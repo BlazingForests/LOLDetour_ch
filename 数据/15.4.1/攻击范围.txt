@@ -1,0 +1,16 @@
+﻿League of Legends.Scaleform::Render::Matrix4x4<float>::SetIdentity+34EBB - 8B 80 90000000        - mov eax,[eax+00000090]
+League of Legends.Scaleform::Render::Matrix4x4<float>::SetIdentity+34EC1 - FF D0                 - call eax
+League of Legends.Scaleform::Render::Matrix4x4<float>::SetIdentity+34EC3 - 8B 0D 14721402        - mov ecx,[League of Legends.exe+1177214]
+League of Legends.Scaleform::Render::Matrix4x4<float>::SetIdentity+34EC9 - D8 81 DC090000        - fadd dword ptr [ecx+000009DC]  //范围
+League of Legends.Scaleform::Render::Matrix4x4<float>::SetIdentity+34ECF - 8B 81 68040000        - mov eax,[ecx+00000468]
+League of Legends.Scaleform::Render::Matrix4x4<float>::SetIdentity+34ED5 - 81 C1 68040000        - add ecx,00000468
+League of Legends.Scaleform::Render::Matrix4x4<float>::SetIdentity+34EDB - D9 5D F8              - fstp dword ptr [ebp-08]
+League of Legends.Scaleform::Render::Matrix4x4<float>::SetIdentity+34EDE - FF 50 24              - call dword ptr [eax+24]
+League of Legends.Scaleform::Render::Matrix4x4<float>::SetIdentity+34EE1 - D9 45 F8              - fld dword ptr [ebp-08]
+League of Legends.Scaleform::Render::Matrix4x4<float>::SetIdentity+34EE4 - 83 EC 0C              - sub esp,0C
+League of Legends.Scaleform::Render::Matrix4x4<float>::SetIdentity+34EE7 - 8B D4                 - mov edx,esp
+League of Legends.Scaleform::Render::Matrix4x4<float>::SetIdentity+34EE9 - 8B 48 20              - mov ecx,[eax+20]
+
+0146F6C5 - 8B 42 48  - mov eax,[edx+48]
+0146F82F - F6 42 48 20 - test byte ptr [edx+48],20
+0146F898 - F7 42 48 00100000 - test [edx+48],1000

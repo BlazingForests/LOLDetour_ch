@@ -1,0 +1,57 @@
+00CE90ED  |. /74 71         JE SHORT League_o.00CE9160
+00CE90EF  |. |8B47 18       MOV EAX,DWORD PTR DS:[EDI+18]
+00CE90F2  |. |33DB          XOR EBX,EBX
+00CE90F4  |. |C1E8 0A       SHR EAX,0A
+00CE90F7  |. |0FB6C0        MOVZX EAX,AL
+00CE90FA  |. |83E0 01       AND EAX,1
+00CE90FD  |. |84C0          TEST AL,AL
+00CE90FF  |. |0F45DF        CMOVNE EBX,EDI
+00CE9102  |. |85DB          TEST EBX,EBX
+00CE9104  |. |74 5A         JE SHORT League_o.00CE9160
+00CE9106  |. |8BCB          MOV ECX,EBX
+00CE9108  |. |E8 53117E00   CALL League_o.014CA260
+00CE910D  |. |84C0          TEST AL,AL
+00CE910F  |. |74 4F         JE SHORT League_o.00CE9160
+00CE9111  |. |F3:0F1046 4C  MOVSS XMM0,DWORD PTR DS:[ESI+4C]
+00CE9116  |. |83EC 08       SUB ESP,8
+00CE9119  |. |F3:0F584424 1>ADDSS XMM0,DWORD PTR SS:[ESP+14]         ; |
+00CE911F  |. |D945 14       FLD DWORD PTR SS:[EBP+14]                ; |
+00CE9122  |. |8B8B 1C1C0000 MOV ECX,DWORD PTR DS:[EBX+1C1C]          ; |*******
+00CE9128  |. |D95C24 04     FSTP DWORD PTR SS:[ESP+4]                ; |
+00CE912C  |. |F3:0F114424 2>MOVSS DWORD PTR SS:[ESP+28],XMM0         ; |
+00CE9132  |. |F3:0F1046 50  MOVSS XMM0,DWORD PTR DS:[ESI+50]         ; |
+00CE9137  |. |F3:0F584424 1>ADDSS XMM0,DWORD PTR SS:[ESP+18]         ; |
+00CE913D  |. |F3:0F114424 2>MOVSS DWORD PTR SS:[ESP+2C],XMM0         ; |
+00CE9143  |. |E8 58E51000   CALL League_o.00DF76A0                   ; \League_o.00DF76A0
+00CE9148  |. |8B4C24 1C     MOV ECX,DWORD PTR SS:[ESP+1C]
+00CE914C  |. |83C4 04       ADD ESP,4
+00CE914F  |. |81C1 CC0E0000 ADD ECX,0ECC
+00CE9155  |. |50            PUSH EAX
+00CE9156  |. |8D4424 28     LEA EAX,DWORD PTR SS:[ESP+28]
+00CE915A  |. |50            PUSH EAX
+00CE915B  |. |E8 E0425200   CALL League_o.0120D440
+00CE9160  |> \A1 54D0FB01   MOV EAX,DWORD PTR DS:[1FBD054]
+00CE9165  |.  BA C812D101   MOV EDX,League_o.01D112C8                ;  ASCII "HeroHealthBar"
+00CE916A  |.  6A 00         PUSH 0                                   ; /Arg2 = 00000000
+00CE916C  |.  6A 01         PUSH 1                                   ; |Arg1 = 00000001
+00CE916E  |.  B9 A0F7CE01   MOV ECX,League_o.01CEF7A0                ; |ASCII "LossOfControl"
+00CE9173  |.  8A58 5E       MOV BL,BYTE PTR DS:[EAX+5E]              ; |
+00CE9176  |.  E8 457C6D00   CALL League_o.013C0DC0                   ; \League_o.013C0DC0
+00CE917B  |.  83C4 08       ADD ESP,8
+00CE917E  |.  84DB          TEST BL,BL
+00CE9180  |.  0F84 90000000 JE League_o.00CE9216
+00CE9186  |.  84C0          TEST AL,AL
+00CE9188  |.  0F84 88000000 JE League_o.00CE9216
+00CE918E  |.  6A 00         PUSH 0                                   ; /Arg2 = 00000000
+00CE9190  |.  6A 07         PUSH 7                                   ; |Arg1 = 00000007
+00CE9192  |.  BA 8C4ECF01   MOV EDX,League_o.01CF4E8C                ; |ASCII "HeroMode"
+00CE9197  |.  B9 A0F7CE01   MOV ECX,League_o.01CEF7A0                ; |ASCII "LossOfControl"
+00CE919C  |.  E8 1FF72800   CALL League_o.00F788C0                   ; \League_o.00F788C0
+00CE91A1  |.  8B4C24 20     MOV ECX,DWORD PTR SS:[ESP+20]
+00CE91A5  |.  83C4 08       ADD ESP,8
+00CE91A8  |.  85C9          TEST ECX,ECX
+00CE91AA  |.  75 0D         JNZ SHORT League_o.00CE91B9
+00CE91AC  |.  A8 01         TEST AL,1
+00CE91AE  |.  7F 24         JG SHORT League_o.00CE91D4
+00CE91B0  |.  5F            POP EDI
+

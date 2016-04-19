@@ -1,0 +1,1 @@
+League of Legends.exe+3EE16D - C7 44 C2 3C 00000000  - mov [edx+eax*8+3C],00000000  //¸öÊý

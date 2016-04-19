@@ -1,0 +1,78 @@
+2448B40C+1C
+
+27C7C240+eax*8+3C
+
+
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+529FC - 8B 0D 90BEAB03        - mov ecx,["League of Legends.exe"+297BE90]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+52A02 - 8B 01                 - mov eax,[ecx]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+52A04 - 8B 80 5C030000        - mov eax,[eax+0000035C]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+52A0A - FF D0                 - call eax
+
+
+C745FCFFFFFFFFBE????????EB098DA424000000008BFF8B0D????????8B46082B0D????????2B06C1F902C1F8023BC1
+
+012C6909   .  C745 FC FFFFF>MOV DWORD PTR SS:[EBP-4],-1
+012C6910   >  BE E4D0A103   MOV ESI,League_o.03A1D0E4                ;  ASCII " x"
+012C6915   .  EB 09         JMP SHORT League_o.012C6920
+012C6917   .  8DA424 000000>LEA ESP,DWORD PTR SS:[ESP]
+012C691E   .  8BFF          MOV EDI,EDI
+012C6920   >  8B0D 0806DA02 MOV ECX,DWORD PTR DS:[2DA0608] ****上标
+012C6926   .  8B46 08       MOV EAX,DWORD PTR DS:[ESI+8]
+012C6929   .  2B0D 0406DA02 SUB ECX,DWORD PTR DS:[2DA0604] ****下标
+012C692F   .  2B06          SUB EAX,DWORD PTR DS:[ESI]
+012C6931   .  C1F9 02       SAR ECX,2
+012C6934   .  C1F8 02       SAR EAX,2
+012C6937   .  3BC1          CMP EAX,ECX
+012C6939   .  73 14         JNB SHORT League_o.012C694F
+012C693B   .  81F9 FFFFFF3F CMP ECX,3FFFFFFF
+012C6941   .  0F87 19010000 JA League_o.012C6A60
+012C6947   .  51            PUSH ECX                                 ; /Arg1
+012C6948   .  8BCE          MOV ECX,ESI                              ; |
+012C694A   .  E8 1192F9FF   CALL League_o.0125FB60                   ; \League_o.00FDFB60
+
+3B35????????0F47F985FF7422
+
+00598F7C   .  3B35 50C7BB02 CMP ESI,DWORD PTR DS:[2BBC750]
+00598F82   .  0F47F9        CMOVA EDI,ECX
+00598F85   .  85FF          TEST EDI,EDI
+00598F87   .  74 22         JE SHORT League_o.00598FAB
+00598F89   .  8DA424 000000>LEA ESP,DWORD PTR SS:[ESP]
+00598F90   >  8B0E          MOV ECX,DWORD PTR DS:[ESI]
+00598F92   .  8B55 FC       MOV EDX,DWORD PTR SS:[EBP-4]
+00598F95   .  FF75 08       PUSH DWORD PTR SS:[EBP+8]
+00598F98   .  8B01          MOV EAX,DWORD PTR DS:[ECX]
+00598F9A   .  D902          FLD DWORD PTR DS:[EDX]
+00598F9C   .  51            PUSH ECX
+00598F9D   .  D91C24        FSTP DWORD PTR SS:[ESP]
+
+
+
+
+
+
+
+[[dwObjectBase]+4*n] Player对象
++24 Ansi 玩家名称
++3c]+18 英雄名称 
++138 HP_MIN +148 HP_MAX
++1A4 MP_MIN +1B4 MP_MAX
++16C+4]+24 Visible
++60 +64 +68 x z y
++4F54]+60 目的地 x
++56DC 平A范围显示 +734 A 范围
+
+
++55E4]英雄对象
++0名称
++618
+
++CB4+n*4+6C] 物品对象
++4 //物品数量
+
+
+[2A8056F0+CB4+ESI*4+6C]+4
+
+
+
+016F6DB8
+[264EB268+60]

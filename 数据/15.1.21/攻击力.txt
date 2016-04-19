@@ -1,0 +1,52 @@
+League of Legends.Scaleform::Thread::`default constructor closure'+40C51 - 75 08                 - jne "League of Legends.Scaleform::Thread::`default constructor closure'"+40C5B
+League of Legends.Scaleform::Thread::`default constructor closure'+40C53 - 0F57 ED               - xorps xmm5,xmm5
+League of Legends.Scaleform::Thread::`default constructor closure'+40C56 - 0F28 CD               - movaps xmm1,xmm5
+League of Legends.Scaleform::Thread::`default constructor closure'+40C59 - EB 2B                 - jmp "League of Legends.Scaleform::Thread::`default constructor closure'"+40C86
+League of Legends.Scaleform::Thread::`default constructor closure'+40C5B - 8B 8D 74FFFFFF        - mov ecx,[ebp-0000008C]
+League of Legends.Scaleform::Thread::`default constructor closure'+40C61 - 6A 08                 - push 08
+League of Legends.Scaleform::Thread::`default constructor closure'+40C63 - E8 48715C00           - call "League of Legends.Scaleform::System::System"+15CB0
+League of Legends.Scaleform::Thread::`default constructor closure'+40C68 - 8B 85 70FFFFFF        - mov eax,[ebp-00000090]
+League of Legends.Scaleform::Thread::`default constructor closure'+40C6E - 0F57 ED               - xorps xmm5,xmm5
+League of Legends.Scaleform::Thread::`default constructor closure'+40C71 - D8 0C 85 E4E32102     - fmul dword ptr [eax*4+"League of Legends.exe"+15EE3E4]
+League of Legends.Scaleform::Thread::`default constructor closure'+40C78 - D9 9D 70FFFFFF        - fstp dword ptr [ebp-00000090]
+League of Legends.Scaleform::Thread::`default constructor closure'+40C7E - F3 0F10 8D 70FFFFFF   - movss xmm1,[ebp-00000090]
+League of Legends.Scaleform::Thread::`default constructor closure'+40C86 - 8B 15 74FB2102        - mov edx,["League of Legends.exe"+15EFB74]
+League of Legends.Scaleform::Thread::`default constructor closure'+40C8C - 8B 82 F0200000        - mov eax,[edx+000020F0]  **********
+League of Legends.Scaleform::Thread::`default constructor closure'+40C92 - 85 C0                 - test eax,eax
+League of Legends.Scaleform::Thread::`default constructor closure'+40C94 - 74 05                 - je "League of Legends.Scaleform::Thread::`default constructor closure'"+40C9B
+League of Legends.Scaleform::Thread::`default constructor closure'+40C96 - 83 C0 28              - add eax,28  *************
+League of Legends.Scaleform::Thread::`default constructor closure'+40C99 - EB 02                 - jmp "League of Legends.Scaleform::Thread::`default constructor closure'"+40C9D
+League of Legends.Scaleform::Thread::`default constructor closure'+40C9B - 33 C0                 - xor eax,eax
+League of Legends.Scaleform::Thread::`default constructor closure'+40C9D - F3 0F10 40 50         - movss xmm0,[eax+50]
+League of Legends.Scaleform::Thread::`default constructor closure'+40CA2 - F3 0F58 C1            - addss xmm0,xmm1
+League of Legends.Scaleform::Thread::`default constructor closure'+40CA6 - F3 0F10 67 2C         - movss xmm4,[edi+2C]
+League of Legends.Scaleform::Thread::`default constructor closure'+40CAB - F3 0F10 8A D4070000   - movss xmm1,[edx+000007D4]  *********
+League of Legends.Scaleform::Thread::`default constructor closure'+40CB3 - F3 0F59 0D 18F0F701   - mulss xmm1,["League of Legends.exe"+134F018]
+League of Legends.Scaleform::Thread::`default constructor closure'+40CBB - F3 0F58 25 C050EE01   - addss xmm4,["League of Legends.exe"+12B50C0]
+League of Legends.Scaleform::Thread::`default constructor closure'+40CC3 - F3 0F59 05 18F0F701   - mulss xmm0,["League of Legends.exe"+134F018]
+League of Legends.Scaleform::Thread::`default constructor closure'+40CCB - F3 0F10 1D 6493F101   - movss xmm3,["League of Legends.exe"+12E9364]
+League of Legends.Scaleform::Thread::`default constructor closure'+40CD3 - F3 0F10 35 0466ED01   - movss xmm6,["League of Legends.exe"+12A6604]
+League of Legends.Scaleform::Thread::`default constructor closure'+40CDB - F3 0F5C C8            - subss xmm1,xmm0
+League of Legends.Scaleform::Thread::`default constructor closure'+40CDF - F3 0F10 3D E4EEEA01   - movss xmm7,["League of Legends.exe"+127EEE4]
+League of Legends.Scaleform::Thread::`default constructor closure'+40CE7 - 0F54 DC               - andps xmm3,xmm4
+League of Legends.Scaleform::Thread::`default constructor closure'+40CEA - 0F28 D4               - movaps xmm2,xmm4
+League of Legends.Scaleform::Thread::`default constructor closure'+40CED - F3 0F11 8D 70FFFFFF   - movss [ebp-00000090],xmm1
+League of Legends.Scaleform::Thread::`default constructor closure'+40CF5 - F3 0F58 C8            - addss xmm1,xmm0
+League of Legends.Scaleform::Thread::`default constructor closure'+40CF9 - 0F28 C4               - movaps xmm0,xmm4
+League of Legends.Scaleform::Thread::`default constructor closure'+40CFC - 0F57 C3               - xorps xmm0,xmm3
+League of Legends.Scaleform::Thread::`default constructor closure'+40CFF - F3 0FC2 C6 01         - cmpss xmm0,xmm6,01
+League of Legends.Scaleform::Thread::`default constructor closure'+40D04 - F3 0F11 8D 74FFFFFF   - movss [ebp-0000008C],xmm1
+League of Legends.Scaleform::Thread::`default constructor closure'+40D0C - 0F28 CE               - movaps xmm1,xmm6
+League of Legends.Scaleform::Thread::`default constructor closure'+40D0F - 0F54 C8               - andps xmm1,xmm0
+League of Legends.Scaleform::Thread::`default constructor closure'+40D12 - 0F56 CB               - orps xmm1,xmm3
+League of Legends.Scaleform::Thread::`default constructor closure'+40D15 - F3 0F58 D1            - addss xmm2,xmm1
+League of Legends.Scaleform::Thread::`default constructor closure'+40D19 - F3 0F5C D1            - subss xmm2,xmm1
+League of Legends.Scaleform::Thread::`default constructor closure'+40D1D - 0F28 CE               - movaps xmm1,xmm6
+League of Legends.Scaleform::Thread::`default constructor closure'+40D20 - 0F28 C2               - movaps xmm0,xmm2
+League of Legends.Scaleform::Thread::`default constructor closure'+40D23 - F3 0F5C C4            - subss xmm0,xmm4
+League of Legends.Scaleform::Thread::`default constructor closure'+40D27 - F3 0F10 A5 74FFFFFF   - movss xmm4,[ebp-0000008C]
+League of Legends.Scaleform::Thread::`default constructor closure'+40D2F - F3 0F58 25 C050EE01   - addss xmm4,["League of Legends.exe"+12B50C0]
+League of Legends.Scaleform::Thread::`default constructor closure'+40D37 - F3 0FC2 C3 06         - cmpss xmm0,xmm3,06
+League of Legends.Scaleform::Thread::`default constructor closure'+40D3C - F3 0F10 1D 6493F101   - movss xmm3,["League of Legends.exe"+12E9364]
+League of Legends.Scaleform::Thread::`default constructor closure'+40D44 - 0F54 DC               - andps xmm3,xmm4
+League of Legends.Scaleform::Thread::`default constructor closure'+40D47 - 0F54 C7               - andps xmm0,xmm7

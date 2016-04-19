@@ -1,0 +1,190 @@
+2015年9月8日 15:08:46
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C50D - 0F84 89000000         - je League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C59C
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C513 - 8B 0D 6CA65401        - mov ecx,[League of Legends.exe+114A66C]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C519 - 8B 01                 - mov eax,[ecx]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C51B - FF 50 14              - call dword ptr [eax+14]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C51E - 8B 0D 6CA65401        - mov ecx,[League of Legends.exe+114A66C]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C524 - F3 0F10 00            - movss xmm0,[eax]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C528 - F3 0F11 45 EC         - movss [ebp-14],xmm0
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C52D - F3 0F10 40 04         - movss xmm0,[eax+04]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C532 - F3 0F58 05 94D13201   - addss xmm0,[League of Legends.exe+F2D194]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C53A - F3 0F11 45 F0         - movss [ebp-10],xmm0
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C53F - F3 0F10 40 08         - movss xmm0,[eax+08]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C544 - 8B 01                 - mov eax,[ecx]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C546 - F3 0F11 45 F4         - movss [ebp-0C],xmm0
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C54B - 8B 80 90000000        - mov eax,[eax+00000090]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C551 - FF D0                 - call eax
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C553 - 8B 0D 6CA65401        - mov ecx,[League of Legends.exe+114A66C]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C559 - D8 81 300B0000        - fadd dword ptr [ecx+00000B30]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C55F - 8B 81 08050000        - mov eax,[ecx+00000508]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C565 - 81 C1 08050000        - add ecx,00000508
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C56B - D9 5D F8              - fstp dword ptr [ebp-08]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C56E - FF 50 24              - call dword ptr [eax+24]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C571 - F3 0F10 4D F8         - movss xmm1,[ebp-08]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C576 - 83 EC 0C              - sub esp,0C
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C579 - 8B CC                 - mov ecx,esp
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C57B - BA 48184F01           - mov edx,League of Legends.exe+10F1848
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C580 - F3 0F7E 40 20         - movq xmm0,[eax+20]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C585 - 8B 40 28              - mov eax,[eax+28]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C588 - 66 0FD6 01            - movq [ecx],xmm0
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C58C - 89 41 08              - mov [ecx+08],eax
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C58F - 8D 4D EC              - lea ecx,[ebp-14]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C592 - 6A 00                 - push 00
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C594 - E8 C76CE1FF           - call League of Legends.Scaleform::Render::Matrix4x4<float>::SetIdentity+12CC0
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C599 - 83 C4 10              - add esp,10
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C59C - 8B 0D 6CA65401        - mov ecx,[League of Legends.exe+114A66C]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5A2 - 8B 01                 - mov eax,[ecx]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5A4 - 8B 80 7C030000        - mov eax,[eax+0000037C]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5AA - FF D0                 - call eax
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5AC - 84 C0                 - test al,al
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5AE - 74 7D                 - je League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C62D
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5B0 - 8B 0D 6CA65401        - mov ecx,[League of Legends.exe+114A66C]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5B6 - 8B 01                 - mov eax,[ecx]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5B8 - FF 50 14              - call dword ptr [eax+14]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5BB - 8B 0D 6CA65401        - mov ecx,[League of Legends.exe+114A66C]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5C1 - F3 0F10 00            - movss xmm0,[eax]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5C5 - F3 0F11 45 EC         - movss [ebp-14],xmm0
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5CA - F3 0F10 40 04         - movss xmm0,[eax+04]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5CF - F3 0F58 05 94D13201   - addss xmm0,[League of Legends.exe+F2D194]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5D7 - F3 0F11 45 F0         - movss [ebp-10],xmm0
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5DC - F3 0F10 40 08         - movss xmm0,[eax+08]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5E1 - 8B 01                 - mov eax,[ecx]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5E3 - F3 0F11 45 F4         - movss [ebp-0C],xmm0
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5E8 - 8B 80 90000000        - mov eax,[eax+00000090]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5EE - FF D0                 - call eax
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5F0 - A1 6CA65401           - mov eax,[League of Legends.exe+114A66C]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5F5 - 8B 0D E06F5401        - mov ecx,[League of Legends.exe+1146FE0]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C5FB - D8 80 300B0000        - fadd dword ptr [eax+00000B30]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C601 - D9 5D F8              - fstp dword ptr [ebp-08]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C604 - 85 C9                 - test ecx,ecx
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C606 - 74 25                 - je League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C62D
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C608 - 8B 89 B4000000        - mov ecx,[ecx+000000B4]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C60E - 85 C9                 - test ecx,ecx
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C610 - 74 1B                 - je League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C62D
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C612 - A1 08E85401           - mov eax,[League of Legends.exe+114E808]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C617 - F3 0F10 55 F8         - movss xmm2,[ebp-08]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C61C - 68 48184F01           - push League of Legends.exe+10F1848
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C621 - FF 70 08              - push [eax+08]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C624 - 8D 45 EC              - lea eax,[ebp-14]
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C627 - 50                    - push eax
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C628 - E8 63964300           - call League of Legends.Scaleform::System::System+E1620
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C62D - 5F                    - pop edi
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C62E - 5E                    - pop esi
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C62F - 8B E5                 - mov esp,ebp
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C631 - 5D                    - pop ebp
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C632 - C3                    - ret 
+League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+5C633 - CC                    - int 3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+017E4290 - 83 EC 14              - sub esp,14
+017E4293 - 53                    - push ebx
+017E4294 - 56                    - push esi
+017E4295 - 8B F1                 - mov esi,ecx
+017E4297 - 80 3E 00              - cmp byte ptr [esi],00
+017E429A - 0F85 77010000         - jne 017E4417
+017E42A0 - 6A 2C                 - push 2C
+017E42A2 - E8 F90CF5FF           - call 01734FA0
+017E42A7 - 8B C8                 - mov ecx,eax
+017E42A9 - E8 A247A3FF           - call 01218A50
+017E42AE - 85 C0                 - test eax,eax
+017E42B0 - 0F95 C3               - setnc bl
+017E42B3 - 80 7E 54 00           - cmp byte ptr [esi+54],00
+017E42B7 - 75 2E                 - jne 017E42E7
+017E42B9 - 8B 0D 04C71402        - mov ecx,[0214C704] : [3ABE29C0]
+017E42BF - 8B 01                 - mov eax,[ecx]
+017E42C1 - 8B 80 74030000        - mov eax,[eax+00000374]
+017E42C7 - FF D0                 - call eax
+017E42C9 - 84 C0                 - test al,al
+017E42CB - 75 1A                 - jne 017E42E7
+017E42CD - A1 0CAC1402           - mov eax,[0214AC0C] : [2B524FB8]
+017E42D2 - 8B 40 08              - mov eax,[eax+08]
+017E42D5 - 83 78 30 02           - cmp dword ptr [eax+30],02
+017E42D9 - 0F85 9B000000         - jne 017E437A
+017E42DF - 84 DB                 - test bl,bl
+017E42E1 - 0F84 93000000         - je 017E437A
+017E42E7 - 8B 0D 04C71402        - mov ecx,[0214C704] : [3ABE29C0]
+017E42ED - 8B 01                 - mov eax,[ecx]
+017E42EF - FF 50 14              - call dword ptr [eax+14]
+017E42F2 - 8B 0D 04C71402        - mov ecx,[0214C704] : [3ABE29C0]
+017E42F8 - F3 0F10 00            - movss xmm0,[eax]
+017E42FC - F3 0F11 44 24 10      - movss [esp+10],xmm0
+017E4302 - F3 0F10 40 04         - movss xmm0,[eax+04]
+017E4307 - F3 0F58 05 C01EEA01   - addss xmm0,[01EA1EC0] : [3DCCCCCD]
+017E430F - F3 0F11 44 24 14      - movss [esp+14],xmm0
+017E4315 - F3 0F10 40 08         - movss xmm0,[eax+08]
+017E431A - 8B 01                 - mov eax,[ecx]
+017E431C - F3 0F11 44 24 18      - movss [esp+18],xmm0
+017E4322 - 8B 80 90000000        - mov eax,[eax+00000090]
+017E4328 - FF D0                 - call eax
+017E432A - 8B 0D 04C71402        - mov ecx,[0214C704] : [3ABE29C0]
+017E4330 - D8 81 5C0A0000        - fadd dword ptr [ecx+00000A5C]
+017E4336 - 8B 81 88040000        - mov eax,[ecx+00000488]
+017E433C - 81 C1 88040000        - add ecx,00000488
+017E4342 - D9 5C 24 0C           - fstp dword ptr [esp+0C]
+017E4346 - FF 50 24              - call dword ptr [eax+24]
+017E4349 - D9 44 24 0C           - fld dword ptr [esp+0C]
+017E434D - 83 EC 0C              - sub esp,0C
+017E4350 - 8B D4                 - mov edx,esp
+017E4352 - 8B 48 20              - mov ecx,[eax+20]
+017E4355 - 6A 00                 - push 00
+017E4357 - 89 0A                 - mov [edx],ecx
+017E4359 - 8B 48 24              - mov ecx,[eax+24]
+017E435C - 8B 40 28              - mov eax,[eax+28]
+017E435F - 89 4A 04              - mov [edx+04],ecx
+017E4362 - 89 42 08              - mov [edx+08],eax
+017E4365 - BA 44D50E02           - mov edx,020ED544 : [FFFFFFFF]
+017E436A - 51                    - push ecx
+017E436B - 8D 4C 24 24           - lea ecx,[esp+24]
+017E436F - D9 1C 24              - fstp dword ptr [esp]
+017E4372 - E8 C90CC3FF           - call 01415040
+017E4377 - 83 C4 14              - add esp,14
+017E437A - 8B 0D 04C71402        - mov ecx,[0214C704] : [3ABE29C0]
+017E4380 - 8B 01                 - mov eax,[ecx]
+017E4382 - 8B 80 78030000        - mov eax,[eax+00000378]
+017E4388 - FF D0                 - call eax
+017E438A - 84 C0                 - test al,al
+017E438C - 0F84 85000000         - je 017E4417
+017E4392 - 8B 0D 04C71402        - mov ecx,[0214C704] : [3ABE29C0]
+017E4398 - 8B 01                 - mov eax,[ecx]
+017E439A - FF 50 14              - call dword ptr [eax+14]
+017E439D - 8B 0D 04C71402        - mov ecx,[0214C704] : [3ABE29C0]
+017E43A3 - F3 0F10 00            - movss xmm0,[eax]
+017E43A7 - F3 0F11 44 24 10      - movss [esp+10],xmm0
+017E43AD - F3 0F10 40 04         - movss xmm0,[eax+04]
+017E43B2 - F3 0F58 05 C01EEA01   - addss xmm0,[01EA1EC0] : [3DCCCCCD]
+017E43BA - F3 0F11 44 24 14      - movss [esp+14],xmm0
+017E43C0 - F3 0F10 40 08         - movss xmm0,[eax+08]
+017E43C5 - 8B 01                 - mov eax,[ecx]
+017E43C7 - F3 0F11 44 24 18      - movss [esp+18],xmm0
+017E43CD - 8B 80 90000000        - mov eax,[eax+00000090]
+017E43D3 - FF D0                 - call eax
+017E43D5 - A1 04C71402           - mov eax,[0214C704] : [3ABE29C0]
+017E43DA - 8B 0D 58441402        - mov ecx,[02144458] : [3043AC10]
+017E43E0 - D8 80 5C0A0000        - fadd dword ptr [eax+00000A5C]
+017E43E6 - 85 C9                 - test ecx,ecx
+017E43E8 - 74 2B                 - je 017E4415
+017E43EA - 8B 89 D0000000        - mov ecx,[ecx+000000D0]
+017E43F0 - 85 C9                 - test ecx,ecx
+017E43F2 - 74 21                 - je 017E4415
+017E43F4 - A1 6CFADD03           - mov eax,[03DDFA6C] : [37EC5C58]
+017E43F9 - 68 44D50E02           - push 020ED544 : [FFFFFFFF]
+017E43FE - FF 70 08              - push [eax+08]
+017E4401 - 8D 44 24 18           - lea eax,[esp+18]

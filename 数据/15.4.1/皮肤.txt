@@ -1,0 +1,458 @@
+.rdata:10016136 00000005 C \a\b\t\n\v                                                                                       
+.rdata:1001614F 0000005F C  !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+.rdata:100172F8 00000011 C 506A188BCEE8|5|2                                                                                 
+.rdata:1001730C 00000021 C 6A06B9????????E8????????85C0|3|1                                                                 
+.rdata:10017330 0000001B C 8B0D????????6A??568B01|2|1                                                         `              
+.rdata:1001734C 0000001B C 8B0D????????8B0C9185C9|6|0                                                                       
+.rdata:10017368 0000002D C 8B0D????????C1EA??C1E8??80E2??24??3AD074|2|1                                                     
+.rdata:10017398 00000042 C 8985????????8A0EE8????????88068D76????75??????????????0f84|0x15|0 ***********                               
+.rdata:100173DC 00000021 C 7D??8B0D????????8B0C9185C974|4|1                                                                 
+.rdata:10017400 0000003E C 83C801A3????????E8????????68????????E8????????83C40456B9|1C|1                                    
+.rdata:10017440 00000025 C 74??E8????????8B35????????85F674|9|1                                                             
+.rdata:10017468 0000001F C 8B0D????????8B89????????E8|2|1                                                                   
+.rdata:10017488 0000001B C 50B8????????0F45C650FF|6|0                                                                       
+.rdata:100174A4 00000027 C 8B0D????????85C974??8B01FF50??84C0|2|1                                                           
+.rdata:100174CC 0000001F C A1????????85C074??33FF8D9E|1|1                                                                   
+.rdata:100174EC 00000019 C D91C24FF75??8BCB57E8|E|0                                                                         
+.rdata:10017508 0000002D C 751B83BE??????????0F84????????6A008BCEE8|0|0                                                     
+.rdata:10017538 0000004B C 8B4424??2B4424??010184DB74268B4424??8B88????000085C9740E807D??00750856|0|0                       
+.rdata:10017584 0000001B C LOL-AssistModule-VideoData                                                                       
+.rdata:100175A0 00000017 C LOL-HeroSkin-VideoData                                                                           
+.rdata:100175B8 00000026 C _MyD3dApiAddressInfoKey__Hearthstone_                                                            
+.rdata:100175E0 00000013 C LOL_CRYSTAL_TIMING                                                                               
+.rdata:100175F4 00000013 C LOL_MONSTER_TIMING                                                                               
+.rdata:10017608 0000000A C HeroCount                                                                                        
+.rdata:10017614 00000009 C SkinInfo                                                                                         
+.rdata:10017620 00000007 C Hero%d                 
+
+
+
+
+
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetXScale+2153A5 - D9 1C 24              - fstp dword ptr [esp]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetXScale+2153A8 - FF 75 10              - push [ebp+10]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetXScale+2153AB - 8B CB                 - mov ecx,ebx
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetXScale+2153AD - 57                    - push edi
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetXScale+2153AE - E8 0D070700           - call League of Legends.Scaleform::Mutex::`default constructor closure'+3A790
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetXScale+2153B3 - E9 C8AE7260           - jmp AssistModule.dll+1840
+                                                                          
+
+
+
+
+AssistModule.dll+118D - 68 34763B6C           - push AssistModule.dll+17634
+AssistModule.dll+1192 - FF 15 04403B6C        - call dword ptr [AssistModule.dll+14004]
+AssistModule.dll+1198 - 83 F8 FF              - cmp eax,FF
+AssistModule.dll+119B - 74 DA                 - je AssistModule.dll+1177
+AssistModule.dll+119D - 5E                    - pop esi
+AssistModule.dll+119E - A3 0CB93B6C           - mov [AssistModule.dll+1B90C],eax
+AssistModule.dll+11A3 - B8 01000000           - mov eax,00000001
+AssistModule.dll+11A8 - 5F                    - pop edi
+AssistModule.dll+11A9 - 8B 4D FC              - mov ecx,[ebp-04]
+AssistModule.dll+11AC - 33 CD                 - xor ecx,ebp
+AssistModule.dll+11AE - E8 FB180000           - call AssistModule.dll+2AAE
+
+
+
+
+League of Legends.RegisterNativeEventCallback+7EF2D -                       - ?? 
+
+ebp-64 HeroName
+ebp-5C 
+
+
+League of Legends.RegisterNativeEventCallback+7EBD5 - FF 75 98              - push [ebp-68]
+League of Legends.RegisterNativeEventCallback+7EBD8 - 50                    - push eax
+League of Legends.RegisterNativeEventCallback+7EBD9 - B8 C8000000           - mov eax,000000C8
+League of Legends.RegisterNativeEventCallback+7EBDE - 0F45 C6               - cmovne eax,esi
+League of Legends.RegisterNativeEventCallback+7EBE1 - 50                    - push eax
+League of Legends.RegisterNativeEventCallback+7EBE2 - FF 75 A4              - push [ebp-5C]
+League of Legends.RegisterNativeEventCallback+7EBE5 - E8 CC2B5D00           - call League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7F0F0
+League of Legends.RegisterNativeEventCallback+7EBEA - 83 C4 1C              - add esp,1C
+League of Legends.RegisterNativeEventCallback+7EBED - 89 45 98              - mov [ebp-68],eax
+League of Legends.RegisterNativeEventCallback+7EBF0 - 8D B0 302A0000        - lea esi,[eax+00002A30]
+
+
+
+
+League of Legends.RegisterNativeEventCallback+7EBD0 - BE 64000000           - mov esi,00000064
+League of Legends.RegisterNativeEventCallback+7EBD5 - FF 75 98              - push [ebp-68]
+League of Legends.RegisterNativeEventCallback+7EBD8 - 50                    - push eax
+League of Legends.RegisterNativeEventCallback+7EBD9 - B8 C8000000           - mov eax,000000C8
+League of Legends.RegisterNativeEventCallback+7EBDE - E9 F3BCAC6B           - jmp AssistModule.dll+1360
+League of Legends.RegisterNativeEventCallback+7EBE3 - 90                    - nop 
+League of Legends.RegisterNativeEventCallback+7EBE4 - 90                    - nop    ///////////////////////////////////////////////////
+League of Legends.RegisterNativeEventCallback+7EBE5 - E8 CC2B5D00           - call League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7F0F0
+League of Legends.RegisterNativeEventCallback+7EBEA - 83 C4 1C              - add esp,1C
+League of Legends.RegisterNativeEventCallback+7EBED - 89 45 98              - mov [ebp-68],eax
+League of Legends.RegisterNativeEventCallback+7EBF0 - 8D B0 302A0000        - lea esi,[eax+00002A30]
+League of Legends.RegisterNativeEventCallback+7EBF6 - 8D 45 CC              - lea eax,[ebp-34]
+League of Legends.RegisterNativeEventCallback+7EBF9 - 8B CE                 - mov ecx,esi
+League of Legends.RegisterNativeEventCallback+7EBFB - 50                    - push eax
+League of Legends.RegisterNativeEventCallback+7EBFC - E8 C53FF5FF           - call League of Legends.Scaleform::System::Init+86890
+League of Legends.RegisterNativeEventCallback+7EC01 - 8D 45 CC              - lea eax,[ebp-34]
+League of Legends.RegisterNativeEventCallback+7EC04 - 8B CE                 - mov ecx,esi
+League of Legends.RegisterNativeEventCallback+7EC06 - 50                    - push eax
+League of Legends.RegisterNativeEventCallback+7EC07 - E8 EABF0100           - call League of Legends.RegisterNativeEventCallback+9ABF6
+League of Legends.RegisterNativeEventCallback+7EC0C - 8B 5D 94              - mov ebx,[ebp-6C]
+League of Legends.RegisterNativeEventCallback+7EC0F - 8D 75 A4              - lea esi,[ebp-5C]
+League of Legends.RegisterNativeEventCallback+7EC12 - B8 04000000           - mov eax,00000004
+League of Legends.RegisterNativeEventCallback+7EC17 - 8B 4B 49              - mov ecx,[ebx+49]
+
+
+
+
+
+
+League of Legends.RegisterNativeEventCallback+7EB1D - 88 06                 - mov [esi],al
+League of Legends.RegisterNativeEventCallback+7EB1F - 8D 76 01              - lea esi,[esi+01]
+League of Legends.RegisterNativeEventCallback+7EB22 - 4B                    - dec ebx
+League of Legends.RegisterNativeEventCallback+7EB23 - 75 F1                 - jne League of Legends.RegisterNativeEventCallback+7EB16
+League of Legends.RegisterNativeEventCallback+7EB25 - 8B 5D 94              - mov ebx,[ebp-6C]
+League of Legends.RegisterNativeEventCallback+7EB28 - 8D 4D 98              - lea ecx,[ebp-68]
+League of Legends.RegisterNativeEventCallback+7EB2B - BA 04000000           - mov edx,00000004
+League of Legends.RegisterNativeEventCallback+7EB30 - 8B 43 59              - mov eax,[ebx+59]
+League of Legends.RegisterNativeEventCallback+7EB33 - 89 45 98              - mov [ebp-68],eax
+League of Legends.RegisterNativeEventCallback+7EB36 - 8A 01                 - mov al,[ecx]
+League of Legends.RegisterNativeEventCallback+7EB38 - 8D 49 01              - lea ecx,[ecx+01]
+League of Legends.RegisterNativeEventCallback+7EB3B - 04 64                 - add al,64
+League of Legends.RegisterNativeEventCallback+7EB3D - C0 C8 03              - ror al,03
+League of Legends.RegisterNativeEventCallback+7EB40 - 0FB6 C0               - movzx eax,al
+League of Legends.RegisterNativeEventCallback+7EB43 - 8A 80 489B4101        - mov al,[eax+League of Legends.exe+1019B48]
+League of Legends.RegisterNativeEventCallback+7EB49 - 2C 16                 - sub al,16
+League of Legends.RegisterNativeEventCallback+7EB4B - 0FB6 C0               - movzx eax,al
+League of Legends.RegisterNativeEventCallback+7EB4E - 8A 80 489B4101        - mov al,[eax+League of Legends.exe+1019B48]
+League of Legends.RegisterNativeEventCallback+7EB54 - F6 D0                 - not al
+League of Legends.RegisterNativeEventCallback+7EB56 - 34 0B                 - xor al,0B
+League of Legends.RegisterNativeEventCallback+7EB58 - 88 41 FF              - mov [ecx-01],al
+League of Legends.RegisterNativeEventCallback+7EB5B - 4A                    - dec edx
+League of Legends.RegisterNativeEventCallback+7EB5C - 75 D8                 - jne League of Legends.RegisterNativeEventCallback+7EB36
+League of Legends.RegisterNativeEventCallback+7EB5E - 8A 43 30              - mov al,[ebx+30]
+League of Legends.RegisterNativeEventCallback+7EB61 - 8D 75 A4              - lea esi,[ebp-5C]
+League of Legends.RegisterNativeEventCallback+7EB64 - 04 4C                 - add al,4C
+League of Legends.RegisterNativeEventCallback+7EB66 - 0FB6 C0               - movzx eax,al
+League of Legends.RegisterNativeEventCallback+7EB69 - 8A 80 489B4101        - mov al,[eax+League of Legends.exe+1019B48]
+League of Legends.RegisterNativeEventCallback+7EB6F - C0 C8 03              - ror al,03
+League of Legends.RegisterNativeEventCallback+7EB72 - 34 98                 - xor al,98
+League of Legends.RegisterNativeEventCallback+7EB74 - 2C 70                 - sub al,70
+League of Legends.RegisterNativeEventCallback+7EB76 - 0FB6 C0               - movzx eax,al
+League of Legends.RegisterNativeEventCallback+7EB79 - 8A 80 489B4101        - mov al,[eax+League of Legends.exe+1019B48]
+League of Legends.RegisterNativeEventCallback+7EB7F - C0 C8 04              - ror al,04
+League of Legends.RegisterNativeEventCallback+7EB82 - 0FB6 C0               - movzx eax,al
+League of Legends.RegisterNativeEventCallback+7EB85 - 8A 80 489B4101        - mov al,[eax+League of Legends.exe+1019B48]
+League of Legends.RegisterNativeEventCallback+7EB8B - 88 45 A3              - mov [ebp-5D],al
+League of Legends.RegisterNativeEventCallback+7EB8E - 8B 43 51              - mov eax,[ebx+51]
+League of Legends.RegisterNativeEventCallback+7EB91 - 8D 5A 04              - lea ebx,[edx+04]
+League of Legends.RegisterNativeEventCallback+7EB94 - 89 45 A4              - mov [ebp-5C],eax
+League of Legends.RegisterNativeEventCallback+7EB97 - 8A 0E                 - mov cl,[esi]
+League of Legends.RegisterNativeEventCallback+7EB99 - E8 483D4B00           - call League of Legends.EnableEventXMLLogTarget+5148
+League of Legends.RegisterNativeEventCallback+7EB9E - 88 06                 - mov [esi],al
+League of Legends.RegisterNativeEventCallback+7EBA0 - 8D 76 01              - lea esi,[esi+01]
+League of Legends.RegisterNativeEventCallback+7EBA3 - 4B                    - dec ebx
+League of Legends.RegisterNativeEventCallback+7EBA4 - 75 F1                 - jne League of Legends.RegisterNativeEventCallback+7EB97
+League of Legends.RegisterNativeEventCallback+7EBA6 - 83 7F 14 10           - cmp dword ptr [edi+14],10
+League of Legends.RegisterNativeEventCallback+7EBAA - 72 04                 - jb League of Legends.RegisterNativeEventCallback+7EBB0
+League of Legends.RegisterNativeEventCallback+7EBAC - 8B 17                 - mov edx,[edi]
+League of Legends.RegisterNativeEventCallback+7EBAE - EB 02                 - jmp League of Legends.RegisterNativeEventCallback+7EBB2
+League of Legends.RegisterNativeEventCallback+7EBB0 - 8B D7                 - mov edx,edi
+League of Legends.RegisterNativeEventCallback+7EBB2 - FF B5 7CFFFFFF        - push [ebp-00000084]
+League of Legends.RegisterNativeEventCallback+7EBB8 - 83 7D EC 10           - cmp dword ptr [ebp-14],10
+League of Legends.RegisterNativeEventCallback+7EBBC - 8D 4D D8              - lea ecx,[ebp-28]
+League of Legends.RegisterNativeEventCallback+7EBBF - FF 75 9C              - push [ebp-64]
+League of Legends.RegisterNativeEventCallback+7EBC2 - 0F43 4D D8            - cmovae ecx,[ebp-28]
+League of Legends.RegisterNativeEventCallback+7EBC6 - 8D 45 80              - lea eax,[ebp-80]
+League of Legends.RegisterNativeEventCallback+7EBC9 - FF 75 8C              - push [ebp-74]
+League of Legends.RegisterNativeEventCallback+7EBCC - 80 7D A3 00           - cmp byte ptr [ebp-5D],00
+League of Legends.RegisterNativeEventCallback+7EBD0 - BE 64000000           - mov esi,00000064
+League of Legends.RegisterNativeEventCallback+7EBD5 - FF 75 98              - push [ebp-68]
+League of Legends.RegisterNativeEventCallback+7EBD8 - 50                    - push eax
+League of Legends.RegisterNativeEventCallback+7EBD9 - B8 C8000000           - mov eax,000000C8
+League of Legends.RegisterNativeEventCallback+7EBDE - 0F45 C6               - cmovne eax,esi     ///’‚¿ÔHOOKµ„
+League of Legends.RegisterNativeEventCallback+7EBE1 - 50                    - push eax
+League of Legends.RegisterNativeEventCallback+7EBE2 - FF 75 A4              - push [ebp-5C]
+League of Legends.RegisterNativeEventCallback+7EBE5 - E8 CC2B5D00           - call League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7F0F0
+League of Legends.RegisterNativeEventCallback+7EBEA - 83 C4 1C              - add esp,1C
+League of Legends.RegisterNativeEventCallback+7EBED - 89 45 98              - mov [ebp-68],eax
+League of Legends.RegisterNativeEventCallback+7EBF0 - 8D B0 302A0000        - lea esi,[eax+00002A30]
+League of Legends.RegisterNativeEventCallback+7EBF6 - 8D 45 CC              - lea eax,[ebp-34]
+League of Legends.RegisterNativeEventCallback+7EBF9 - 8B CE                 - mov ecx,esi
+League of Legends.RegisterNativeEventCallback+7EBFB - 50                    - push eax
+League of Legends.RegisterNativeEventCallback+7EBFC - E8 C53FF5FF           - call League of Legends.Scaleform::System::Init+86890
+League of Legends.RegisterNativeEventCallback+7EC01 - 8D 45 CC              - lea eax,[ebp-34]
+League of Legends.RegisterNativeEventCallback+7EC04 - 8B CE                 - mov ecx,esi
+League of Legends.RegisterNativeEventCallback+7EC06 - 50                    - push eax
+League of Legends.RegisterNativeEventCallback+7EC07 - E8 EABF0100           - call League of Legends.RegisterNativeEventCallback+9ABF6
+League of Legends.RegisterNativeEventCallback+7EC0C - 8B 5D 94              - mov ebx,[ebp-6C]
+League of Legends.RegisterNativeEventCallback+7EC0F - 8D 75 A4              - lea esi,[ebp-5C]
+League of Legends.RegisterNativeEventCallback+7EC12 - B8 04000000           - mov eax,00000004
+League of Legends.RegisterNativeEventCallback+7EC17 - 8B 4B 49              - mov ecx,[ebx+49]
+League of Legends.RegisterNativeEventCallback+7EC1A - 89 4D A4              - mov [ebp-5C],ecx
+League of Legends.RegisterNativeEventCallback+7EC1D - 0FB6 0E               - movzx ecx,byte ptr [esi]
+League of Legends.RegisterNativeEventCallback+7EC20 - 8D 76 01              - lea esi,[esi+01]
+League of Legends.RegisterNativeEventCallback+7EC23 - 80 E9 1A              - sub cl,1A
+League of Legends.RegisterNativeEventCallback+7EC26 - 0FB6 C9               - movzx ecx,cl
+League of Legends.RegisterNativeEventCallback+7EC29 - 8A 99 489B4101        - mov bl,[ecx+League of Legends.exe+1019B48]
+League of Legends.RegisterNativeEventCallback+7EC2F - D0 CB                 - ror bl,1
+League of Legends.RegisterNativeEventCallback+7EC31 - 8A CB                 - mov cl,bl
+League of Legends.RegisterNativeEventCallback+7EC33 - 8A D3                 - mov dl,bl
+League of Legends.RegisterNativeEventCallback+7EC35 - D0 EA                 - shr dl,1
+League of Legends.RegisterNativeEventCallback+7EC37 - 02 C9                 - add cl,cl
+League of Legends.RegisterNativeEventCallback+7EC39 - 32 D1                 - xor dl,cl
+League of Legends.RegisterNativeEventCallback+7EC3B - 02 DB                 - add bl,bl
+League of Legends.RegisterNativeEventCallback+7EC3D - 80 E2 55              - and dl,55
+League of Legends.RegisterNativeEventCallback+7EC40 - 32 D3                 - xor dl,bl
+League of Legends.RegisterNativeEventCallback+7EC42 - F6 D2                 - not dl
+League of Legends.RegisterNativeEventCallback+7EC44 - 0FB6 CA               - movzx ecx,dl
+League of Legends.RegisterNativeEventCallback+7EC47 - 0FB6 89 489B4101      - movzx ecx,byte ptr [ecx+League of Legends.exe+1019B48]
+League of Legends.RegisterNativeEventCallback+7EC4E - C0 C9 03              - ror cl,03
+League of Legends.RegisterNativeEventCallback+7EC51 - 88 4E FF              - mov [esi-01],cl
+League of Legends.RegisterNativeEventCallback+7EC54 - 48                    - dec eax
+League of Legends.RegisterNativeEventCallback+7EC55 - 75 C6                 - jne League of Legends.RegisterNativeEventCallback+7EC1D
+League of Legends.RegisterNativeEventCallback+7EC57 - A1 14E64C01           - mov eax,[League of Legends.exe+10CE614]
+League of Legends.RegisterNativeEventCallback+7EC5C - F3 0F10 45 A4         - movss xmm0,[ebp-5C]
+League of Legends.RegisterNativeEventCallback+7EC61 - 8B 75 94              - mov esi,[ebp-6C]
+League of Legends.RegisterNativeEventCallback+7EC64 - 8B 5D 98              - mov ebx,[ebp-68]
+League of Legends.RegisterNativeEventCallback+7EC67 - 0F2F 40 04            - comiss xmm0,[eax+04]
+League of Legends.RegisterNativeEventCallback+7EC6B - 0F86 B4000000         - jbe League of Legends.RegisterNativeEventCallback+7ED25
+League of Legends.RegisterNativeEventCallback+7EC71 - 8A 4E 4D              - mov cl,[esi+4D]
+League of Legends.RegisterNativeEventCallback+7EC74 - 80 C1 45              - add cl,45
+League of Legends.RegisterNativeEventCallback+7EC77 - 8A C1                 - mov al,cl
+League of Legends.RegisterNativeEventCallback+7EC79 - 8A D1                 - mov dl,cl
+League of Legends.RegisterNativeEventCallback+7EC7B - 02 C9                 - add cl,cl
+League of Legends.RegisterNativeEventCallback+7EC7D - D0 EA                 - shr dl,1
+League of Legends.RegisterNativeEventCallback+7EC7F - 02 C0                 - add al,al
+League of Legends.RegisterNativeEventCallback+7EC81 - 32 D0                 - xor dl,al
+League of Legends.RegisterNativeEventCallback+7EC83 - 80 E2 55              - and dl,55
+League of Legends.RegisterNativeEventCallback+7EC86 - 32 D1                 - xor dl,cl
+League of Legends.RegisterNativeEventCallback+7EC88 - 80 EA 50              - sub dl,50
+League of Legends.RegisterNativeEventCallback+7EC8B - 8A CA                 - mov cl,dl
+League of Legends.RegisterNativeEventCallback+7EC8D - 8A C2                 - mov al,dl
+League of Legends.RegisterNativeEventCallback+7EC8F - D0 E9                 - shr cl,1
+League of Legends.RegisterNativeEventCallback+7EC91 - 02 C0                 - add al,al
+League of Legends.RegisterNativeEventCallback+7EC93 - 32 C8                 - xor cl,al
+League of Legends.RegisterNativeEventCallback+7EC95 - 02 D2                 - add dl,dl
+League of Legends.RegisterNativeEventCallback+7EC97 - 80 E1 55              - and cl,55
+League of Legends.RegisterNativeEventCallback+7EC9A - 32 CA                 - xor cl,dl
+League of Legends.RegisterNativeEventCallback+7EC9C - F6 D1                 - not cl
+League of Legends.RegisterNativeEventCallback+7EC9E - C0 C9 02              - ror cl,02
+League of Legends.RegisterNativeEventCallback+7ECA1 - 80 C1 14              - add cl,14
+League of Legends.RegisterNativeEventCallback+7ECA4 - 88 4D 9C              - mov [ebp-64],cl
+League of Legends.RegisterNativeEventCallback+7ECA7 - 8B CB                 - mov ecx,ebx
+League of Legends.RegisterNativeEventCallback+7ECA9 - FF 75 9C              - push [ebp-64]
+League of Legends.RegisterNativeEventCallback+7ECAC - E8 5540EEFF           - call League of Legends.Scaleform::System::Init+169D0
+League of Legends.RegisterNativeEventCallback+7ECB1 - 8A 46 23              - mov al,[esi+23]
+League of Legends.RegisterNativeEventCallback+7ECB4 - 34 7A                 - xor al,7A
+League of Legends.RegisterNativeEventCallback+7ECB6 - 0FB6 C0               - movzx eax,al
+League of Legends.RegisterNativeEventCallback+7ECB9 - 69 C8 20800000        - imul ecx,eax,00008020
+League of Legends.RegisterNativeEventCallback+7ECBF - 69 C0 02080000        - imul eax,eax,00000802
+League of Legends.RegisterNativeEventCallback+7ECC5 - 81 E1 40840800        - and ecx,00088440
+League of Legends.RegisterNativeEventCallback+7ECCB - 25 10210200           - and eax,00022110 : [00000000]
+League of Legends.RegisterNativeEventCallback+7ECD0 - 0B C8                 - or ecx,eax
+League of Legends.RegisterNativeEventCallback+7ECD2 - 69 C1 01010100        - imul eax,ecx,00010101 : [00000000]
+League of Legends.RegisterNativeEventCallback+7ECD8 - C1 E8 10              - shr eax,10
+League of Legends.RegisterNativeEventCallback+7ECDB - 0FB6 C0               - movzx eax,al
+League of Legends.RegisterNativeEventCallback+7ECDE - 8A 80 489B4101        - mov al,[eax+League of Legends.exe+1019B48]
+League of Legends.RegisterNativeEventCallback+7ECE4 - F6 D0                 - not al
+League of Legends.RegisterNativeEventCallback+7ECE6 - C0 C0 04              - rol al,04
+League of Legends.RegisterNativeEventCallback+7ECE9 - 0FB6 C0               - movzx eax,al
+League of Legends.RegisterNativeEventCallback+7ECEC - C1 E0 11              - shl eax,11
+League of Legends.RegisterNativeEventCallback+7ECEF - 33 83 B0080000        - xor eax,[ebx+000008B0]
+League of Legends.RegisterNativeEventCallback+7ECF5 - 25 00000200           - and eax,00020000 : [00000000]
+League of Legends.RegisterNativeEventCallback+7ECFA - 33 83 B0080000        - xor eax,[ebx+000008B0]
+League of Legends.RegisterNativeEventCallback+7ED00 - 39 83 B0080000        - cmp [ebx+000008B0],eax
+League of Legends.RegisterNativeEventCallback+7ED06 - 74 06                 - je League of Legends.RegisterNativeEventCallback+7ED0E
+League of Legends.RegisterNativeEventCallback+7ED08 - 89 83 B0080000        - mov [ebx+000008B0],eax
+League of Legends.RegisterNativeEventCallback+7ED0E - D9EE                  - fldz 
+League of Legends.RegisterNativeEventCallback+7ED10 - 8D 8B 88040000        - lea ecx,[ebx+00000488]
+League of Legends.RegisterNativeEventCallback+7ED16 - 8B 01                 - mov eax,[ecx]
+League of Legends.RegisterNativeEventCallback+7ED18 - 83 EC 08              - sub esp,08
+League of Legends.RegisterNativeEventCallback+7ED1B - D9 54 24 04           - fst dword ptr [esp+04]
+League of Legends.RegisterNativeEventCallback+7ED1F - D9 1C 24              - fstp dword ptr [esp]
+League of Legends.RegisterNativeEventCallback+7ED22 - FF 50 10              - call dword ptr [eax+10]
+League of Legends.RegisterNativeEventCallback+7ED25 - 8A 46 50              - mov al,[esi+50]
+League of Legends.RegisterNativeEventCallback+7ED28 - 2C 50                 - sub al,50
+League of Legends.RegisterNativeEventCallback+7ED2A - C0 C8 02              - ror al,02
+League of Legends.RegisterNativeEventCallback+7ED2D - 04 74                 - add al,74
+League of Legends.RegisterNativeEventCallback+7ED2F - C0 C8 03              - ror al,03
+League of Legends.RegisterNativeEventCallback+7ED32 - 04 43                 - add al,43
+League of Legends.RegisterNativeEventCallback+7ED34 - 88 45 A3              - mov [ebp-5D],al
+League of Legends.RegisterNativeEventCallback+7ED37 - 74 7A                 - je League of Legends.RegisterNativeEventCallback+7EDB3
+League of Legends.RegisterNativeEventCallback+7ED39 - 8B 83 88040000        - mov eax,[ebx+00000488]
+League of Legends.RegisterNativeEventCallback+7ED3F - 8D 8B 88040000        - lea ecx,[ebx+00000488]
+League of Legends.RegisterNativeEventCallback+7ED45 - FF 50 04              - call dword ptr [eax+04]
+League of Legends.RegisterNativeEventCallback+7ED48 - 85 C0                 - test eax,eax
+League of Legends.RegisterNativeEventCallback+7ED4A - 74 67                 - je League of Legends.RegisterNativeEventCallback+7EDB3
+League of Legends.RegisterNativeEventCallback+7ED4C - 8A 46 50              - mov al,[esi+50]
+League of Legends.RegisterNativeEventCallback+7ED4F - 8D 8B 88040000        - lea ecx,[ebx+00000488]
+League of Legends.RegisterNativeEventCallback+7ED55 - 2C 50                 - sub al,50
+League of Legends.RegisterNativeEventCallback+7ED57 - C0 C8 02              - ror al,02
+League of Legends.RegisterNativeEventCallback+7ED5A - 04 74                 - add al,74
+League of Legends.RegisterNativeEventCallback+7ED5C - C0 C8 03              - ror al,03
+League of Legends.RegisterNativeEventCallback+7ED5F - 04 43                 - add al,43
+League of Legends.RegisterNativeEventCallback+7ED61 - 88 45 A3              - mov [ebp-5D],al
+League of Legends.RegisterNativeEventCallback+7ED64 - 8B 83 88040000        - mov eax,[ebx+00000488]
+League of Legends.RegisterNativeEventCallback+7ED6A - FF 50 04              - call dword ptr [eax+04]
+League of Legends.RegisterNativeEventCallback+7ED6D - 8D 5D A4              - lea ebx,[ebp-5C]
+League of Legends.RegisterNativeEventCallback+7ED70 - 8B 40 18              - mov eax,[eax+18]
+League of Legends.RegisterNativeEventCallback+7ED73 - 89 45 9C              - mov [ebp-64],eax
+League of Legends.RegisterNativeEventCallback+7ED76 - 8B 46 55              - mov eax,[esi+55]
+League of Legends.RegisterNativeEventCallback+7ED79 - BE 04000000           - mov esi,00000004
+League of Legends.RegisterNativeEventCallback+7ED7E - 89 45 A4              - mov [ebp-5C],eax
+League of Legends.RegisterNativeEventCallback+7ED81 - EB 03                 - jmp League of Legends.RegisterNativeEventCallback+7ED86
+League of Legends.RegisterNativeEventCallback+7ED83 - 8D 49 00              - lea ecx,[ecx+00]
+League of Legends.RegisterNativeEventCallback+7ED86 - 8A 0B                 - mov cl,[ebx]
+League of Legends.RegisterNativeEventCallback+7ED88 - E8 D9C95E00           - call League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+990A0
+League of Legends.RegisterNativeEventCallback+7ED8D - 88 03                 - mov [ebx],al
+League of Legends.RegisterNativeEventCallback+7ED8F - 8D 5B 01              - lea ebx,[ebx+01]
+League of Legends.RegisterNativeEventCallback+7ED92 - 4E                    - dec esi
+League of Legends.RegisterNativeEventCallback+7ED93 - 75 F1                 - jne League of Legends.RegisterNativeEventCallback+7ED86
+League of Legends.RegisterNativeEventCallback+7ED95 - 0FB6 45 A3            - movzx eax,byte ptr [ebp-5D]
+League of Legends.RegisterNativeEventCallback+7ED99 - 50                    - push eax
+League of Legends.RegisterNativeEventCallback+7ED9A - FF 75 9C              - push [ebp-64]
+League of Legends.RegisterNativeEventCallback+7ED9D - FF 75 A4              - push [ebp-5C]
+League of Legends.RegisterNativeEventCallback+7EDA0 - 51                    - push ecx
+League of Legends.RegisterNativeEventCallback+7EDA1 - E8 A08C6000           - call League of Legends.Scaleform::Semaphore::`default constructor closure'+133F0
+League of Legends.RegisterNativeEventCallback+7EDA6 - 83 C4 04              - add esp,04
+League of Legends.RegisterNativeEventCallback+7EDA9 - 8B C8                 - mov ecx,eax
+League of Legends.RegisterNativeEventCallback+7EDAB - E8 D6EA6000           - call League of Legends.Scaleform::Semaphore::`default constructor closure'+19230
+League of Legends.RegisterNativeEventCallback+7EDB0 - 8B 75 94              - mov esi,[ebp-6C]
+League of Legends.RegisterNativeEventCallback+7EDB3 - 8A 46 27              - mov al,[esi+27]
+League of Legends.RegisterNativeEventCallback+7EDB6 - D0 C8                 - ror al,1
+League of Legends.RegisterNativeEventCallback+7EDB8 - 34 E6                 - xor al,E6
+League of Legends.RegisterNativeEventCallback+7EDBA - C0 C0 02              - rol al,02
+League of Legends.RegisterNativeEventCallback+7EDBD - F6 D0                 - not al
+League of Legends.RegisterNativeEventCallback+7EDBF - C0 C8 02              - ror al,02
+League of Legends.RegisterNativeEventCallback+7EDC2 - D0 C8                 - ror al,1
+League of Legends.RegisterNativeEventCallback+7EDC4 - C0 C8 03              - ror al,03
+League of Legends.RegisterNativeEventCallback+7EDC7 - 3C 02                 - cmp al,02
+League of Legends.RegisterNativeEventCallback+7EDC9 - 75 5A                 - jne League of Legends.RegisterNativeEventCallback+7EE25
+League of Legends.RegisterNativeEventCallback+7EDCB - 8B 46 2C              - mov eax,[esi+2C]
+League of Legends.RegisterNativeEventCallback+7EDCE - 8D 5D A4              - lea ebx,[ebp-5C]
+League of Legends.RegisterNativeEventCallback+7EDD1 - 89 45 A4              - mov [ebp-5C],eax
+League of Legends.RegisterNativeEventCallback+7EDD4 - BE 04000000           - mov esi,00000004
+League of Legends.RegisterNativeEventCallback+7EDD9 - 8A 0B                 - mov cl,[ebx]
+League of Legends.RegisterNativeEventCallback+7EDDB - E8 B663D1FF           - call League of Legends.Scaleform::Event::`default constructor closure'+346A0
+League of Legends.RegisterNativeEventCallback+7EDE0 - 88 03                 - mov [ebx],al
+League of Legends.RegisterNativeEventCallback+7EDE2 - 8D 5B 01              - lea ebx,[ebx+01]
+League of Legends.RegisterNativeEventCallback+7EDE5 - 4E                    - dec esi
+League of Legends.RegisterNativeEventCallback+7EDE6 - 75 F1                 - jne League of Legends.RegisterNativeEventCallback+7EDD9
+League of Legends.RegisterNativeEventCallback+7EDE8 - 8B 75 94              - mov esi,[ebp-6C]
+League of Legends.RegisterNativeEventCallback+7EDEB - 8D 5D 8C              - lea ebx,[ebp-74]
+League of Legends.RegisterNativeEventCallback+7EDEE - 8B 46 28              - mov eax,[esi+28]
+League of Legends.RegisterNativeEventCallback+7EDF1 - BE 04000000           - mov esi,00000004
+League of Legends.RegisterNativeEventCallback+7EDF6 - 89 45 8C              - mov [ebp-74],eax
+League of Legends.RegisterNativeEventCallback+7EDF9 - 8A 0B                 - mov cl,[ebx]
+League of Legends.RegisterNativeEventCallback+7EDFB - E8 761BEDFF           - call League of Legends.Scaleform::System::Init+4640
+League of Legends.RegisterNativeEventCallback+7EE00 - 88 03                 - mov [ebx],al
+League of Legends.RegisterNativeEventCallback+7EE02 - 8D 5B 01              - lea ebx,[ebx+01]
+League of Legends.RegisterNativeEventCallback+7EE05 - 4E                    - dec esi
+League of Legends.RegisterNativeEventCallback+7EE06 - 75 F1                 - jne League of Legends.RegisterNativeEventCallback+7EDF9
+League of Legends.RegisterNativeEventCallback+7EE08 - D9 45 A4              - fld dword ptr [ebp-5C]
+League of Legends.RegisterNativeEventCallback+7EE0B - 83 EC 08              - sub esp,08
+League of Legends.RegisterNativeEventCallback+7EE0E - 8B 4D 98              - mov ecx,[ebp-68]
+League of Legends.RegisterNativeEventCallback+7EE11 - D9 5C 24 04           - fstp dword ptr [esp+04]
+League of Legends.RegisterNativeEventCallback+7EE15 - D9 45 8C              - fld dword ptr [ebp-74]
+League of Legends.RegisterNativeEventCallback+7EE18 - D9 1C 24              - fstp dword ptr [esp]
+League of Legends.RegisterNativeEventCallback+7EE1B - E8 56420400           - call League of Legends.RegisterNativeEventCallback+C3076
+League of Legends.RegisterNativeEventCallback+7EE20 - 8B 75 94              - mov esi,[ebp-6C]
+League of Legends.RegisterNativeEventCallback+7EE23 - EB 0B                 - jmp League of Legends.RegisterNativeEventCallback+7EE30
+League of Legends.RegisterNativeEventCallback+7EE25 - 3C 01                 - cmp al,01
+League of Legends.RegisterNativeEventCallback+7EE27 - 75 07                 - jne League of Legends.RegisterNativeEventCallback+7EE30
+League of Legends.RegisterNativeEventCallback+7EE29 - 8B 45 98              - mov eax,[ebp-68]
+League of Legends.RegisterNativeEventCallback+7EE2C - C6 40 12 01           - mov byte ptr [eax+12],01
+League of Legends.RegisterNativeEventCallback+7EE30 - 8B 46 59              - mov eax,[esi+59]
+League of Legends.RegisterNativeEventCallback+7EE33 - 8D 4D A4              - lea ecx,[ebp-5C]
+League of Legends.RegisterNativeEventCallback+7EE36 - 8B 1D F4681603        - mov ebx,[League of Legends.exe+2D668F4]
+League of Legends.RegisterNativeEventCallback+7EE3C - BA 04000000           - mov edx,00000004
+League of Legends.RegisterNativeEventCallback+7EE41 - 89 45 A4              - mov [ebp-5C],eax
+League of Legends.RegisterNativeEventCallback+7EE44 - 8B FF                 - mov edi,edi
+League of Legends.RegisterNativeEventCallback+7EE46 - 8A 01                 - mov al,[ecx]
+League of Legends.RegisterNativeEventCallback+7EE48 - 8D 49 01              - lea ecx,[ecx+01]
+League of Legends.RegisterNativeEventCallback+7EE4B - 04 64                 - add al,64
+League of Legends.RegisterNativeEventCallback+7EE4D - C0 C8 03              - ror al,03
+League of Legends.RegisterNativeEventCallback+7EE50 - 0FB6 C0               - movzx eax,al
+League of Legends.RegisterNativeEventCallback+7EE53 - 8A 80 489B4101        - mov al,[eax+League of Legends.exe+1019B48]
+League of Legends.RegisterNativeEventCallback+7EE59 - 2C 16                 - sub al,16
+League of Legends.RegisterNativeEventCallback+7EE5B - 0FB6 C0               - movzx eax,al
+League of Legends.RegisterNativeEventCallback+7EE5E - 8A 80 489B4101        - mov al,[eax+League of Legends.exe+1019B48]
+League of Legends.RegisterNativeEventCallback+7EE64 - F6 D0                 - not al
+League of Legends.RegisterNativeEventCallback+7EE66 - 34 0B                 - xor al,0B
+League of Legends.RegisterNativeEventCallback+7EE68 - 88 41 FF              - mov [ecx-01],al
+League of Legends.RegisterNativeEventCallback+7EE6B - 4A                    - dec edx
+League of Legends.RegisterNativeEventCallback+7EE6C - 75 D8                 - jne League of Legends.RegisterNativeEventCallback+7EE46
+League of Legends.RegisterNativeEventCallback+7EE6E - 8B 03                 - mov eax,[ebx]
+League of Legends.RegisterNativeEventCallback+7EE70 - 8D 4D 9C              - lea ecx,[ebp-64]
+League of Legends.RegisterNativeEventCallback+7EE73 - 51                    - push ecx
+League of Legends.RegisterNativeEventCallback+7EE74 - 8B CB                 - mov ecx,ebx
+League of Legends.RegisterNativeEventCallback+7EE76 - FF 50 58              - call dword ptr [eax+58]
+League of Legends.RegisterNativeEventCallback+7EE79 - 8B 00                 - mov eax,[eax]
+League of Legends.RegisterNativeEventCallback+7EE7B - 3B 45 A4              - cmp eax,[ebp-5C]
+League of Legends.RegisterNativeEventCallback+7EE7E - 75 70                 - jne League of Legends.RegisterNativeEventCallback+7EEF0
+League of Legends.RegisterNativeEventCallback+7EE80 - 8B 03                 - mov eax,[ebx]
+League of Legends.RegisterNativeEventCallback+7EE82 - 8D 4D 9C              - lea ecx,[ebp-64]
+League of Legends.RegisterNativeEventCallback+7EE85 - 51                    - push ecx
+League of Legends.RegisterNativeEventCallback+7EE86 - 8B CB                 - mov ecx,ebx
+League of Legends.RegisterNativeEventCallback+7EE88 - FF 50 58              - call dword ptr [eax+58]
+League of Legends.RegisterNativeEventCallback+7EE8B - 8B 0D 8CC24B01        - mov ecx,[League of Legends.exe+10BC28C]
+League of Legends.RegisterNativeEventCallback+7EE91 - 3B 08                 - cmp ecx,[eax]
+League of Legends.RegisterNativeEventCallback+7EE93 - 74 5B                 - je League of Legends.RegisterNativeEventCallback+7EEF0
+League of Legends.RegisterNativeEventCallback+7EE95 - 8B 0D 040E4D01        - mov ecx,[League of Legends.exe+10D0E04]
+League of Legends.RegisterNativeEventCallback+7EE9B - 80 79 20 00           - cmp byte ptr [ecx+20],00
+League of Legends.RegisterNativeEventCallback+7EE9F - 74 0D                 - je League of Legends.RegisterNativeEventCallback+7EEAE
+League of Legends.RegisterNativeEventCallback+7EEA1 - 80 79 1E 00           - cmp byte ptr [ecx+1E],00
+League of Legends.RegisterNativeEventCallback+7EEA5 - 75 07                 - jne League of Legends.RegisterNativeEventCallback+7EEAE
+League of Legends.RegisterNativeEventCallback+7EEA7 - 6A 01                 - push 01
+League of Legends.RegisterNativeEventCallback+7EEA9 - E8 38F86700           - call League of Legends.exe+B55170
+League of Legends.RegisterNativeEventCallback+7EEAE - 83 7E 1E 10           - cmp dword ptr [esi+1E],10
+League of Legends.RegisterNativeEventCallback+7EEB2 - 8D 46 0A              - lea eax,[esi+0A]
+League of Legends.RegisterNativeEventCallback+7EEB5 - 72 02                 - jb League of Legends.RegisterNativeEventCallback+7EEB9
+League of Legends.RegisterNativeEventCallback+7EEB7 - 8B 00                 - mov eax,[eax]
+League of Legends.RegisterNativeEventCallback+7EEB9 - 50                    - push eax
+League of Legends.RegisterNativeEventCallback+7EEBA - E8 17350C00           - call League of Legends.Scaleform::Render::Matrix2x4<float>::GetXScale+578A0
+League of Legends.RegisterNativeEventCallback+7EEBF - 8B C8                 - mov ecx,eax
+League of Legends.RegisterNativeEventCallback+7EEC1 - E8 40380E00           - call League of Legends.Scaleform::Render::Matrix2x4<float>::GetXScale+77BD0
+League of Legends.RegisterNativeEventCallback+7EEC6 - E8 0B350C00           - call League of Legends.Scaleform::Render::Matrix2x4<float>::GetXScale+578A0
+League of Legends.RegisterNativeEventCallback+7EECB - 8B C8                 - mov ecx,eax
+League of Legends.RegisterNativeEventCallback+7EECD - E8 14155200           - call League of Legends.Scaleform::System::`default constructor closure'+205D0
+League of Legends.RegisterNativeEventCallback+7EED2 - 80 7D 93 00           - cmp byte ptr [ebp-6D],00
+League of Legends.RegisterNativeEventCallback+7EED6 - 74 18                 - je League of Legends.RegisterNativeEventCallback+7EEF0
+League of Legends.RegisterNativeEventCallback+7EED8 - E8 F9C85200           - call League of Legends.Scaleform::System::`default constructor closure'+2B9C0
+League of Legends.RegisterNativeEventCallback+7EEDD - 8B C8                 - mov ecx,eax
+League of Legends.RegisterNativeEventCallback+7EEDF - E8 7227E5FF           - call League of Legends.Scaleform::System::System+14900
+League of Legends.RegisterNativeEventCallback+7EEE4 - E8 9D881E00           - call League of Legends.Scaleform::Render::Matrix2x4<float>::GetXScale+17CC50
+League of Legends.RegisterNativeEventCallback+7EEE9 - 8B C8                 - mov ecx,eax
+League of Legends.RegisterNativeEventCallback+7EEEB - E8 B6683A00           - call League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+E5E0
+League of Legends.RegisterNativeEventCallback+7EEF0 - 83 7D EC 10           - cmp dword ptr [ebp-14],10
+League of Legends.RegisterNativeEventCallback+7EEF4 - 8D 45 D8              - lea eax,[ebp-28]
+League of Legends.RegisterNativeEventCallback+7EEF7 - 8D 5D A4              - lea ebx,[ebp-5C]
+League of Legends.RegisterNativeEventCallback+7EEFA - 0F43 45 D8            - cmovae eax,[ebp-28]
+League of Legends.RegisterNativeEventCallback+7EEFE - 89 45 9C              - mov [ebp-64],eax
+League of Legends.RegisterNativeEventCallback+7EF01 - 8B 46 51              - mov eax,[esi+51]
+League of Legends.RegisterNativeEventCallback+7EF04 - BE 04000000           - mov esi,00000004
+League of Legends.RegisterNativeEventCallback+7EF09 - 89 45 A4              - mov [ebp-5C],eax
+League of Legends.RegisterNativeEventCallback+7EF0C - 8A 0B                 - mov cl,[ebx]
+League of Legends.RegisterNativeEventCallback+7EF0E - E8 D3394B00           - call League of Legends.EnableEventXMLLogTarget+5148
+League of Legends.RegisterNativeEventCallback+7EF13 - 88 03                 - mov [ebx],al
+League of Legends.RegisterNativeEventCallback+7EF15 - 8D 5B 01              - lea ebx,[ebx+01]
+League of Legends.RegisterNativeEventCallback+7EF18 - 4E                    - dec esi
+League of Legends.RegisterNativeEventCallback+7EF19 - 75 F1                 - jne League of Legends.RegisterNativeEventCallback+7EF0C
+League of Legends.RegisterNativeEventCallback+7EF1B - 83 7F 14 10           - cmp dword ptr [edi+14],10
+League of Legends.RegisterNativeEventCallback+7EF1F - 72 04                 - jb League of Legends.RegisterNativeEventCallback+7EF25
+League of Legends.RegisterNativeEventCallback+7EF21 - 8B 07                 - mov eax,[edi]
+League of Legends.RegisterNativeEventCallback+7EF23 - EB 02                 - jmp League of Legends.RegisterNativeEventCallback+7EF27
+League of Legends.RegisterNativeEventCallback+7EF25 - 8B C7                 - mov eax,edi
+League of Legends.RegisterNativeEventCallback+7EF27 - FF 75 9C              - push [ebp-64]
+League of Legends.RegisterNativeEventCallback+7EF2A - FF 75 A4              - push [ebp-5C]
+League of Legends.RegisterNativeEventCallback+7EF2D - 50                    - push eax
+League of Legends.RegisterNativeEventCallback+7EF2E - 68 58B72801           - push League of Legends.exe+E8B758
+League of Legends.RegisterNativeEventCallback+7EF33 - E8 FE4AC8FF           - call League of Legends.exe+15A4C0
+League of Legends.RegisterNativeEventCallback+7EF38 - 8B 75 94              - mov esi,[ebp-6C]
+League of Legends.RegisterNativeEventCallback+7EF3B - 8D 45 D8              - lea eax,[ebp-28]
+League of Legends.RegisterNativeEventCallback+7EF3E - 83 C4 10              - add esp,10
+League of Legends.RegisterNativeEventCallback+7EF41 - 8D 5D A4              - lea ebx,[ebp-5C]
+League of Legends.RegisterNativeEventCallback+7EF44 - 83 7D EC 10           - cmp dword ptr [ebp-14],10
+League of Legends.RegisterNativeEventCallback+7EF48 - 0F43 45 D8            - cmovae eax,[ebp-28]
+League of Legends.RegisterNativeEventCallback+7EF4C - 89 45 9C              - mov [ebp-64],eax
+League of Legends.RegisterNativeEventCallback+7EF4F - 8B 46 51              - mov eax,[esi+51]
+League of Legends.RegisterNativeEventCallback+7EF52 - BE 04000000           - mov esi,00000004
+League of Legends.RegisterNativeEventCallback+7EF57 - 89 45 A4              - mov [ebp-5C],eax

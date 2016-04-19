@@ -1,0 +1,172 @@
+278a16f8
+[esi+C48]
++40 +44 +48 x z y
+
+
+01829A8F    8B45 14         MOV EAX,DWORD PTR SS:[EBP+14]
+01829A92    0FB7C8          MOVZX ECX,AX
+01829A95    8B43 58         MOV EAX,DWORD PTR DS:[EBX+58]
+01829A98    0FB71448        MOVZX EDX,WORD PTR DS:[EAX+ECX*2]
+01829A9C    66:85D2         TEST DX,DX
+01829A9F    79 22           JNS SHORT League_o.01829AC3
+01829AA1    8B4D 10         MOV ECX,DWORD PTR SS:[EBP+10]
+01829AA4    8B55 08         MOV EDX,DWORD PTR SS:[EBP+8]
+01829AA7    6A 01           PUSH 1
+01829AA9 >  51              PUSH ECX
+01829AAA    E8 C1B90400     CALL League_o.01875470   
+01829AAF    8B4D F8         MOV ECX,DWORD PTR SS:[EBP-8]
+
+
+League of Legends.EnableEventXMLLogTarget+1F5C0 - 55                    - push ebp
+League of Legends.EnableEventXMLLogTarget+1F5C1 - 8B EC                 - mov ebp,esp
+League of Legends.EnableEventXMLLogTarget+1F5C3 - 83 EC 10              - sub esp,10
+League of Legends.EnableEventXMLLogTarget+1F5C6 - F3 0F10 11            - movss xmm2,[ecx]
+League of Legends.EnableEventXMLLogTarget+1F5CA - F3 0F59 52 0C         - mulss xmm2,[edx+0C]
+League of Legends.EnableEventXMLLogTarget+1F5CF - 8B 45 08              - mov eax,[ebp+08]
+League of Legends.EnableEventXMLLogTarget+1F5D2 - F3 0F10 61 04         - movss xmm4,[ecx+04]
+League of Legends.EnableEventXMLLogTarget+1F5D7 - F3 0F59 62 10         - mulss xmm4,[edx+10]
+League of Legends.EnableEventXMLLogTarget+1F5DC - F3 0F10 72 20         - movss xmm6,[edx+20]
+League of Legends.EnableEventXMLLogTarget+1F5E1 - F3 0F10 4A 24         - movss xmm1,[edx+24]
+League of Legends.EnableEventXMLLogTarget+1F5E6 - 0F28 C6               - movaps xmm0,xmm6
+League of Legends.EnableEventXMLLogTarget+1F5E9 - F3 0F10 59 08         - movss xmm3,[ecx+08]
+League of Legends.EnableEventXMLLogTarget+1F5EE - F3 0F59 5A 14         - mulss xmm3,[edx+14]
+League of Legends.EnableEventXMLLogTarget+1F5F3 - F3 0F10 7A 1C         - movss xmm7,[edx+1C]
+League of Legends.EnableEventXMLLogTarget+1F5F8 - F3 0F59 C4            - mulss xmm0,xmm4
+League of Legends.EnableEventXMLLogTarget+1F5FC - F3 0F59 CA            - mulss xmm1,xmm2
+League of Legends.EnableEventXMLLogTarget+1F600 - F3 0F11 55 F4         - movss [ebp-0C],xmm2
+League of Legends.EnableEventXMLLogTarget+1F605 - F3 0F5C C8            - subss xmm1,xmm0
+League of Legends.EnableEventXMLLogTarget+1F609 - 0F28 C7               - movaps xmm0,xmm7
+League of Legends.EnableEventXMLLogTarget+1F60C - F3 0F59 C3            - mulss xmm0,xmm3
+League of Legends.EnableEventXMLLogTarget+1F610 - F3 0F58 C8            - addss xmm1,xmm0
+League of Legends.EnableEventXMLLogTarget+1F614 - 0F28 C6               - movaps xmm0,xmm6
+League of Legends.EnableEventXMLLogTarget+1F617 - F3 0F59 C2            - mulss xmm0,xmm2
+League of Legends.EnableEventXMLLogTarget+1F61B - F3 0F11 45 FC         - movss [ebp-04],xmm0
+League of Legends.EnableEventXMLLogTarget+1F620 - F3 0F10 42 24         - movss xmm0,[edx+24]
+League of Legends.EnableEventXMLLogTarget+1F625 - F3 0F10 6D FC         - movss xmm5,[ebp-04]
+League of Legends.EnableEventXMLLogTarget+1F62A - F3 0F59 C4            - mulss xmm0,xmm4
+League of Legends.EnableEventXMLLogTarget+1F62E - F3 0F11 4D F0         - movss [ebp-10],xmm1
+League of Legends.EnableEventXMLLogTarget+1F633 - F3 0F10 4A 18         - movss xmm1,[edx+18]
+League of Legends.EnableEventXMLLogTarget+1F638 - F3 0F58 E8            - addss xmm5,xmm0
+League of Legends.EnableEventXMLLogTarget+1F63C - 0F28 C1               - movaps xmm0,xmm1
+League of Legends.EnableEventXMLLogTarget+1F63F - F3 0F59 C3            - mulss xmm0,xmm3
+League of Legends.EnableEventXMLLogTarget+1F643 - F3 0F5C E8            - subss xmm5,xmm0
+League of Legends.EnableEventXMLLogTarget+1F647 - 0F28 C7               - movaps xmm0,xmm7
+League of Legends.EnableEventXMLLogTarget+1F64A - F3 0F59 C2            - mulss xmm0,xmm2
+League of Legends.EnableEventXMLLogTarget+1F64E - 0F28 D1               - movaps xmm2,xmm1
+League of Legends.EnableEventXMLLogTarget+1F651 - F3 0F59 55 F4         - mulss xmm2,[ebp-0C]
+League of Legends.EnableEventXMLLogTarget+1F656 - F3 0F11 6D FC         - movss [ebp-04],xmm5
+League of Legends.EnableEventXMLLogTarget+1F65B - 0F28 E9               - movaps xmm5,xmm1
+League of Legends.EnableEventXMLLogTarget+1F65E - F3 0F59 EC            - mulss xmm5,xmm4
+League of Legends.EnableEventXMLLogTarget+1F662 - 0F57 15 70B50C02      - xorps xmm2,[League of Legends.exe+D2B570]
+League of Legends.EnableEventXMLLogTarget+1F669 - F3 0F5C E8            - subss xmm5,xmm0
+League of Legends.EnableEventXMLLogTarget+1F66D - F3 0F10 42 24         - movss xmm0,[edx+24]
+League of Legends.EnableEventXMLLogTarget+1F672 - F3 0F59 C3            - mulss xmm0,xmm3
+League of Legends.EnableEventXMLLogTarget+1F676 - F3 0F58 E8            - addss xmm5,xmm0
+League of Legends.EnableEventXMLLogTarget+1F67A - 0F28 C7               - movaps xmm0,xmm7
+League of Legends.EnableEventXMLLogTarget+1F67D - F3 0F59 C4            - mulss xmm0,xmm4
+League of Legends.EnableEventXMLLogTarget+1F681 - F3 0F10 65 F0         - movss xmm4,[ebp-10]
+League of Legends.EnableEventXMLLogTarget+1F686 - F3 0F5C D0            - subss xmm2,xmm0
+League of Legends.EnableEventXMLLogTarget+1F68A - F3 0F59 FD            - mulss xmm7,xmm5
+League of Legends.EnableEventXMLLogTarget+1F68E - 0F28 C6               - movaps xmm0,xmm6
+League of Legends.EnableEventXMLLogTarget+1F691 - F3 0F59 C3            - mulss xmm0,xmm3
+League of Legends.EnableEventXMLLogTarget+1F695 - F3 0F10 5D FC         - movss xmm3,[ebp-04]
+League of Legends.EnableEventXMLLogTarget+1F69A - F3 0F59 F3            - mulss xmm6,xmm3
+League of Legends.EnableEventXMLLogTarget+1F69E - F3 0F5C D0            - subss xmm2,xmm0
+League of Legends.EnableEventXMLLogTarget+1F6A2 - F3 0F10 42 24         - movss xmm0,[edx+24]
+League of Legends.EnableEventXMLLogTarget+1F6A7 - F3 0F59 C4            - mulss xmm0,xmm4
+League of Legends.EnableEventXMLLogTarget+1F6AB - F3 0F59 CA            - mulss xmm1,xmm2
+League of Legends.EnableEventXMLLogTarget+1F6AF - F3 0F5C C1            - subss xmm0,xmm1
+League of Legends.EnableEventXMLLogTarget+1F6B3 - F3 0F5C C6            - subss xmm0,xmm6
+League of Legends.EnableEventXMLLogTarget+1F6B7 - F3 0F58 C7            - addss xmm0,xmm7
+League of Legends.EnableEventXMLLogTarget+1F6BB - F3 0F58 02            - addss xmm0,[edx]   ///////////////此处访问内存
+League of Legends.EnableEventXMLLogTarget+1F6BF - F3 0F11 00            - movss [eax],xmm0
+League of Legends.EnableEventXMLLogTarget+1F6C3 - F3 0F10 4A 24         - movss xmm1,[edx+24]
+League of Legends.EnableEventXMLLogTarget+1F6C8 - F3 0F10 42 1C         - movss xmm0,[edx+1C]
+League of Legends.EnableEventXMLLogTarget+1F6CD - F3 0F59 C2            - mulss xmm0,xmm2
+League of Legends.EnableEventXMLLogTarget+1F6D1 - F3 0F59 CB            - mulss xmm1,xmm3
+League of Legends.EnableEventXMLLogTarget+1F6D5 - F3 0F5C C8            - subss xmm1,xmm0
+League of Legends.EnableEventXMLLogTarget+1F6D9 - 0F28 C5               - movaps xmm0,xmm5
+League of Legends.EnableEventXMLLogTarget+1F6DC - F3 0F59 42 18         - mulss xmm0,[edx+18]
+League of Legends.EnableEventXMLLogTarget+1F6E1 - F3 0F5C C8            - subss xmm1,xmm0
+League of Legends.EnableEventXMLLogTarget+1F6E5 - F3 0F10 42 20         - movss xmm0,[edx+20]
+League of Legends.EnableEventXMLLogTarget+1F6EA - F3 0F59 C4            - mulss xmm0,xmm4
+League of Legends.EnableEventXMLLogTarget+1F6EE - F3 0F58 C8            - addss xmm1,xmm0
+League of Legends.EnableEventXMLLogTarget+1F6F2 - F3 0F58 4A 04         - addss xmm1,[edx+04]
+League of Legends.EnableEventXMLLogTarget+1F6F7 - F3 0F11 48 04         - movss [eax+04],xmm1
+League of Legends.EnableEventXMLLogTarget+1F6FC - F3 0F10 4A 24         - movss xmm1,[edx+24]
+League of Legends.EnableEventXMLLogTarget+1F701 - F3 0F10 42 20         - movss xmm0,[edx+20]
+League of Legends.EnableEventXMLLogTarget+1F706 - F3 0F59 C2            - mulss xmm0,xmm2
+League of Legends.EnableEventXMLLogTarget+1F70A - F3 0F59 CD            - mulss xmm1,xmm5
+League of Legends.EnableEventXMLLogTarget+1F70E - F3 0F5C C8            - subss xmm1,xmm0
+League of Legends.EnableEventXMLLogTarget+1F712 - F3 0F10 42 1C         - movss xmm0,[edx+1C]
+League of Legends.EnableEventXMLLogTarget+1F717 - F3 0F59 C4            - mulss xmm0,xmm4
+League of Legends.EnableEventXMLLogTarget+1F71B - F3 0F5C C8            - subss xmm1,xmm0
+League of Legends.EnableEventXMLLogTarget+1F71F - 80 7D 0C 00           - cmp byte ptr [ebp+0C],00
+League of Legends.EnableEventXMLLogTarget+1F723 - F3 0F59 5A 18         - mulss xmm3,[edx+18]
+League of Legends.EnableEventXMLLogTarget+1F728 - F3 0F58 CB            - addss xmm1,xmm3
+League of Legends.EnableEventXMLLogTarget+1F72C - F3 0F58 4A 08         - addss xmm1,[edx+08]
+League of Legends.EnableEventXMLLogTarget+1F731 - F3 0F11 48 08         - movss [eax+08],xmm1
+League of Legends.EnableEventXMLLogTarget+1F736 - 74 2D                 - je League of Legends.EnableEventXMLLogTarget+1F765
+League of Legends.EnableEventXMLLogTarget+1F738 - F3 0F10 41 0C         - movss xmm0,[ecx+0C]
+League of Legends.EnableEventXMLLogTarget+1F73D - F3 0F59 42 0C         - mulss xmm0,[edx+0C]
+League of Legends.EnableEventXMLLogTarget+1F742 - F3 0F11 40 0C         - movss [eax+0C],xmm0
+League of Legends.EnableEventXMLLogTarget+1F747 - F3 0F10 41 10         - movss xmm0,[ecx+10]
+League of Legends.EnableEventXMLLogTarget+1F74C - F3 0F59 42 10         - mulss xmm0,[edx+10]
+League of Legends.EnableEventXMLLogTarget+1F751 - F3 0F11 40 10         - movss [eax+10],xmm0
+League of Legends.EnableEventXMLLogTarget+1F756 - F3 0F10 41 14         - movss xmm0,[ecx+14]
+League of Legends.EnableEventXMLLogTarget+1F75B - F3 0F59 42 14         - mulss xmm0,[edx+14]
+League of Legends.EnableEventXMLLogTarget+1F760 - F3 0F11 40 14         - movss [eax+14],xmm0
+League of Legends.EnableEventXMLLogTarget+1F765 - F3 0F10 41 1C         - movss xmm0,[ecx+1C]
+League of Legends.EnableEventXMLLogTarget+1F76A - F3 0F10 69 24         - movss xmm5,[ecx+24]
+League of Legends.EnableEventXMLLogTarget+1F76F - F3 0F10 72 1C         - movss xmm6,[edx+1C]
+League of Legends.EnableEventXMLLogTarget+1F774 - 0F28 CD               - movaps xmm1,xmm5
+League of Legends.EnableEventXMLLogTarget+1F777 - F3 0F10 59 18         - movss xmm3,[ecx+18]
+League of Legends.EnableEventXMLLogTarget+1F77C - F3 0F10 52 20         - movss xmm2,[edx+20]
+League of Legends.EnableEventXMLLogTarget+1F781 - F3 0F10 7A 18         - movss xmm7,[edx+18]
+League of Legends.EnableEventXMLLogTarget+1F786 - F3 0F10 61 20         - movss xmm4,[ecx+20]
+League of Legends.EnableEventXMLLogTarget+1F78B - F3 0F11 45 0C         - movss [ebp+0C],xmm0
+League of Legends.EnableEventXMLLogTarget+1F790 - F3 0F10 42 24         - movss xmm0,[edx+24]
+League of Legends.EnableEventXMLLogTarget+1F795 - F3 0F59 41 1C         - mulss xmm0,[ecx+1C]
+League of Legends.EnableEventXMLLogTarget+1F79A - F3 0F59 F5            - mulss xmm6,xmm5
+League of Legends.EnableEventXMLLogTarget+1F79E - F3 0F59 4A 24         - mulss xmm1,[edx+24]
+League of Legends.EnableEventXMLLogTarget+1F7A3 - F3 0F58 F0            - addss xmm6,xmm0
+League of Legends.EnableEventXMLLogTarget+1F7A7 - 0F28 C3               - movaps xmm0,xmm3
+League of Legends.EnableEventXMLLogTarget+1F7AA - F3 0F59 C2            - mulss xmm0,xmm2
+League of Legends.EnableEventXMLLogTarget+1F7AE - F3 0F59 D5            - mulss xmm2,xmm5
+League of Legends.EnableEventXMLLogTarget+1F7B2 - F3 0F58 F0            - addss xmm6,xmm0
+League of Legends.EnableEventXMLLogTarget+1F7B6 - 0F28 C7               - movaps xmm0,xmm7
+League of Legends.EnableEventXMLLogTarget+1F7B9 - F3 0F59 C4            - mulss xmm0,xmm4
+League of Legends.EnableEventXMLLogTarget+1F7BD - F3 0F5C F0            - subss xmm6,xmm0
+League of Legends.EnableEventXMLLogTarget+1F7C1 - 0F28 C4               - movaps xmm0,xmm4
+League of Legends.EnableEventXMLLogTarget+1F7C4 - F3 0F59 42 24         - mulss xmm0,[edx+24]
+League of Legends.EnableEventXMLLogTarget+1F7C9 - F3 0F58 D0            - addss xmm2,xmm0
+League of Legends.EnableEventXMLLogTarget+1F7CD - 0F28 C7               - movaps xmm0,xmm7
+League of Legends.EnableEventXMLLogTarget+1F7D0 - F3 0F59 41 1C         - mulss xmm0,[ecx+1C]
+League of Legends.EnableEventXMLLogTarget+1F7D5 - F3 0F58 D0            - addss xmm2,xmm0
+League of Legends.EnableEventXMLLogTarget+1F7D9 - 0F28 C3               - movaps xmm0,xmm3
+League of Legends.EnableEventXMLLogTarget+1F7DC - F3 0F59 42 1C         - mulss xmm0,[edx+1C]
+League of Legends.EnableEventXMLLogTarget+1F7E1 - F3 0F5C D0            - subss xmm2,xmm0
+League of Legends.EnableEventXMLLogTarget+1F7E5 - 0F28 C7               - movaps xmm0,xmm7
+League of Legends.EnableEventXMLLogTarget+1F7E8 - F3 0F59 C3            - mulss xmm0,xmm3
+League of Legends.EnableEventXMLLogTarget+1F7EC - F3 0F59 5A 24         - mulss xmm3,[edx+24]
+League of Legends.EnableEventXMLLogTarget+1F7F1 - F3 0F5C C8            - subss xmm1,xmm0
+League of Legends.EnableEventXMLLogTarget+1F7F5 - F3 0F59 FD            - mulss xmm7,xmm5
+League of Legends.EnableEventXMLLogTarget+1F7F9 - F3 0F10 42 1C         - movss xmm0,[edx+1C]
+League of Legends.EnableEventXMLLogTarget+1F7FE - F3 0F59 41 1C         - mulss xmm0,[ecx+1C]
+League of Legends.EnableEventXMLLogTarget+1F803 - F3 0F58 FB            - addss xmm7,xmm3
+League of Legends.EnableEventXMLLogTarget+1F807 - F3 0F5C C8            - subss xmm1,xmm0
+League of Legends.EnableEventXMLLogTarget+1F80B - 0F28 C4               - movaps xmm0,xmm4
+League of Legends.EnableEventXMLLogTarget+1F80E - F3 0F59 42 20         - mulss xmm0,[edx+20]
+League of Legends.EnableEventXMLLogTarget+1F813 - F3 0F59 62 1C         - mulss xmm4,[edx+1C]
+League of Legends.EnableEventXMLLogTarget+1F818 - F3 0F5C C8            - subss xmm1,xmm0
+League of Legends.EnableEventXMLLogTarget+1F81C - F3 0F10 42 20         - movss xmm0,[edx+20]
+League of Legends.EnableEventXMLLogTarget+1F821 - F3 0F59 45 0C         - mulss xmm0,[ebp+0C]
+League of Legends.EnableEventXMLLogTarget+1F826 - F3 0F58 FC            - addss xmm7,xmm4
+League of Legends.EnableEventXMLLogTarget+1F82A - F3 0F11 70 1C         - movss [eax+1C],xmm6
+League of Legends.EnableEventXMLLogTarget+1F82F - F3 0F11 50 20         - movss [eax+20],xmm2
+League of Legends.EnableEventXMLLogTarget+1F834 - F3 0F11 48 24         - movss [eax+24],xmm1
+League of Legends.EnableEventXMLLogTarget+1F839 - F3 0F5C F8            - subss xmm7,xmm0
+League of Legends.EnableEventXMLLogTarget+1F83D - F3 0F11 78 18         - movss [eax+18],xmm7
+League of Legends.EnableEventXMLLogTarget+1F842 - 8B E5                 - mov esp,ebp
+League of Legends.EnableEventXMLLogTarget+1F844 - 5D                    - pop ebp
+League of Legends.EnableEventXMLLogTarget+1F845 - C3                    - ret 

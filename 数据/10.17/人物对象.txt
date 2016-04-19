@@ -1,0 +1,83 @@
+目的地
+League of Legends.EnableEventXMLLogTarget+26F78 - F3 0F10 40 F4         - movss xmm0,[eax-0C]
+League of Legends.EnableEventXMLLogTarget+26F7D - F3 0F11 45 9C         - movss [ebp-64],xmm0
+League of Legends.EnableEventXMLLogTarget+26F82 - F3 0F10 40 F8         - movss xmm0,[eax-08]
+League of Legends.EnableEventXMLLogTarget+26F87 - F3 0F11 45 A0         - movss [ebp-60],xmm0
+League of Legends.EnableEventXMLLogTarget+26F8C - F3 0F10 40 FC         - movss xmm0,[eax-04]
+League of Legends.EnableEventXMLLogTarget+26F91 - F3 0F11 45 A4         - movss [ebp-5C],xmm0
+[31C1B240+14]+158
+
++24 名字
++158 小图标
+monsterCamp_1:Blue Team Blue Buff
+monsterCamp_4:Blue Team Red Buff
+monsterCamp_6:Small Dragon
+monsterCamp_7:Red Team Blue Buff
+monsterCamp_10:Red Team Red Buff
+monsterCamp_12:Big Dragon
+
+
+
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+3AC42 - FF D0                 - call eax
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+3AC44 - 83 C4 08              - add esp,08
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+3AC47 - A1 F4DDC503           - mov eax,["League of Legends.exe"+296DDF4]
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+3AC4C - 33 F6                 - xor esi,esi
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+3AC4E - 85 C0                 - test eax,eax
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+3AC50 - 0F8E 7E000000         - jng "League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity"+3ACD4
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+3AC56 - 8B 0D F0DDC503        - mov ecx,["League of Legends.exe"+296DDF0]
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+3AC5C - 8D 64 24 00           - lea esp,[esp+00]
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+3AC60 - 83 3C B1  00          - cmp dword ptr [ecx+esi*4],00
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+3AC64 - 75 07                 - jne "League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity"+3AC6D
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+3AC66 - 46                    - inc esi
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+3AC67 - 3B F0                 - cmp esi,eax
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+3AC69 - 7C F5                 - jnge "League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity"+3AC60
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+3AC6B - EB 67                 - jmp "League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity"+3ACD4
+
+
+
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+66E2F - 8B 0D 1C42C803        - mov ecx,["League of Legends.exe"+299421C]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+66E35 - 83 C4 14              - add esp,14
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+66E38 - 89 4D F0              - mov [ebp-10],ecx
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+66E3B - 8B 41 04              - mov eax,[ecx+04]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+66E3E - 8B 30                 - mov esi,[eax]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+66E40 - 3B F0                 - cmp esi,eax
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+66E42 - 0F84 1B010000         - je "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+66F63
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+66E48 - EB 06                 - jmp "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+66E50
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+66E4A - 8D 9B 00000000        - lea ebx,[ebx+00000000]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+66E50 - 8B 5E 14              - mov ebx,[esi+14]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+66E53 - 8A 83 58010000        - mov al,[ebx+00000158]  //小图标
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+66E59 - 84 C0                 - test al,al
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+66E5B - 0F84 B9000000         - je "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+66F1A
+
+
+
+
+League of Legends.EnableEventXMLLogTarget+26F96 - 0F2F 0D BC51E601      - comiss xmm1,[League of Legends.exe+D451BC]
+
+打野计时
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4D5AF - 57                    - push edi
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4D5B0 - FF 70 24              - push [eax+24]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4D5B3 - 8B 11                 - mov edx,[ecx]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4D5B5 - FF 52 24              - call dword ptr [edx+24]
+
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4D8C3 - 8B CE                 - mov ecx,esi
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4D8C5 - FF 10                 - call dword ptr [eax]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4D8C7 - 8B C8                 - mov ecx,eax
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4D8C9 - E8 82B8E7FF           - call League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+FB0F0
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4D8CE - 8B D8                 - mov ebx,eax
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4D8D0 - 85 DB                 - test ebx,ebx
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4D8D2 - 75 3A                 - jne League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4D90E
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4D8D4 - 8B 06                 - mov eax,[esi]
+
+
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4DA4F - 8D 45 D8              - lea eax,[ebp-28]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4DA52 - 50                    - push eax
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4DA53 - 8D 8D 08FFFFFF        - lea ecx,[ebp-000000F8]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4DA59 - E8 9253E1FF           - call League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+94D90
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4DA5E - 8B 4D CC              - mov ecx,[ebp-34]
+
+
+0111F898   > \6A FF         PUSH -1                                  ; /Arg2 = FFFFFFFF
+0111F89A   .  57            PUSH EDI                                 ; |Arg1
+0111F89B   .  E8 F49C3000   CALL League_o.01429594                   ; \League_o.00BD9594
+

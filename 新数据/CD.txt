@@ -1,0 +1,61 @@
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E50 - 83 EC 08              - sub esp,08 { 8 }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E53 - 56                    - push esi
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E54 - 8B F1                 - mov esi,ecx
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E56 - 8B 0D C4680503        - mov ecx,["League of Legends.exe"+2E368C4] { [05584000] }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E5C - 85 C9                 - test ecx,ecx
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E5E - 74 0B                 - je "League of Legends.Scaleform::SysAllocStatic::`default constructor closure'"+7E6B { ->League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E6B }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E60 - 8B 01                 - mov eax,[ecx]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E62 - 8B 40 20              - mov eax,[eax+20]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E65 - FF D0                 - call eax
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E67 - 84 C0                 - test al,al
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E69 - 75 1B                 - jne "League of Legends.Scaleform::SysAllocStatic::`default constructor closure'"+7E86 { ->League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E86 }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E6B - 83 EC 0C              - sub esp,0C { 12 }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E6E - B9 00BD1401           - mov ecx,"League of Legends.exe"+F2BD00 { ["ALE-BACA394A"] }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E73 - E8 D8FF7700           - call "League of Legends.RegisterNativeEventCallback"+C2570 { ->League of Legends.RegisterNativeEventCallback+C2570 }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E78 - 83 C4 0C              - add esp,0C { 12 }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E7B - FF 15 C8B10901        - call dword ptr ["League of Legends.exe"+E7B1C8] { ->->KERNELBASE.GetLastError }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E81 - A3 00000000           - mov [00000000],eax { 0 }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E86 - 8B 0D C4680503        - mov ecx,["League of Legends.exe"+2E368C4] { [05584000] }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E8C - 8B 01                 - mov eax,[ecx]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E8E - 8B 40 04              - mov eax,[eax+04]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E91 - FF D0                 - call eax
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E93 - 83 7E 18 00           - cmp dword ptr [esi+18],00 { 0 }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E97 - F3 0F10 46 14         - movss xmm0,[esi+14]  /////////
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7E9C - D9 5C 24 08           - fstp dword ptr [esp+08]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EA0 - F3 0F10 54 24 08      - movss xmm2,[esp+08]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EA6 - F3 0F5C C2            - subss xmm0,xmm2
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EAA - F3 0F11 44 24 04      - movss [esp+04],xmm0
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EB0 - 75 4B                 - jne "League of Legends.Scaleform::SysAllocStatic::`default constructor closure'"+7EFD { ->League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EFD }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EB2 - 8B 46 20              - mov eax,[esi+20]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EB5 - 85 C0                 - test eax,eax
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EB7 - 79 2F                 - jns "League of Legends.Scaleform::SysAllocStatic::`default constructor closure'"+7EE8 { ->League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EE8 }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EB9 - 8B 06                 - mov eax,[esi]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EBB - 8B CE                 - mov ecx,esi
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EBD - 8B 40 08              - mov eax,[eax+08]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EC0 - FF D0                 - call eax
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EC2 - 84 C0                 - test al,al
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EC4 - 74 37                 - je "League of Legends.Scaleform::SysAllocStatic::`default constructor closure'"+7EFD { ->League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EFD }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EC6 - 8B 06                 - mov eax,[esi]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EC8 - 8B CE                 - mov ecx,esi
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7ECA - FF 50 0C              - call dword ptr [eax+0C]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7ECD - 8B 4E 10              - mov ecx,[esi+10]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7ED0 - F3 0F10 44 24 04      - movss xmm0,[esp+04]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7ED6 - F3 0F10 54 24 08      - movss xmm2,[esp+08]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EDC - 8B 40 34              - mov eax,[eax+34]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EDF - 8B 84 88 1C030000     - mov eax,[eax+ecx*4+0000031C]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EE6 - 85 C0                 - test eax,eax
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EE8 - 7E 13                 - jle "League of Legends.Scaleform::SysAllocStatic::`default constructor closure'"+7EFD { ->League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EFD }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EEA - F3 0F10 4E 24         - movss xmm1,[esi+24]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EEF - F3 0F5C CA            - subss xmm1,xmm2
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EF3 - 0F2F C1               - comiss xmm0,xmm1
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EF6 - 77 05                 - ja "League of Legends.Scaleform::SysAllocStatic::`default constructor closure'"+7EFD { ->League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EFD }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EF8 - 0F28 C1               - movaps xmm0,xmm1
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EFB - EB 06                 - jmp "League of Legends.Scaleform::SysAllocStatic::`default constructor closure'"+7F03 { ->League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7F03 }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7EFD - F3 0F10 44 24 04      - movss xmm0,[esp+04]
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7F03 - 0F57 C9               - xorps xmm1,xmm1
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7F06 - 0F2F C1               - comiss xmm0,xmm1
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7F09 - 77 03                 - ja "League of Legends.Scaleform::SysAllocStatic::`default constructor closure'"+7F0E { ->League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7F0E }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7F0B - 0F28 C1               - movaps xmm0,xmm1
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7F0E - 5E                    - pop esi
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7F0F - 83 C4 08              - add esp,08 { 8 }
+League of Legends.Scaleform::SysAllocStatic::`default constructor closure'+7F12 - C3                    - ret 

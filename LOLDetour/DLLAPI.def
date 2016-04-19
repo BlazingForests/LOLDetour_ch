@@ -1,0 +1,9 @@
+LIBRARY
+EXPORTS
+ ccvva
+ UnHook_LOL
+ ccvv
+ UnHook_LOLClient
+ LoadConfig
+ SendCode
+ IsAdministrator

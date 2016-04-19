@@ -1,0 +1,26 @@
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D7719 - 80 78 24 00           - cmp byte ptr [eax+24],00 //∏√µÿ÷∑÷ª≈–∂œ”¢–€
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D771D - EB 13                 - jmp "League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity"+D7732
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D771F - 80 78 24 00           - cmp byte ptr [eax+24],00
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D7723 - 74 2C                 - je "League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity"+D7751
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D7725 - 8D 8F 6C010000        - lea ecx,[edi+0000016C]
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D772B - E8 B0E70600           - call "League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity"+145EE0
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D7730 - 84 C0                 - test al,al
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D7732 - 74 1D                 - je "League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity"+D7751
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D7734 - 8D 8F 6C970000        - lea ecx,[edi+0000976C]
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D773A - E8 41A1F2FF           - call "League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity"+1880
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D773F - D9 45 08              - fld dword ptr [ebp+08]
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D7742 - 83 EC 08              - sub esp,08
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D7745 - 8B CF                 - mov ecx,edi
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D7747 - D9 1C 24              - fstp dword ptr [esp]
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D774A - E8 61FFFDFF           - call "League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity"+B76B0
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D774F - EB 42                 - jmp "League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity"+D7793
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D7751 - 8B 07                 - mov eax,[edi]
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D7753 - 8B CF                 - mov ecx,edi
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D7755 - FF 90 A0000000        - call dword ptr [eax+000000A0]
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+D775B - 8B D8                 - mov ebx,eax
+
+00367ECE
+
+[[349662B4]+170]+24
+
+

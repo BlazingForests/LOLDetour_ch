@@ -1,0 +1,50 @@
+League of Legends.Scaleform::System::System+115DE0 - 8B FF                 - mov edi,edi
+League of Legends.Scaleform::System::System+115DE2 - 55                    - push ebp
+League of Legends.Scaleform::System::System+115DE3 - 8B EC                 - mov ebp,esp
+League of Legends.Scaleform::System::System+115DE5 - 56                    - push esi
+League of Legends.Scaleform::System::System+115DE6 - 8B F1                 - mov esi,ecx
+League of Legends.Scaleform::System::System+115DE8 - 57                    - push edi
+League of Legends.Scaleform::System::System+115DE9 - 8B 86 20010000        - mov eax,[esi+00000120]
+League of Legends.Scaleform::System::System+115DEF - 8D 8E 20010000        - lea ecx,[esi+00000120]
+League of Legends.Scaleform::System::System+115DF5 - 8B 40 04              - mov eax,[eax+04]
+League of Legends.Scaleform::System::System+115DF8 - FF D0                 - call eax
+League of Legends.Scaleform::System::System+115DFA - 84 C0                 - test al,al
+League of Legends.Scaleform::System::System+115DFC - 75 79                 - jne League of Legends.Scaleform::System::System+115E77
+League of Legends.Scaleform::System::System+115DFE - 8B 06                 - mov eax,[esi]
+League of Legends.Scaleform::System::System+115E00 - 8B CE                 - mov ecx,esi
+League of Legends.Scaleform::System::System+115E02 - 8B 80 CC000000        - mov eax,[eax+000000CC]
+League of Legends.Scaleform::System::System+115E08 - FF D0                 - call eax
+League of Legends.Scaleform::System::System+115E0A - 84 C0                 - test al,al
+League of Legends.Scaleform::System::System+115E0C - 75 69                 - jne League of Legends.Scaleform::System::System+115E77
+League of Legends.Scaleform::System::System+115E0E - F6 05 08075501 02     - test byte ptr [League of Legends.exe+1150708],02
+League of Legends.Scaleform::System::System+115E15 - 75 60                 - jne League of Legends.Scaleform::System::System+115E77
+League of Legends.Scaleform::System::System+115E17 - 8B 86 08050000        - mov eax,[esi+00000508]
+League of Legends.Scaleform::System::System+115E1D - 8D 8E 08050000        - lea ecx,[esi+00000508]
+League of Legends.Scaleform::System::System+115E23 - FF 10                 - call dword ptr [eax]
+League of Legends.Scaleform::System::System+115E25 - 8B 40 1C              - mov eax,[eax+1C]
+League of Legends.Scaleform::System::System+115E28 - 8B 40 18              - mov eax,[eax+18]
+League of Legends.Scaleform::System::System+115E2B - C1 E8 07              - shr eax,07
+League of Legends.Scaleform::System::System+115E2E - A8 01                 - test al,01
+League of Legends.Scaleform::System::System+115E30 - 75 45                 - jne League of Legends.Scaleform::System::System+115E77
+League of Legends.Scaleform::System::System+115E32 - 8B 86 20010000        - mov eax,[esi+00000120]
+League of Legends.Scaleform::System::System+115E38 - 8D 8E 20010000        - lea ecx,[esi+00000120]
+League of Legends.Scaleform::System::System+115E3E - 8B 40 14              - mov eax,[eax+14]
+League of Legends.Scaleform::System::System+115E41 - FF D0                 - call eax
+League of Legends.Scaleform::System::System+115E43 - 84 C0                 - test al,al
+League of Legends.Scaleform::System::System+115E45 - 74 30                 - je League of Legends.Scaleform::System::System+115E77
+League of Legends.Scaleform::System::System+115E47 - 8B 8E E8100000        - mov ecx,[esi+000010E8]   //////////////////////////////////////////////////////////////
+League of Legends.Scaleform::System::System+115E4D - 85 C9                 - test ecx,ecx
+League of Legends.Scaleform::System::System+115E4F - 74 26                 - je League of Legends.Scaleform::System::System+115E77
+League of Legends.Scaleform::System::System+115E51 - 8B 45 08              - mov eax,[ebp+08]
+League of Legends.Scaleform::System::System+115E54 - 0FB6 C0               - movzx eax,al
+League of Legends.Scaleform::System::System+115E57 - 51                    - push ecx
+League of Legends.Scaleform::System::System+115E58 - 66 0F6E C0            - movd xmm0,eax
+League of Legends.Scaleform::System::System+115E5C - 0F5B C0               - cvtdq2ps xmm0,xmm0
+League of Legends.Scaleform::System::System+115E5F - F3 0F59 05 E8C22801   - mulss xmm0,[League of Legends.exe+E8C2E8]
+League of Legends.Scaleform::System::System+115E67 - F3 0F11 41 3C         - movss [ecx+3C],xmm0
+League of Legends.Scaleform::System::System+115E6C - 8B 8E E8100000        - mov ecx,[esi+000010E8]
+League of Legends.Scaleform::System::System+115E72 - E8 89CDD2FF           - call League of Legends.Scaleform::System::System+C4DA0
+League of Legends.Scaleform::System::System+115E77 - 5F                    - pop edi
+League of Legends.Scaleform::System::System+115E78 - 5E                    - pop esi
+League of Legends.Scaleform::System::System+115E79 - 5D                    - pop ebp
+League of Legends.Scaleform::System::System+115E7A - C2 0400               - ret 0004

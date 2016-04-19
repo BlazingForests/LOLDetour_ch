@@ -1,0 +1,13 @@
+0BC27504B301EB02
+
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+20311 - E8 5A4AE9FF           - call "League of Legends.Scaleform::Semaphore::`default constructor closure'"+D7100
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+20316 - B0 01                 - mov al,01
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+20318 - 8B 4C 24 30           - mov ecx,[esp+30]
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+2031C - 64 89 0D 00000000     - mov fs:[00000000],ecx
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+20323 - 59                    - pop ecx
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+20324 - 5F                    - pop edi
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+20325 - 5E                    - pop esi
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+20326 - 5B                    - pop ebx
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+20327 - 8B E5                 - mov esp,ebp
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+20329 - 5D                    - pop ebp
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+2032A - C2 1400               - ret 0014

@@ -1,0 +1,43 @@
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1A4 - 8B 7D 0C              - mov edi,[ebp+0C]
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1A7 - 57                    - push edi
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1A8 - 53                    - push ebx
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1A9 - E8 C22EEEFF           - call "League of Legends.Scaleform::AcquireInterface::~AcquireInterface"+29EC0
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1AE - 84 C0                 - test al,al
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1B0 - 74 0B                 - je "League of Legends.Scaleform::Semaphore::`default constructor closure'"+BD1BD
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1B2 - B0 01                 - mov al,01
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1B4 - 5F                    - pop edi
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1B5 - 5E                    - pop esi
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1B6 - 5B                    - pop ebx
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1B7 - 8B E5                 - mov esp,ebp
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1B9 - 5D                    - pop ebp
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1BA - C2 0C00               - ret 000C
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1BD - 8B 8E D8000000        - mov ecx,[esi+000000D8]    **********
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1C3 - 85 C9                 - test ecx,ecx
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1C5 - 74 3E                 - je "League of Legends.Scaleform::Semaphore::`default constructor closure'"+BD205
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1C7 - 80 B9 640A0000 00     - cmp byte ptr [ecx+00000A64],00
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1CE - 75 35                 - jne "League of Legends.Scaleform::Semaphore::`default constructor closure'"+BD205
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1D0 - 80 B9 BC000000 00     - cmp byte ptr [ecx+000000BC],00
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1D7 - 74 2C                 - je "League of Legends.Scaleform::Semaphore::`default constructor closure'"+BD205
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1D9 - D9EE                  - fldz 
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1DB - 8D 45 E8              - lea eax,[ebp-18]
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1DE - 57                    - push edi
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1DF - 51                    - push ecx
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1E0 - D9 1C 24              - fstp dword ptr [esp]
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1E3 - 50                    - push eax
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1E4 - E8 17D76800           - call "League of Legends.exe"+A99590
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1E9 - 8B D3                 - mov edx,ebx
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1EB - 8B C8                 - mov ecx,eax
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1ED - E8 FE0AE1FF           - call "League of Legends.Scaleform::SysAllocStatic::`default constructor closure'"+68A0
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1F2 - 83 C4 04              - add esp,04
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1F5 - 84 C0                 - test al,al
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1F7 - 74 0C                 - je "League of Legends.Scaleform::Semaphore::`default constructor closure'"+BD205
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1F9 - 8A 45 10              - mov al,[ebp+10]
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1FC - 5F                    - pop edi
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1FD - 5E                    - pop esi
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1FE - 5B                    - pop ebx
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD1FF - 8B E5                 - mov esp,ebp
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD201 - 5D                    - pop ebp
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD202 - C2 0C00               - ret 000C
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD205 - 57                    - push edi
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD206 - 53                    - push ebx
+League of Legends.Scaleform::Semaphore::`default constructor closure'+BD207 - 8B CE                 - mov ecx,esi

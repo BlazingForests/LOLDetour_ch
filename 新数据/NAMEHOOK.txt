@@ -1,0 +1,64 @@
+League of Legends.exe+C5A230 - 83 EC 08              - sub esp,08 { 8 }
+League of Legends.exe+C5A233 - 56                    - push esi
+League of Legends.exe+C5A234 - 8B F1                 - mov esi,ecx
+League of Legends.exe+C5A236 - F3 0F11 54 24 04      - movss [esp+04],xmm2
+League of Legends.exe+C5A23C - F3 0F11 4C 24 08      - movss [esp+08],xmm1
+League of Legends.exe+C5A242 - 83 7E 18 00           - cmp dword ptr [esi+18],00 { 0 }
+League of Legends.exe+C5A246 - 0F84 CF000000         - je "League of Legends.exe"+C5A31B { ->League of Legends.exe+C5A31B }
+League of Legends.exe+C5A24C - 83 7E 24 00           - cmp dword ptr [esi+24],00 { 0 }
+League of Legends.exe+C5A250 - 7F 06                 - jg "League of Legends.exe"+C5A258 { ->League of Legends.exe+C5A258 }
+League of Legends.exe+C5A252 - 83 7E 28 00           - cmp dword ptr [esi+28],00 { 0 }
+League of Legends.exe+C5A256 - 7E 75                 - jle "League of Legends.exe"+C5A2CD { ->League of Legends.exe+C5A2CD }
+League of Legends.exe+C5A258 - FF 74 24 20           - push [esp+20]
+League of Legends.exe+C5A25C - 83 EC 08              - sub esp,08 { 8 }
+League of Legends.exe+C5A25F - C7 44 24 04 0000803F  - mov [esp+04],3F800000 { 1.00 }
+League of Legends.exe+C5A267 - C7 04 24  0000803F    - mov [esp],3F800000 { 1.00 }
+League of Legends.exe+C5A26E - FF 74 24 24           - push [esp+24]
+League of Legends.exe+C5A272 - FF 74 24 24           - push [esp+24]
+League of Legends.exe+C5A276 - 6A 00                 - push 00 { 0 }
+League of Legends.exe+C5A278 - 51                    - push ecx
+League of Legends.exe+C5A279 - 8B C4                 - mov eax,esp
+League of Legends.exe+C5A27B - C7 00 00000000        - mov [eax],00000000 { 0 }
+League of Legends.exe+C5A281 - 66 0F6E 46 28         - movd xmm0,[esi+28]
+League of Legends.exe+C5A286 - 8B 44 24 4C           - mov eax,[esp+4C]
+League of Legends.exe+C5A28A - 8B 4E 18              - mov ecx,[esi+18]
+League of Legends.exe+C5A28D - 0F5B C0               - cvtdq2ps xmm0,xmm0
+League of Legends.exe+C5A290 - 50                    - push eax
+League of Legends.exe+C5A291 - 50                    - push eax
+League of Legends.exe+C5A292 - 8B 11                 - mov edx,[ecx]
+League of Legends.exe+C5A294 - FF 74 24 34           - push [esp+34]
+League of Legends.exe+C5A298 - F3 0F58 C2            - addss xmm0,xmm2
+League of Legends.exe+C5A29C - 83 EC 0C              - sub esp,0C { 12 }
+League of Legends.exe+C5A29F - F3 0F11 44 24 08      - movss [esp+08],xmm0
+League of Legends.exe+C5A2A5 - 66 0F6E 46 24         - movd xmm0,[esi+24]
+League of Legends.exe+C5A2AA - 0F5B C0               - cvtdq2ps xmm0,xmm0
+League of Legends.exe+C5A2AD - F3 0F58 C1            - addss xmm0,xmm1
+League of Legends.exe+C5A2B1 - F3 0F11 44 24 04      - movss [esp+04],xmm0
+League of Legends.exe+C5A2B7 - C7 04 24  0000803F    - mov [esp],3F800000 { 1.00 }
+League of Legends.exe+C5A2BE - FF 52 14              - call dword ptr [edx+14]
+League of Legends.exe+C5A2C1 - F3 0F10 54 24 04      - movss xmm2,[esp+04]  //////////////
+League of Legends.exe+C5A2C7 - F3 0F10 4C 24 08      - movss xmm1,[esp+08]
+League of Legends.exe+C5A2CD - FF 74 24 20           - push [esp+20]
+League of Legends.exe+C5A2D1 - 8B 4E 18              - mov ecx,[esi+18]
+League of Legends.exe+C5A2D4 - 83 EC 08              - sub esp,08 { 8 }
+League of Legends.exe+C5A2D7 - 8B 01                 - mov eax,[ecx]
+League of Legends.exe+C5A2D9 - C7 44 24 04 0000803F  - mov [esp+04],3F800000 { 1.00 }
+League of Legends.exe+C5A2E1 - C7 04 24  0000803F    - mov [esp],3F800000 { 1.00 }
+League of Legends.exe+C5A2E8 - FF 74 24 24           - push [esp+24]
+League of Legends.exe+C5A2EC - FF 74 24 24           - push [esp+24]
+League of Legends.exe+C5A2F0 - 6A 00                 - push 00 { 0 }
+League of Legends.exe+C5A2F2 - FF 74 24 44           - push [esp+44]
+League of Legends.exe+C5A2F6 - FF 74 24 44           - push [esp+44]
+League of Legends.exe+C5A2FA - FF 74 24 44           - push [esp+44]
+League of Legends.exe+C5A2FE - FF 74 24 34           - push [esp+34]
+League of Legends.exe+C5A302 - 83 EC 0C              - sub esp,0C { 12 }
+League of Legends.exe+C5A305 - F3 0F11 54 24 08      - movss [esp+08],xmm2
+League of Legends.exe+C5A30B - F3 0F11 4C 24 04      - movss [esp+04],xmm1
+League of Legends.exe+C5A311 - C7 04 24  0000803F    - mov [esp],3F800000 { 1.00 }
+League of Legends.exe+C5A318 - FF 50 14              - call dword ptr [eax+14]
+League of Legends.exe+C5A31B - 5E                    - pop esi
+League of Legends.exe+C5A31C - 83 C4 08              - add esp,08 { 8 }
+League of Legends.exe+C5A31F - C2 2400               - ret 0024 { 36 }
+
+
+F30F11542408F30F114C2404C704240000803F

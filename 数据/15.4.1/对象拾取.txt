@@ -1,0 +1,59 @@
+01EE4E81 - C7 46 34 00000000 - mov [esi+34],00000000
+01EE4FEA - C7 46 34 00000000 - mov [esi+34],00000000
+017ED7D7 - C7 46 34 00000000 - mov [esi+34],00000000
+018A77F3 - 8B 40 34  - mov eax,[eax+34]
+016CD92D - FF 77 34  - push [edi+34]
+01A75807 - 83 7E 34 00 - cmp dword ptr [esi+34],00
+01AE843E - FF 71 34  - push [ecx+34]
+01EE4EF8 - 89 46 34  - mov [esi+34],eax /////
+017ED7C8 - 89 46 34  - mov [esi+34],eax //////
+017ED748 - C7 46 34 00000000 - mov [esi+34],00000000
+017ED7AD - C7 46 34 00000000 - mov [esi+34],00000000
+017ED6E1 - 89 46 34  - mov [esi+34],eax
+017ED716 - C7 46 34 00000000 - mov [esi+34],00000000
+017ED757 - C7 46 34 00000000 - mov [esi+34],00000000
+017ED776 - C7 46 34 00000000 - mov [esi+34],00000000
+01E07B6D - 8B 41 34  - mov eax,[ecx+34]
+
+BASE+0x8 对象ID
+
+07170716
+06D406D3
+League of Legends.exe+2F72E2 - 8B 47 08              - mov eax,[edi+08]
+League of Legends.exe+2F72E5 - 8D 4C 24 60           - lea ecx,[esp+60]
+League of Legends.exe+2F72E9 - 83 C4 04              - add esp,04
+League of Legends.exe+2F72EC - FF 70 40              - push [eax+40]
+League of Legends.exe+2F72EF - E8 6C159900           - call League of Legends.exe+C88860
+
+
+
+League of Legends.exe+1FDDDC - 74 4C                 - je League of Legends.exe+1FDE2A
+00FCBA70    8BFF            MOV EDI,EDI
+
+
+
+0145DDDC   /74 4C           JE SHORT League_o.0145DE2A
+0145DDDE   |D905 CC453802   FLD DWORD PTR DS:[23845CC]   //人物描边过程
+0145DDE4   |8D4424 24       LEA EAX,DWORD PTR SS:[ESP+24] 
+0145DDE8   |8B5424 1C       MOV EDX,DWORD PTR SS:[ESP+1C]
+0145DDEC   |51              PUSH ECX
+0145DDED   |D91C24          FSTP DWORD PTR SS:[ESP]
+0145DDF0   |50              PUSH EAX
+0145DDF1   |51              PUSH ECX
+0145DDF2   |FF36            PUSH DWORD PTR DS:[ESI]
+0145DDF4   |8D4C24 38       LEA ECX,DWORD PTR SS:[ESP+38]
+0145DDF8   |FF7424 28       PUSH DWORD PTR SS:[ESP+28]
+0145DDFC   |E8 EFCFA800     CALL League_o.01EEADF0
+0145DE01   |83C4 0C         ADD ESP,0C
+0145DE04   |8BC8            MOV ECX,EAX
+0145DE06   |E8 D5DF4B00     CALL League_o.0191BDE0
+0145DE0B   |FF35 D0453802   PUSH DWORD PTR DS:[23845D0]
+0145DE11   |8D4424 28       LEA EAX,DWORD PTR SS:[ESP+28]
+0145DE15   |FF35 C8453802   PUSH DWORD PTR DS:[23845C8]
+0145DE1B   |50              PUSH EAX
+0145DE1C   |FF76 04         PUSH DWORD PTR DS:[ESI+4]
+0145DE1F   |FF76 08         PUSH DWORD PTR DS:[ESI+8]
+0145DE22   |FF36            PUSH DWORD PTR DS:[ESI] //对象地址
+0145DE24   |57              PUSH EDI
+0145DE25   |E8 26444100     CALL League_o.01872250
+

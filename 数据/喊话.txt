@@ -1,0 +1,429 @@
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13620 - 55                    - push ebp
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13621 - 8B EC                 - mov ebp,esp
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13623 - 83 E4 F8              - and esp,-08
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13626 - 81 EC 8C000000        - sub esp,0000008C
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+1362C - A1 902E0102           - mov eax,["League of Legends.exe"+E12E90]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13631 - 33 C4                 - xor eax,esp
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13633 - 89 84 24 88000000     - mov [esp+00000088],eax
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+1363A - 83 3D A0BDB703 00     - cmp dword ptr ["League of Legends.exe"+297BDA0],00
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13641 - 56                    - push esi
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13642 - 8B 75 0C              - mov esi,[ebp+0C]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13645 - 74 65                 - je "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+136AC
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13647 - 8D 4C 24 08           - lea ecx,[esp+08]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+1364B - E8 C0380F00           - call "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+106F10
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13650 - F6 44 24 0E 40        - test byte ptr [esp+0E],40
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13655 - 75 0B                 - jne "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+13662
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13657 - F6 44 24 0D 04        - test byte ptr [esp+0D],04
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+1365C - 75 04                 - jne "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+13662
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+1365E - 32 C9                 - xor cl,cl
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13660 - EB 02                 - jmp "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+13664
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13662 - B1 01                 - mov cl,01
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13664 - F6 44 24 1B 20        - test byte ptr [esp+1B],20
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13669 - 75 0B                 - jne "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+13676
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+1366B - F6 44 24 0B 20        - test byte ptr [esp+0B],20
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13670 - 75 04                 - jne "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+13676
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13672 - 32 D2                 - xor dl,dl
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13674 - EB 02                 - jmp "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+13678
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13676 - B2 01                 - mov dl,01
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13678 - A1 A0BDB703           - mov eax,["League of Legends.exe"+297BDA0]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+1367D - 8B 80 80000000        - mov eax,[eax+00000080]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13683 - 83 E8 00              - sub eax,00
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13686 - 74 08                 - je "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+13690
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13688 - 83 E8 05              - sub eax,05
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+1368B - 74 12                 - je "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+1369F
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+1368D - 48                    - dec eax
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+1368E - 75 1C                 - jne "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+136AC
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13690 - 84 D2                 - test dl,dl
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13692 - 75 18                 - jne "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+136AC
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13694 - 84 C9                 - test cl,cl
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13696 - 74 0F                 - je "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+136A7
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+13698 - E8 83240700           - call "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+85B20
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+1369D - EB 0D                 - jmp "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+136AC
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+1369F - 56                    - push esi //此处
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+136A0 - E8 3B370700           - call "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+86DE0
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+136A5 - EB 05                 - jmp "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+136AC
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+136A7 - E8 D4230700           - call "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+85A80
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+136AC - 8B 8C 24 8C000000     - mov ecx,[esp+0000008C]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+136B3 - B8 01000000           - mov eax,00000001
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+136B8 - 5E                    - pop esi
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+136B9 - 33 CC                 - xor ecx,esp
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+136BB - E8 B5A34D00           - call "League of Legends.exe"+87A6B5
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+136C0 - 8B E5                 - mov esp,ebp
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+136C2 - 5D                    - pop ebp
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+136C3 - C2 0800               - ret 0008
+
+
+
+750432D2EB02
+
+
+
+
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C3D - 50                    - push eax
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C3E - 51                    - push ecx
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C3F - 8B CA                 - mov ecx,edx
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C41 - E8 8A4E0000           - call "League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity"+225AD0
+
+
+
+
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C6C - 8B 09                 - mov ecx,[ecx]
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C6E - 8B 45 0C              - mov eax,[ebp+0C]
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C71 - 83 78 14 10           - cmp dword ptr [eax+14],10
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C75 - 72 02                 - jb "League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity"+220C79
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C77 - 8B 00                 - mov eax,[eax]
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C79 - 51                    - push ecx
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C7A - 50                    - push eax
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C7B - 8B CA                 - mov ecx,edx
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C7D - E8 4E4E0000           - call "League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity"+225AD0
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C82 - 5E                    - pop esi
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C83 - 8B E5                 - mov esp,ebp
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C85 - 5D                    - pop ebp
+League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity+220C86 - C2 0C00               - ret 000C
+
+
+
+
+
+001EE88C   364F4901
+001EE890   00000000
+001EE894   272FAB00  ASCII "FSCommand:ChatSend"
+001EE898   00FC0BFC  League_o.00FC0BFC
+001EE89C   27217A38
+001EE8A0   2723DEA0
+001EE8A4   272FAB00  ASCII "FSCommand:ChatSend"
+001EE8A8   00E0E28F  League_o.00E0E28F
+001EE8AC   00000012
+001EE8B0   0091D527  返回到 League_o.0091D527 来自 League_o.00C2BEF0
+001EE8B4   26F98B04  ASCII "FSCommand:"
+001EE8B8   272110A8
+001EE8BC   26F9976C  ASCII "ChatSend"
+001EE8C0   00E0E28F  League_o.00E0E28F
+001EE8C4   26B79C70
+001EE8C8   00000299
+001EE8CC   001EEAB4
+001EE8D0   00E720CB  League_o.00E720CB
+001EE8D4   364F490D
+001EE8D8   0091E16C  返回到 League_o.0091E16C 来自 League_o.00CC4610
+001EE8DC   001EEAB4  指向下一个 SEH 记录的指针
+001EE8E0   00E1A990  SE处理程序
+001EE8E4   FFFFFFFF
+001EE8E8   27217A3C
+001EE8EC  /001EEAC0  返回到 001EEAC0
+001EE8F0  |00D2C68D  返回到 League_o.00D2C68D
+001EE8F4  |2723DEA0
+001EE8F8  |272FAB0A  ASCII "ChatSend"
+001EE8FC  |283CAAE0  ASCII "11111"
+001EE900  |001EEC6C
+001EE904  |272B3AE0
+001EE908  |000000FF
+001EE90C  |31B7F7E0
+001EE910  |26DFF264
+001EE914  |26DFF264
+001EE918  |00000001
+001EE91C  |0BE0B420
+001EE920  |00DFF270  League_o.00DFF270
+001EE924  |27060C60
+push 喊话内容
+push ChatSend
+push 2723DEA0
+mov ecx,0BE0B420
+mov ebx,[ecx]
+mov ebx,[ebx+0x4]
+call ebx
+
+
+
+[[[[270809F8+70]+10]+8]+1DC]+20
+
+pushad
+push 0A430000 内容
+push 0A180000 ChatSend
+push [[["League of Legends.exe"+297BDA0]+108]+4]
+mov ecx,0C18A350
+mov ebx,[ecx]
+mov ebx,[ebx+0x4]
+call ebx
+popad
+ret
+
+
+
+001EE928  |27217A3C
+001EE92C  |00000000
+001EE930  |27300C40
+001EE934  |001EE924
+001EE938  |001EE994
+001EE93C  |00000000
+001EE940  |00000000
+001EE944  |26DFF201
+001EE948  |00000000
+
+
+
+
+League of Legends.exe+A0C661 - 8B 44 24 34           - mov eax,[esp+34]
+League of Legends.exe+A0C665 - 8B 00                 - mov eax,[eax]
+League of Legends.exe+A0C667 - 8B 08                 - mov ecx,[eax]
+League of Legends.exe+A0C669 - 8B 44 24 38           - mov eax,[esp+38]
+League of Legends.exe+A0C66D - 51                    - push ecx
+League of Legends.exe+A0C66E - 8B 4C 24 20           - mov ecx,[esp+20]
+League of Legends.exe+A0C672 - 8B 00                 - mov eax,[eax]
+League of Legends.exe+A0C674 - 8B 30                 - mov esi,[eax]
+League of Legends.exe+A0C676 - 8B 43 70              - mov eax,[ebx+70]
+League of Legends.exe+A0C679 - 8B 5C 24 20           - mov ebx,[esp+20]
+League of Legends.exe+A0C67D - 8B 40 10              - mov eax,[eax+10]
+League of Legends.exe+A0C680 - 8B 1B                 - mov ebx,[ebx]
+League of Legends.exe+A0C682 - 8B 50 08              - mov edx,[eax+08]
+League of Legends.exe+A0C685 - 8D 46 0A              - lea eax,[esi+0A]
+League of Legends.exe+A0C688 - 50                    - push eax
+League of Legends.exe+A0C689 - 52                    - push edx
+
+
+
+006A2ADA    33C4            XOR EAX,ESP
+006A2ADC    50              PUSH EAX
+006A2ADD    8D4424 50       LEA EAX,DWORD PTR SS:[ESP+50]
+006A2AE1    64:A3 00000000  MOV DWORD PTR FS:[0],EAX
+006A2AE7    8BD9            MOV EBX,ECX
+006A2AE9    8B55 10         MOV EDX,DWORD PTR SS:[EBP+10]
+006A2AEC    8B7D 08         MOV EDI,DWORD PTR SS:[EBP+8]
+006A2AEF    8B75 0C         MOV ESI,DWORD PTR SS:[EBP+C]
+006A2AF2    897C24 14       MOV DWORD PTR SS:[ESP+14],EDI
+006A2AF6    803A 00         CMP BYTE PTR DS:[EDX],0
+006A2AF9    C74424 44 0F000>MOV DWORD PTR SS:[ESP+44],0F
+006A2B01    C74424 40 00000>MOV DWORD PTR SS:[ESP+40],0
+006A2B09    C64424 30 00    MOV BYTE PTR SS:[ESP+30],0
+006A2B0E    75 04           JNZ SHORT League_o.006A2B14
+006A2B10    33C9            XOR ECX,ECX
+006A2B12    EB 19           JMP SHORT League_o.006A2B2D
+006A2B14    8BCA            MOV ECX,EDX
+006A2B16    8D79 01         LEA EDI,DWORD PTR DS:[ECX+1]
+006A2B19    8DA424 00000000 LEA ESP,DWORD PTR SS:[ESP]
+006A2B20    8A01            MOV AL,BYTE PTR DS:[ECX]
+
+
+
+
+
+
+
+
+League of Legends.exe+5C82DE - 8B D0                 - mov edx,eax
+League of Legends.exe+5C82E0 - 83 E2 FC              - and edx,-04
+League of Legends.exe+5C82E3 - 83 E0 FC              - and eax,-04
+League of Legends.exe+5C82E6 - 83 C0 08              - add eax,08
+League of Legends.exe+5C82E9 - 8B 12                 - mov edx,[edx]
+League of Legends.exe+5C82EB - 81 E2 FFFFFF7F        - and edx,7FFFFFFF
+League of Legends.exe+5C82F1 - 52                    - push edx
+League of Legends.exe+5C82F2 - 50                    - push eax
+League of Legends.exe+5C82F3 - E8 38513400           - call "League of Legends.exe"+90D430
+
+
+0026ED44   273790A0
+0026ED48   275CFBC0
+0026ED4C   00BAD461  返回到 League_o.00BAD461 来自 League_o.00B6FC70
+0026ED50   2FE873A8  ASCII "111111"
+0026ED54   00000006
+0026ED58   00001505
+0026ED5C   275CFBC0
+0026ED60   273790A0
+0026ED64   0026EE8C
+0026ED68   0026EDE8
+0026ED6C   275CFBC0
+0026ED70   2FE873A8  ASCII "111111"
+0026ED74   0026EDA8
+0026ED78   00DF0C6F  League_o.00DF0C6F
+0026ED7C   008682F8  返回到 League_o.008682F8 来自 League_o.00BAD430
+0026ED80   2FE873A8  ASCII "111111"
+0026ED84   00000006
+0026ED88   00000000
+0026ED8C   00BD1CB0  返回到 League_o.00BD1CB0 来自 League_o.008682D0
+0026ED90   0026EDE8
+0026ED94   0026EDBC
+0026ED98   26DFC8E0
+0026ED9C   27535A58
+0026EDA0   275CFBC0
+0026EDA4   00000000
+0026EDA8   0026EE74  指向下一个 SEH 记录的指针
+0026EDAC   00DEF31D  SE处理程序
+0026EDB0   00000003
+0026EDB4   00C8D1DB  返回到 League_o.00C8D1DB 来自 League_o.00BD1BD0
+0026EDB8   0026EDE8
+0026EDBC   2FE873A0
+0026EDC0   26DFC8E0
+0026EDC4   27535A58
+0026EDC8   27535A58
+0026EDCC   C6421000
+0026EDD0   0026EEA0
+0026EDD4   00000000
+0026EDD8   275CFC7C
+0026EDDC   0026F064
+0026EDE0   2736AAA0
+0026EDE4   2736AAA0
+0026EDE8   0026F3A0
+0026EDEC   00BB438B  返回到 League_o.00BB438B
+0026EDF0   0026F3A0
+0026EDF4   275D4030
+0026EDF8   00000000
+0026EDFC   30C64154
+0026EE00   00000010
+0026EE04   0026EE5C
+0026EE08   00DF9269  League_o.00DF9269
+0026EE0C   FFFFFFFF
+0026EE10   00BEADC0  返回到 League_o.00BEADC0 来自 League_o.008848D0
+0026EE14   27535A58
+0026EE18   00CA805F  返回到 League_o.00CA805F 来自 League_o.00CA7160
+0026EE1C   0026EE84
+0026EE20   27535A58
+0026EE24   303DB470
+0026EE28   0026F0E0
+0026EE2C   00000000
+0026EE30   26DFC8E0
+0026EE34   0026F0E0
+0026EE38   27535A58
+0026EE3C   00000010
+0026EE40   0026EE58
+0026EE44   00C44ECF  返回到 League_o.00C44ECF
+0026EE48   26DFC8E0
+0026EE4C   275B8AD0
+0026EE50   0000000C
+0026EE54   00000001
+0026EE58   0026EE8C
+0026EE5C   0026EEE4
+0026EE60   00DF211B  League_o.00DF211B
+0026EE64   FFFFFFFF
+0026EE68   00C5DE3F  返回到 League_o.00C5DE3F 来自 League_o.00C44E10
+0026EE6C   275BBF48
+0026EE70   26DFC8E0
+0026EE74   0026EEE4  指向下一个 SEH 记录的指针
+0026EE78   00DF7B31  SE处理程序
+0026EE7C   FFFFFFFF
+0026EE80   275B8AE0
+0026EE84   27535A58
+0026EE88   00000000
+0026EE8C   275CFC7C
+0026EE90   00CA844A  返回到 League_o.00CA844A
+
+
+
+
+
+
+
+
+
+
+
+
+League of Legends.exe+8EFAF0 - 0FB7 44 7D 00         - movzx eax,word ptr [ebp+edi*2+00]
+League of Legends.exe+8EFAF5 - 83 F8 7F              - cmp eax,7F
+League of Legends.exe+8EFAF8 - 77 09                 - ja "League of Legends.exe"+8EFB03
+League of Legends.exe+8EFAFA - 88 04 32              - mov [edx+esi],al
+League of Legends.exe+8EFAFD - 42                    - inc edx
+League of Legends.exe+8EFAFE - E9 38010000           - jmp "League of Legends.exe"+8EFC3B
+League of Legends.exe+8EFB03 - 3D FF070000           - cmp eax,000007FF
+League of Legends.exe+8EFB08 - 77 1B                 - ja "League of Legends.exe"+8EFB25
+League of Legends.exe+8EFB0A - 8B C8                 - mov ecx,eax
+
+0026ED04   33F18F90  UNICODE "11111"
+0026ED08   0026EDBC
+0026ED0C   33F7F110
+0026ED10   010B5CFC  League_o.010B5CFC
+0026ED14   00000000
+0026ED18   00B6FD9B  返回到 League_o.00B6FD9B 来自 League_o.00B8FAC0
+0026ED1C   33F7F118
+0026ED20   33F18F90  UNICODE "11111"
+0026ED24   00000005
+0026ED28   00000000
+0026ED2C   0026EDBC
+0026ED30   275CFDCC
+0026ED34   0026ED5C
+0026ED38   00000005
+0026ED3C   00C19A1F  返回到 League_o.00C19A1F 来自 League_o.00B6FD10
+0026ED40   00000000
+0026ED44   00000005
+0026ED48   275CFDC0
+0026ED4C   0026EDBC
+0026ED50   275CFBC0
+0026ED54   275CFDC0
+0026ED58   0026EE8C
+0026ED5C  /0026EE8C
+0026ED60  |00C19A91  返回到 League_o.00C19A91 来自 League_o.00C199C0
+0026ED64  |0026EDBC
+0026ED68  |273790A0
+0026ED6C  |275CFBC0
+0026ED70  |00000001
+0026ED74  |0026EDA8  指向下一个 SEH 记录的指针
+0026ED78  |00DF0C6F  SE处理程序
+0026ED7C  |00000000
+0026ED80  |00C36007  返回到 League_o.00C36007 来自 League_o.00C19A40
+0026ED84  |0026EDBC
+0026ED88  |0026EF24
+0026ED8C  |00000000
+0026ED90  |00BD1C9B  返回到 League_o.00BD1C9B 来自 League_o.00C35FF0
+0026ED94  |0026EDBC
+0026ED98  |26DFC8E0
+0026ED9C  |27535A58
+0026EDA0  |275CFBC0
+0026EDA4  |00000000
+0026EDA8  |0026EE74  指向下一个 SEH 记录的指针
+0026EDAC  |00DEF31D  SE处理程序
+0026EDB0  |FFFFFFFF
+0026EDB4  |00C8D1DB  返回到 League_o.00C8D1DB 来自 League_o.00BD1BD0
+0026EDB8  |0026EDE8
+0026EDBC  |010B5CFC  League_o.010B5CFC
+0026EDC0  |26DFC8E0
+0026EDC4  |27535A58
+0026EDC8  |27535A58
+0026EDCC  |0026EF1C
+0026EDD0  |00BFA211  返回到 League_o.00BFA211
+0026EDD4  |00000000
+0026EDD8  |275CFC7C
+0026EDDC  |00000053
+0026EDE0  |29F62810
+0026EDE4  |29F6DE60
+0026EDE8  |01C2E38C  League_o.01C2E38C
+0026EDEC  |00000053
+0026EDF0  |20CC0050
+0026EDF4  |29F62850
+0026EDF8  |00000053
+0026EDFC  |23CED084
+0026EE00  |00000010
+0026EE04  |0026EE5C
+0026EE08  |00DF9269  League_o.00DF9269
+0026EE0C  |FFFFFFFF
+0026EE10  |00BEADC0  返回到 League_o.00BEADC0 来自 League_o.008848D0
+0026EE14  |27535A58
+0026EE18  |00CA805F  返回到 League_o.00CA805F 来自 League_o.00CA7160
+0026EE1C  |0026EE84
+0026EE20  |27535A58
+0026EE24  |3361A700
+0026EE28  |0026F0E0
+0026EE2C  |00000000
+0026EE30  |26DFC8E0
+0026EE34  |0026F0E0
+0026EE38  |27535A58
+0026EE3C  |00000010
+0026EE40  |0026EE58
+0026EE44  |00C44ECF  返回到 League_o.00C44ECF
+0026EE48  |26DFC8E0
+0026EE4C  |275B8AD0
+0026EE50  |0000000C
+0026EE54  |00000001
+0026EE58  |0026EE8C
+0026EE5C  |0026EEE4
+0026EE60  |00DF211B  League_o.00DF211B
+0026EE64  |FFFFFFFF
+0026EE68  |00C5DE3F  返回到 League_o.00C5DE3F 来自 League_o.00C44E10
+0026EE6C  |275BBF48
+0026EE70  |26DFC8E0
+0026EE74  |0026EEE4  指向下一个 SEH 记录的指针
+0026EE78  |00DF7B31  SE处理程序
+0026EE7C  |FFFFFFFF
+0026EE80  |275B8AE0
+0026EE84  |27535A58
+0026EE88  |00000000
+0026EE8C  \275CFC7C
+0026EE90   00CA844A  返回到 League_o.00CA844A
+

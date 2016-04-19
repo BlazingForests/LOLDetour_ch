@@ -1,0 +1,15 @@
+League of Legends.exe+A641D4 - 78 1F                 - js "League of Legends.exe"+A641F5
+League of Legends.exe+A641D6 - 3B 15 5C5FBB03        - cmp edx,["League of Legends.exe"+38F5F5C]
+League of Legends.exe+A641DC - 7D 17                 - jnl "League of Legends.exe"+A641F5
+League of Legends.exe+A641DE - 8B 0D 585FBB03        - mov ecx,["League of Legends.exe"+38F5F58]  //∂‘œÛ±Ì
+League of Legends.exe+A641E4 - 8B 0C 91              - mov ecx,[ecx+edx*4]
+League of Legends.exe+A641E7 - 85 C9                 - test ecx,ecx
+League of Legends.exe+A641E9 - 74 0A                 - je "League of Legends.exe"+A641F5
+League of Legends.exe+A641EB - 39 41 08              - cmp [ecx+08],eax
+League of Legends.exe+A641EE - 75 05                 - jne "League of Legends.exe"+A641F5
+League of Legends.exe+A641F0 - 8B C1                 - mov eax,ecx
+League of Legends.exe+A641F2 - C2 0400               - ret 0004
+League of Legends.exe+A641F5 - 33 C0                 - xor eax,eax
+League of Legends.exe+A641F7 - C2 0400               - ret 0004
+
+

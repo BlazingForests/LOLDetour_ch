@@ -1,0 +1,30 @@
+League of Legends.Scaleform::System::System+123B80 - 8B FF                 - mov edi,edi
+League of Legends.Scaleform::System::System+123B82 - 55                    - push ebp
+League of Legends.Scaleform::System::System+123B83 - 8B EC                 - mov ebp,esp
+League of Legends.Scaleform::System::System+123B85 - 56                    - push esi
+League of Legends.Scaleform::System::System+123B86 - 8B 75 08              - mov esi,[ebp+08]
+League of Legends.Scaleform::System::System+123B89 - 57                    - push edi
+League of Legends.Scaleform::System::System+123B8A - 8B F9                 - mov edi,ecx
+League of Legends.Scaleform::System::System+123B8C - 85 F6                 - test esi,esi
+League of Legends.Scaleform::System::System+123B8E - 78 05                 - js League of Legends.Scaleform::System::System+123B95
+League of Legends.Scaleform::System::System+123B90 - 83 FE 40              - cmp esi,40
+League of Legends.Scaleform::System::System+123B93 - 7C 1E                 - jnge League of Legends.Scaleform::System::System+123BB3
+League of Legends.Scaleform::System::System+123B95 - 68 08F22B01           - push League of Legends.exe+EBF208
+League of Legends.Scaleform::System::System+123B9A - 68 08F22B01           - push League of Legends.exe+EBF208
+League of Legends.Scaleform::System::System+123B9F - 6A 00                 - push 00
+League of Legends.Scaleform::System::System+123BA1 - 68 08F22B01           - push League of Legends.exe+EBF208
+League of Legends.Scaleform::System::System+123BA6 - 68 4C072A01           - push League of Legends.exe+EA074C
+League of Legends.Scaleform::System::System+123BAB - E8 60A22A00           - call League of Legends.Scaleform::System::System+14BC70
+League of Legends.Scaleform::System::System+123BB0 - 83 C4 14              - add esp,14
+League of Legends.Scaleform::System::System+123BB3 - 83 FE 3F              - cmp esi,3F
+League of Legends.Scaleform::System::System+123BB6 - 77 0D                 - ja League of Legends.Scaleform::System::System+123BC5
+League of Legends.Scaleform::System::System+123BB8 - 8B 84 B7 18050000     - mov eax,[edi+esi*4+00000518]
+League of Legends.Scaleform::System::System+123BBF - 5F                    - pop edi
+League of Legends.Scaleform::System::System+123BC0 - 5E                    - pop esi
+League of Legends.Scaleform::System::System+123BC1 - 5D                    - pop ebp
+League of Legends.Scaleform::System::System+123BC2 - C2 0400               - ret 0004
+League of Legends.Scaleform::System::System+123BC5 - 8B 87 18050000        - mov eax,[edi+00000518]
+League of Legends.Scaleform::System::System+123BCB - 5F                    - pop edi
+League of Legends.Scaleform::System::System+123BCC - 5E                    - pop esi
+League of Legends.Scaleform::System::System+123BCD - 5D                    - pop ebp
+League of Legends.Scaleform::System::System+123BCE - C2 0400               - ret 0004

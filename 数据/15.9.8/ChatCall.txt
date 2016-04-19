@@ -1,0 +1,144 @@
+League of Legends.Scaleform::Event::`default constructor closure'+217C0 - 8B FF                 - mov edi,edi
+League of Legends.Scaleform::Event::`default constructor closure'+217C2 - 55                    - push ebp
+League of Legends.Scaleform::Event::`default constructor closure'+217C3 - 8B EC                 - mov ebp,esp
+League of Legends.Scaleform::Event::`default constructor closure'+217C5 - 83 E4 F8              - and esp,F8
+League of Legends.Scaleform::Event::`default constructor closure'+217C8 - 81 EC 8C000000        - sub esp,0000008C
+League of Legends.Scaleform::Event::`default constructor closure'+217CE - A1 A0D94E01           - mov eax,[League of Legends.exe+10ED9A0]
+League of Legends.Scaleform::Event::`default constructor closure'+217D3 - 33 C4                 - xor eax,esp
+League of Legends.Scaleform::Event::`default constructor closure'+217D5 - 89 84 24 88000000     - mov [esp+00000088],eax
+League of Legends.Scaleform::Event::`default constructor closure'+217DC - 83 3D 54D34F01 00     - cmp dword ptr [League of Legends.exe+10FD354],00
+League of Legends.Scaleform::Event::`default constructor closure'+217E3 - 53                    - push ebx
+League of Legends.Scaleform::Event::`default constructor closure'+217E4 - 56                    - push esi
+League of Legends.Scaleform::Event::`default constructor closure'+217E5 - 57                    - push edi
+League of Legends.Scaleform::Event::`default constructor closure'+217E6 - 8B 7D 0C              - mov edi,[ebp+0C]
+League of Legends.Scaleform::Event::`default constructor closure'+217E9 - 0F84 AC000000         - je League of Legends.Scaleform::Event::`default constructor closure'+2189B
+League of Legends.Scaleform::Event::`default constructor closure'+217EF - 8D 4C 24 10           - lea ecx,[esp+10]
+League of Legends.Scaleform::Event::`default constructor closure'+217F3 - E8 C9559FFF           - call League of Legends.Scaleform::Render::Matrix2x4<float>::GetXScale+314D1
+League of Legends.Scaleform::Event::`default constructor closure'+217F8 - BA 36000000           - mov edx,00000036
+League of Legends.Scaleform::Event::`default constructor closure'+217FD - 8D 4C 24 10           - lea ecx,[esp+10]
+League of Legends.Scaleform::Event::`default constructor closure'+21801 - E8 C0CBE7FF           - call League of Legends.Scaleform::System::~System+18666
+League of Legends.Scaleform::Event::`default constructor closure'+21806 - 84 C0                 - test al,al
+League of Legends.Scaleform::Event::`default constructor closure'+21808 - 75 16                 - jne League of Legends.Scaleform::Event::`default constructor closure'+21820
+League of Legends.Scaleform::Event::`default constructor closure'+2180A - BA 2A000000           - mov edx,0000002A
+League of Legends.Scaleform::Event::`default constructor closure'+2180F - 8D 4C 24 10           - lea ecx,[esp+10]
+League of Legends.Scaleform::Event::`default constructor closure'+21813 - E8 AECBE7FF           - call League of Legends.Scaleform::System::~System+18666
+League of Legends.Scaleform::Event::`default constructor closure'+21818 - 84 C0                 - test al,al
+League of Legends.Scaleform::Event::`default constructor closure'+2181A - 75 04                 - jne League of Legends.Scaleform::Event::`default constructor closure'+21820
+League of Legends.Scaleform::Event::`default constructor closure'+2181C - 32 DB                 - xor bl,bl
+League of Legends.Scaleform::Event::`default constructor closure'+2181E - EB 02                 - jmp League of Legends.Scaleform::Event::`default constructor closure'+21822
+League of Legends.Scaleform::Event::`default constructor closure'+21820 - B3 01                 - mov bl,01
+League of Legends.Scaleform::Event::`default constructor closure'+21822 - BA 9D000000           - mov edx,0000009D
+League of Legends.Scaleform::Event::`default constructor closure'+21827 - 8D 4C 24 10           - lea ecx,[esp+10]
+League of Legends.Scaleform::Event::`default constructor closure'+2182B - E8 96CBE7FF           - call League of Legends.Scaleform::System::~System+18666
+League of Legends.Scaleform::Event::`default constructor closure'+21830 - 84 C0                 - test al,al
+League of Legends.Scaleform::Event::`default constructor closure'+21832 - 75 16                 - jne League of Legends.Scaleform::Event::`default constructor closure'+2184A
+League of Legends.Scaleform::Event::`default constructor closure'+21834 - BA 1D000000           - mov edx,0000001D
+League of Legends.Scaleform::Event::`default constructor closure'+21839 - 8D 4C 24 10           - lea ecx,[esp+10]
+League of Legends.Scaleform::Event::`default constructor closure'+2183D - E8 84CBE7FF           - call League of Legends.Scaleform::System::~System+18666
+League of Legends.Scaleform::Event::`default constructor closure'+21842 - 84 C0                 - test al,al
+League of Legends.Scaleform::Event::`default constructor closure'+21844 - 75 04                 - jne League of Legends.Scaleform::Event::`default constructor closure'+2184A
+League of Legends.Scaleform::Event::`default constructor closure'+21846 - 32 C9                 - xor cl,cl
+League of Legends.Scaleform::Event::`default constructor closure'+21848 - EB 02                 - jmp League of Legends.Scaleform::Event::`default constructor closure'+2184C
+League of Legends.Scaleform::Event::`default constructor closure'+2184A - B1 01                 - mov cl,01
+League of Legends.Scaleform::Event::`default constructor closure'+2184C - 8B 35 54D34F01        - mov esi,[League of Legends.exe+10FD354]
+League of Legends.Scaleform::Event::`default constructor closure'+21852 - 8B 86 80000000        - mov eax,[esi+00000080]
+League of Legends.Scaleform::Event::`default constructor closure'+21858 - 83 E8 00              - sub eax,00
+League of Legends.Scaleform::Event::`default constructor closure'+2185B - 74 08                 - je League of Legends.Scaleform::Event::`default constructor closure'+21865
+League of Legends.Scaleform::Event::`default constructor closure'+2185D - 83 E8 05              - sub eax,05
+League of Legends.Scaleform::Event::`default constructor closure'+21860 - 74 12                 - je League of Legends.Scaleform::Event::`default constructor closure'+21874
+League of Legends.Scaleform::Event::`default constructor closure'+21862 - 48                    - dec eax
+League of Legends.Scaleform::Event::`default constructor closure'+21863 - 75 36                 - jne League of Legends.Scaleform::Event::`default constructor closure'+2189B
+League of Legends.Scaleform::Event::`default constructor closure'+21865 - 84 C9                 - test cl,cl
+League of Legends.Scaleform::Event::`default constructor closure'+21867 - 75 32                 - jne League of Legends.Scaleform::Event::`default constructor closure'+2189B
+League of Legends.Scaleform::Event::`default constructor closure'+21869 - 84 DB                 - test bl,bl
+League of Legends.Scaleform::Event::`default constructor closure'+2186B - 74 29                 - je League of Legends.Scaleform::Event::`default constructor closure'+21896
+League of Legends.Scaleform::Event::`default constructor closure'+2186D - E8 FE7BB8FF           - call League of Legends.Scaleform::Render::Matrix3x4<float>::SetIdentity+42240
+League of Legends.Scaleform::Event::`default constructor closure'+21872 - EB 27                 - jmp League of Legends.Scaleform::Event::`default constructor closure'+2189B
+League of Legends.Scaleform::Event::`default constructor closure'+21874 - 51                    - push ecx
+League of Legends.Scaleform::Event::`default constructor closure'+21875 - 57                    - push edi
+League of Legends.Scaleform::Event::`default constructor closure'+21876 - B9 C0391803           - mov ecx,League of Legends.exe+2D839C0
+League of Legends.Scaleform::Event::`default constructor closure'+2187B - E8 C0A1DEFF           - call League of Legends.Scaleform::GFx::System::Init+40FC0
+League of Legends.Scaleform::Event::`default constructor closure'+21880 - 83 C4 08              - add esp,08
+League of Legends.Scaleform::Event::`default constructor closure'+21883 - B9 D8381803           - mov ecx,League of Legends.exe+2D838D8
+League of Legends.Scaleform::Event::`default constructor closure'+21888 - E8 53AD1F00           - call League of Legends.Scaleform::Mutex::`default constructor closure'+F980
+League of Legends.Scaleform::Event::`default constructor closure'+2188D - 8B CE                 - mov ecx,esi
+League of Legends.Scaleform::Event::`default constructor closure'+2188F - E8 BC930400           - call League of Legends.Scaleform::System::Init+8800
+League of Legends.Scaleform::Event::`default constructor closure'+21894 - EB 05                 - jmp League of Legends.Scaleform::Event::`default constructor closure'+2189B
+League of Legends.Scaleform::Event::`default constructor closure'+21896 - E8 65530C00           - call League of Legends.Scaleform::System::Init+847B0
+League of Legends.Scaleform::Event::`default constructor closure'+2189B - 8B 8C 24 94000000     - mov ecx,[esp+00000094]
+League of Legends.Scaleform::Event::`default constructor closure'+218A2 - B8 01000000           - mov eax,00000001
+League of Legends.Scaleform::Event::`default constructor closure'+218A7 - 5F                    - pop edi
+League of Legends.Scaleform::Event::`default constructor closure'+218A8 - 5E                    - pop esi
+League of Legends.Scaleform::Event::`default constructor closure'+218A9 - 5B                    - pop ebx
+League of Legends.Scaleform::Event::`default constructor closure'+218AA - 33 CC                 - xor ecx,esp
+League of Legends.Scaleform::Event::`default constructor closure'+218AC - E8 BFA03D00           - call League of Legends.exe+D1AFF0
+League of Legends.Scaleform::Event::`default constructor closure'+218B1 - 8B E5                 - mov esp,ebp
+League of Legends.Scaleform::Event::`default constructor closure'+218B3 - 5D                    - pop ebp
+League of Legends.Scaleform::Event::`default constructor closure'+218B4 - C2 0800               - ret 0008
+
+
+
+
+League of Legends.exe+6972A0 - 8B FF                 - mov edi,edi
+League of Legends.exe+6972A2 - 55                    - push ebp
+League of Legends.exe+6972A3 - 8B EC                 - mov ebp,esp
+League of Legends.exe+6972A5 - 83 E4 F8              - and esp,F8
+League of Legends.exe+6972A8 - 81 EC 88000000        - sub esp,00000088
+League of Legends.exe+6972AE - A1 705A5301           - mov eax,[League of Legends.exe+1135A70]
+League of Legends.exe+6972B3 - 33 C4                 - xor eax,esp
+League of Legends.exe+6972B5 - 89 84 24 84000000     - mov [esp+00000084],eax
+League of Legends.exe+6972BC - 83 3D 647D5401 00     - cmp dword ptr [League of Legends.exe+1147D64],00
+League of Legends.exe+6972C3 - 56                    - push esi
+League of Legends.exe+6972C4 - 57                    - push edi
+League of Legends.exe+6972C5 - 8B 7D 0C              - mov edi,[ebp+0C]
+League of Legends.exe+6972C8 - 0F84 80000000         - je League of Legends.exe+69734E
+League of Legends.exe+6972CE - 8D 4C 24 08           - lea ecx,[esp+08]
+League of Legends.exe+6972D2 - E8 694ED5FF           - call League of Legends.exe+3EC140
+League of Legends.exe+6972D7 - F6 44 24 0E 40        - test byte ptr [esp+0E],40
+League of Legends.exe+6972DC - 75 0B                 - jne League of Legends.exe+6972E9
+League of Legends.exe+6972DE - F6 44 24 0D 04        - test byte ptr [esp+0D],04
+League of Legends.exe+6972E3 - 75 04                 - jne League of Legends.exe+6972E9
+League of Legends.exe+6972E5 - 32 C9                 - xor cl,cl
+League of Legends.exe+6972E7 - EB 02                 - jmp League of Legends.exe+6972EB
+League of Legends.exe+6972E9 - B1 01                 - mov cl,01
+League of Legends.exe+6972EB - F6 44 24 1B 20        - test byte ptr [esp+1B],20
+League of Legends.exe+6972F0 - 75 0B                 - jne League of Legends.exe+6972FD
+League of Legends.exe+6972F2 - F6 44 24 0B 20        - test byte ptr [esp+0B],20
+League of Legends.exe+6972F7 - 75 04                 - jne League of Legends.exe+6972FD
+League of Legends.exe+6972F9 - 32 D2                 - xor dl,dl
+League of Legends.exe+6972FB - EB 02                 - jmp League of Legends.exe+6972FF
+League of Legends.exe+6972FD - B2 01                 - mov dl,01
+League of Legends.exe+6972FF - 8B 35 647D5401        - mov esi,[League of Legends.exe+1147D64]
+League of Legends.exe+697305 - 8B 86 80000000        - mov eax,[esi+00000080]
+League of Legends.exe+69730B - 83 E8 00              - sub eax,00
+League of Legends.exe+69730E - 74 08                 - je League of Legends.exe+697318
+League of Legends.exe+697310 - 83 E8 05              - sub eax,05
+League of Legends.exe+697313 - 74 12                 - je League of Legends.exe+697327
+League of Legends.exe+697315 - 48                    - dec eax
+League of Legends.exe+697316 - 75 36                 - jne League of Legends.exe+69734E
+League of Legends.exe+697318 - 84 D2                 - test dl,dl
+League of Legends.exe+69731A - 75 32                 - jne League of Legends.exe+69734E
+League of Legends.exe+69731C - 84 C9                 - test cl,cl
+League of Legends.exe+69731E - 74 29                 - je League of Legends.exe+697349
+League of Legends.exe+697320 - E8 2B1FDFFF           - call League of Legends.exe+489250
+League of Legends.exe+697325 - EB 27                 - jmp League of Legends.exe+69734E
+League of Legends.exe+697327 - 51                    - push ecx
+League of Legends.exe+697328 - 57                    - push edi
+League of Legends.exe+697329 - B9 80B31C03           - mov ecx,League of Legends.exe+2DCB380
+League of Legends.exe+69732E - E8 1DD34F00           - call League of Legends.exe+B94650
+League of Legends.exe+697333 - 83 C4 08              - add esp,08
+League of Legends.exe+697336 - B9 98B21C03           - mov ecx,League of Legends.exe+2DCB298
+League of Legends.exe+69733B - E8 60DFCDFF           - call League of Legends.exe+3752A0
+League of Legends.exe+697340 - 8B CE                 - mov ecx,esi
+League of Legends.exe+697342 - E8 C949DAFF           - call League of Legends.exe+43BD10
+League of Legends.exe+697347 - EB 05                 - jmp League of Legends.exe+69734E
+League of Legends.exe+697349 - E8 A20FE3FF           - call League of Legends.exe+4C82F0
+League of Legends.exe+69734E - 8B 8C 24 8C000000     - mov ecx,[esp+0000008C]
+League of Legends.exe+697355 - B8 01000000           - mov eax,00000001
+League of Legends.exe+69735A - 5F                    - pop edi
+League of Legends.exe+69735B - 5E                    - pop esi
+League of Legends.exe+69735C - 33 CC                 - xor ecx,esp
+League of Legends.exe+69735E - E8 2A8E6C00           - call League of Legends.exe+D6018D
+League of Legends.exe+697363 - 8B E5                 - mov esp,ebp
+League of Legends.exe+697365 - 5D                    - pop ebp
+League of Legends.exe+697366 - C2 0800               - ret 0008

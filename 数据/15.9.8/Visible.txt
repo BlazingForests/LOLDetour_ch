@@ -1,0 +1,28 @@
+League of Legends.RegisterNativeEventCallback+28289 - 8B 80 BC000000        - mov eax,[eax+000000BC]
+League of Legends.RegisterNativeEventCallback+2828F - FF D0                 - call eax
+League of Legends.RegisterNativeEventCallback+28291 - 84 C0                 - test al,al
+League of Legends.RegisterNativeEventCallback+28293 - 8B 87 E0010000        - mov eax,[edi+000001E0]
+League of Legends.RegisterNativeEventCallback+28299 - 75 12                 - jne League of Legends.RegisterNativeEventCallback+282AD
+League of Legends.RegisterNativeEventCallback+2829B - 80 B8 8C000000 00     - cmp byte ptr [eax+0000008C],00
+League of Legends.RegisterNativeEventCallback+282A2 - 75 21                 - jne League of Legends.RegisterNativeEventCallback+282C5
+League of Legends.RegisterNativeEventCallback+282A4 - 80 B8 84000000 00     - cmp byte ptr [eax+00000084],00
+League of Legends.RegisterNativeEventCallback+282AB - EB 16                 - jmp League of Legends.RegisterNativeEventCallback+282C3
+League of Legends.RegisterNativeEventCallback+282AD - 80 B8 84000000 00     - cmp byte ptr [eax+00000084],00
+League of Legends.RegisterNativeEventCallback+282B4 - 74 20                 - je League of Legends.RegisterNativeEventCallback+282D6
+League of Legends.RegisterNativeEventCallback+282B6 - 8D 8F DC010000        - lea ecx,[edi+000001DC]
+League of Legends.RegisterNativeEventCallback+282BC - E8 DF0B6A00           - call League of Legends.Scaleform::System::System+1D7AF0
+League of Legends.RegisterNativeEventCallback+282C1 - 84 C0                 - test al,al
+League of Legends.RegisterNativeEventCallback+282C3 - 74 11                 - je League of Legends.RegisterNativeEventCallback+282D6
+League of Legends.RegisterNativeEventCallback+282C5 - F6 87 72090000 01     - test byte ptr [edi+00000972],01
+League of Legends.RegisterNativeEventCallback+282CC - 75 08                 - jne League of Legends.RegisterNativeEventCallback+282D6
+League of Legends.RegisterNativeEventCallback+282CE - 5E                    - pop esi
+League of Legends.RegisterNativeEventCallback+282CF - B8 01000000           - mov eax,00000001
+League of Legends.RegisterNativeEventCallback+282D4 - 5F                    - pop edi
+League of Legends.RegisterNativeEventCallback+282D5 - C3                    - ret 
+League of Legends.RegisterNativeEventCallback+282D6 - 5E                    - pop esi
+League of Legends.RegisterNativeEventCallback+282D7 - 33 C0                 - xor eax,eax
+League of Legends.RegisterNativeEventCallback+282D9 - 5F                    - pop edi
+League of Legends.RegisterNativeEventCallback+282DA - C3                    - ret 
+League of Legends.RegisterNativeEventCallback+282DB - CC                    - int 3 
+League of Legends.RegisterNativeEventCallback+282DC - CC                    - int 3 
+League of Legends.RegisterNativeEventCallback+282DD - CC                    - int 3 

@@ -1,0 +1,54 @@
+6EF7CFDE    8BFF            MOV EDI,EDI
+6EF7CFE0    55              PUSH EBP
+6EF7CFE1    8BEC            MOV EBP,ESP
+6EF7CFE3    6A FF           PUSH -1
+6EF7CFE5    68 CCAE106F     PUSH d3d9.6F10AECC
+6EF7CFEA    64:A1 00000000  MOV EAX,DWORD PTR FS:[0]
+6EF7CFF0    50              PUSH EAX
+6EF7CFF1    83EC 10         SUB ESP,10
+6EF7CFF4    53              PUSH EBX
+6EF7CFF5    56              PUSH ESI
+6EF7CFF6    57              PUSH EDI
+6EF7CFF7    A1 5092116F     MOV EAX,DWORD PTR DS:[6F119250]
+6EF7CFFC    33C5            XOR EAX,EBP
+6EF7CFFE    50              PUSH EAX
+6EF7CFFF    8D45 F4         LEA EAX,DWORD PTR SS:[EBP-C]
+6EF7D002    64:A3 00000000  MOV DWORD PTR FS:[0],EAX
+6EF7D008    8965 F0         MOV DWORD PTR SS:[EBP-10],ESP
+6EF7D00B    8B7D 08         MOV EDI,DWORD PTR SS:[EBP+8]
+6EF7D00E    33DB            XOR EBX,EBX
+
+
+
+
+05981119    8B0E            MOV ECX,DWORD PTR DS:[ESI]
+0598111B    8B81 B0000000   MOV EAX,DWORD PTR DS:[ECX+B0]
+05981121    8D5424 20       LEA EDX,DWORD PTR SS:[ESP+20]
+05981125    52              PUSH EDX
+05981126    68 00010000     PUSH 100
+0598112B    56              PUSH ESI
+0598112C    FFD0            CALL EAX
+
+
+
+
+[[League of Legends.exe+297BDA0]+100]+4c
+
+
+
+
+
+
+人物基址特征码：
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4BB7A - 89 57 64              - mov [edi+64],edx
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4BB7D - 8B 41 40              - mov eax,[ecx+40]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4BB80 - 89 47 68              - mov [edi+68],eax
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4BB83 - F3 0F11 47 6C         - movss [edi+6C],xmm0
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4BB88 - A1 A0BDA703           - mov eax,[League of Legends.exe+297BDA0]
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4BB8D - 85 C0                 - test eax,eax
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4BB8F - 74 22                 - je League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4BBB3
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4BB91 - 80 B8 A8010000 00     - cmp byte ptr [eax+000001A8],00
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4BB98 - 75 19                 - jne League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4BBB3
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4BB9A - C7 43 38 00000000     - mov [ebx+38],00000000
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4BBA1 - B0 01                 - mov al,01
+League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale+4BBA3 - C6 87 BE000000 00     - mov byte ptr [edi+000000BE],00

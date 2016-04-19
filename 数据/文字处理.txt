@@ -1,0 +1,224 @@
+
+01045A85   .  68 FF000000   PUSH 0FF
+01045A8A   .  8B01          MOV EAX,DWORD PTR DS:[ECX]
+01045A8C   .  FF90 A4010000 CALL DWORD PTR DS:[EAX+1A4]
+01045A92   .  43            INC EBX
+01045A93   .  8D76 04       LEA ESI,DWORD PTR DS:[ESI+4]
+01045A96   .  3BDF          CMP EBX,EDI
+01045A98   .^ 75 E9         JNZ SHORT League_o.01045A83
+01045A9A   >  8B45 B0       MOV EAX,DWORD PTR SS:[EBP-50] £¡£¡£¡£¡£¡£¡£¡£¡£¡£¡
+01045A9D   .  33D2          XOR EDX,EDX
+01045A9F   .  8B7D B4       MOV EDI,DWORD PTR SS:[EBP-4C]
+01045AA2   .  33DB          XOR EBX,EBX
+01045AA4   .  2BF8          SUB EDI,EAX
+01045AA6   .  8BF0          MOV ESI,EAX
+01045AA8   .  83C7 03       ADD EDI,3
+01045AAB   .  C1EF 02       SHR EDI,2
+01045AAE   .  3B45 B4       CMP EAX,DWORD PTR SS:[EBP-4C]
+01045AB1   .  0F47FA        CMOVA EDI,EDX
+01045AB4   .  85FF          TEST EDI,EDI
+01045AB6   .  74 1F         JE SHORT League_o.01045AD7
+
+
+
+
+
+012F7320  |> \8B4E 08       MOV ECX,DWORD PTR DS:[ESI+8]
+012F7323  |.  57            PUSH EDI
+012F7324  |.  FF75 08       PUSH DWORD PTR SS:[EBP+8]
+012F7327  |.  8B01          MOV EAX,DWORD PTR DS:[ECX]
+012F7329  |.  FF50 10       CALL DWORD PTR DS:[EAX+10]
+012F732C  |.  5F            POP EDI                                  ;  League_o.01A91B2D //eaxÓÐ×Ö·û´®
+
+
+
+
+[1ECFBA0]+8
+
+0139926F  |.  C605 95B67803>MOV BYTE PTR DS:[378B695],1
+01399276  |.  E8 058EC3FF   CALL League_o.00FD2080
+0139927B  |>  A1 90FBEC01   MOV EAX,DWORD PTR DS:[1ECFB90]
+01399280  |.  85C0          TEST EAX,EAX
+01399282  |.  75 0F         JNZ SHORT League_o.01399293
+01399284  |.  FF75 08       PUSH DWORD PTR SS:[EBP+8]                ; /Arg1
+01399287  |.  E8 3D8C3000   CALL League_o.016A1EC9                   ; \League_o.016A1EC9
+0139928C  |.  83C4 04       ADD ESP,4
+304A0F58
+
+
+0139928F  |.  8BE5          MOV ESP,EBP
+01399291  |.  5D            POP EBP
+01399292  |.  C3            RETN
+01399293  |>  FF35 A0FBEC01 PUSH DWORD PTR DS:[1ECFBA0]              ;  League_o.0378B480
+
+
+
+Kog
+006F004B
+
+
+2819CA98
+34A69390
+
+
+[[[[[34A69390]+0C4C]+14]+5234]+124]
+
+
+[[[3A1BE90]+5234]+124]
+
+
+[[2DA0604]+4*1]+24
+[1A088E28]+24
+
+2EA46D70+24  Ansi
+[2EA46D70+5234]+124 Uni
+
+277189A8
+ 277D87D8
+
+
+
+01045AC0   >  8B0E          MOV ECX,DWORD PTR DS:[ESI]
+01045AC2   . |68 FF000000   PUSH 0FF
+01045AC7   . |8B01          MOV EAX,DWORD PTR DS:[ECX]
+01045AC9   . |FF90 A4010000 CALL DWORD PTR DS:[EAX+1A4]
+01045ACF   . |43            INC EBX
+01045AD0   . |8D76 04       LEA ESI,DWORD PTR DS:[ESI+4]
+01045AD3   . |3BDF          CMP EBX,EDI
+01045AD5   .^\75 E9         JNZ SHORT League_o.01045AC0
+01045AD7   >  8B45 98       MOV EAX,DWORD PTR SS:[EBP-68]
+
+
+
+
+
+
+
+
+
+005F9E6E    F3:0F104424 10  MOVSS XMM0,DWORD PTR SS:[ESP+10]
+005F9E74    8D5424 08       LEA EDX,DWORD PTR SS:[ESP+8]
+005F9E78    8B4E 0C         MOV ECX,DWORD PTR DS:[ESI+C]
+005F9E7B    D946 38         FLD DWORD PTR DS:[ESI+38]
+005F9E7E    51              PUSH ECX
+005F9E7F    F3:0F114424 0C  MOVSS DWORD PTR SS:[ESP+C],XMM0
+005F9E85    F3:0F104424 18  MOVSS XMM0,DWORD PTR SS:[ESP+18]
+005F9E8B    D91C24          FSTP DWORD PTR SS:[ESP]
+005F9E8E    52              PUSH EDX
+005F9E8F    F3:0F114424 14  MOVSS DWORD PTR SS:[ESP+14],XMM0
+005F9E95    8B01            MOV EAX,DWORD PTR DS:[ECX]
+005F9E97    57              PUSH EDI
+005F9E98    56              PUSH ESI
+005F9E99    FF50 04         CALL DWORD PTR DS:[EAX+4]                ; League_o.005F8A20
+
+
+
+
+
+
+
+
+[558BEC83E4F883EC20568BF157+2]
+
+007A9E40    55              PUSH EBP
+007A9E41    8BEC            MOV EBP,ESP
+007A9E43    83E4 F8         AND ESP,FFFFFFF8
+007A9E46    83EC 20         SUB ESP,20
+007A9E49    56              PUSH ESI
+007A9E4A    8BF1            MOV ESI,ECX
+007A9E4C    57              PUSH EDI
+007A9E4D    8B3D 90BED602   MOV EDI,DWORD PTR DS:[2D6BE90]
+007A9E53    837E 0C 00      CMP DWORD PTR DS:[ESI+C],0
+007A9E57    74 43           JE SHORT League_o.007A9E9C
+007A9E59    8D4424 1C       LEA EAX,DWORD PTR SS:[ESP+1C]
+007A9E5D    50              PUSH EAX
+007A9E5E    E8 ADFDFFFF     CALL League_o.007A9C10
+007A9E63    8D5424 10       LEA EDX,DWORD PTR SS:[ESP+10]
+007A9E67    8BC8            MOV ECX,EAX
+007A9E69    E8 02F71A00     CALL League_o.00959570
+
+
+
+
+
+
+007A7598    8B4C24 1C       MOV ECX,DWORD PTR SS:[ESP+1C]
+007A759C    83C4 04         ADD ESP,4
+007A759F    81C1 CC0E0000   ADD ECX,0ECC
+007A75A5    50              PUSH EAX
+007A75A6    8D4424 28       LEA EAX,DWORD PTR SS:[ESP+28]
+007A75AA    50              PUSH EAX
+007A75AB    E8 E018FFFF     CALL League_o.00798E90
+
+
+
+
+
+kevin1990s
+6B 00 65 00 76 00 69 00 6E 00 31 00 39 00 39 00 30 00 73
+0065006B
+
+[ebp+4]!=0161CFB8
+ecx==2FE97050
+
+
+
+01518FA2    8B5D 08         MOV EBX,DWORD PTR SS:[EBP+8]
+01518FA5    8B07            MOV EAX,DWORD PTR DS:[EDI]
+01518FA7    51              PUSH ECX                                 ; 1
+01518FA8    83EC 0C         SUB ESP,0C
+01518FAB    8BCF            MOV ECX,EDI
+01518FAD    D943 04         FLD DWORD PTR DS:[EBX+4]
+01518FB0    D8C1            FADD ST,ST(1)
+01518FB2    D95C24 08       FSTP DWORD PTR SS:[ESP+8]
+01518FB6    D803            FADD DWORD PTR DS:[EBX]
+01518FB8    D95C24 04       FSTP DWORD PTR SS:[ESP+4]
+01518FBC    D91C24          FSTP DWORD PTR SS:[ESP]
+01518FBF    FF50 10         CALL DWORD PTR DS:[EAX+10]
+01518FC2    D9E8            FLD1
+
+558BEC568BF18B4D0866833900
+
+
+0161BEC0 - 55                    - push ebp
+0161BEC1 - 8B EC                 - mov ebp,esp
+0161BEC3 - 56                    - push esi
+0161BEC4 - 8B F1                 - mov esi,ecx
+0161BEC6 - 8B 4D 08              - mov ecx,[ebp+08]
+0161BEC9 - 66 83 39 00           - cmp word ptr [ecx],00
+0161BECD - 75 04                 - jne 0161BED3
+0161BECF - 33 D2                 - xor edx,edx
+0161BED1 - EB 1D                 - jmp 0161BEF0
+0161BED3 - 8B D1                 - mov edx,ecx
+0161BED5 - 57                    - push edi
+0161BED6 - 8D 7A 02              - lea edi,[edx+02]
+0161BED9 - 8D A4 24 00000000     - lea esp,[esp+00000000]
+0161BEE0 - 66 8B 02              - mov ax,[edx]
+0161BEE3 - 83 C2 02              - add edx,02
+0161BEE6 - 66 85 C0              - test ax,ax
+0161BEE9 - 75 F5                 - jne 0161BEE0
+0161BEEB - 2B D7                 - sub edx,edi
+0161BEED - D1 FA                 - sar edx,1
+0161BEEF - 5F                    - pop edi
+0161BEF0 - 52                    - push edx
+0161BEF1 - 51                    - push ecx
+0161BEF2 - 8D 4E 08              - lea ecx,[esi+08]
+0161BEF5 - E8 46E8E5FF           - call 0147A740
+0161BEFA - 8B CE                 - mov ecx,esi
+0161BEFC - E8 0F280000           - call 0161E710
+0161BF01 - F3 0F2A 46 68         - cvtsi2ss xmm0,[esi+68]
+0161BF06 - 8B CE                 - mov ecx,esi
+0161BF08 - F3 0F59 46 3C         - mulss xmm0,[esi+3C]
+0161BF0D - F3 0F2C C0            - cvttss2si eax,xmm0
+0161BF11 - F3 0F2A 46 6C         - cvtsi2ss xmm0,[esi+6C]
+0161BF16 - 89 46 50              - mov [esi+50],eax
+0161BF19 - F3 0F59 46 40         - mulss xmm0,[esi+40]
+0161BF1E - F3 0F2C C0            - cvttss2si eax,xmm0
+0161BF22 - 89 46 54              - mov [esi+54],eax
+0161BF25 - E8 46270000           - call 0161E670
+0161BF2A - 5E                    - pop esi
+0161BF2B - 5D                    - pop ebp
+0161BF2C - C2 0400               - ret 0004
+0161BF2F - CC                    - int 3 
+0161BF30 - 8D 41 20              - lea eax,[ecx+20]
+0161BF33 - C3                    - ret 

@@ -1,0 +1,372 @@
+League of Legends.exe+558CD1 - F3 0F11 43 24         - movss [ebx+24],xmm0
+
+
+
+
+
+
+League of Legends.exe+558AD4 - 50                    - push eax
+League of Legends.exe+558AD5 - 6A 04                 - push 04
+League of Legends.exe+558AD7 - 8B CE                 - mov ecx,esi
+League of Legends.exe+558AD9 - E8 62CBECFF           - call League of Legends.exe+425640
+League of Legends.exe+558ADE - 8B 85 64FFFFFF        - mov eax,[ebp-0000009C] 
+League of Legends.exe+558AE4 - F3 0F10 56 3C         - movss xmm2,[esi+3C]    ; 原始攻击
+League of Legends.exe+558AE9 - F3 0F10 3D E4E12401   - movss xmm7,[League of Legends.exe+117E1E4]
+League of Legends.exe+558AF1 - F3 0F10 1D 982A2801   - movss xmm3,[League of Legends.exe+11B2A98]
+League of Legends.exe+558AF9 - F3 0F10 88 B4000000   - movss xmm1,[eax+000000B4]  ; 附加攻击
+League of Legends.exe+558B01 - F3 0F10 80 B8000000   - movss xmm0,[eax+000000B8]
+League of Legends.exe+558B09 - F3 0F58 C7            - addss xmm0,xmm7
+League of Legends.exe+558B0D - F3 0F10 2D 2C5D3001   - movss xmm5,[League of Legends.exe+1235D2C]
+League of Legends.exe+558B15 - D9 9D 70FFFFFF        - fstp dword ptr [ebp-00000090]
+League of Legends.exe+558B1B - F3 0F58 95 70FFFFFF   - addss xmm2,[ebp-00000090]
+League of Legends.exe+558B23 - F3 0F58 CA            - addss xmm1,xmm2
+League of Legends.exe+558B27 - F3 0F11 95 70FFFFFF   - movss [ebp-00000090],xmm2
+League of Legends.exe+558B2F - F3 0F59 C8            - mulss xmm1,xmm0
+League of Legends.exe+558B33 - 0F28 E1               - movaps xmm4,xmm1
+League of Legends.exe+558B36 - F3 0F11 8D 74FFFFFF   - movss [ebp-0000008C],xmm1
+League of Legends.exe+558B3E - F3 0F58 25 A4FC2C01   - addss xmm4,[League of Legends.exe+11FFCA4]
+League of Legends.exe+558B46 - 0F28 F1               - movaps xmm6,xmm1
+League of Legends.exe+558B49 - 0F28 CD               - movaps xmm1,xmm5
+League of Legends.exe+558B4C - F3 0F5C F2            - subss xmm6,xmm2
+League of Legends.exe+558B50 - 0F54 DC               - andps xmm3,xmm4
+League of Legends.exe+558B53 - 0F28 C4               - movaps xmm0,xmm4
+League of Legends.exe+558B56 - 0F57 C3               - xorps xmm0,xmm3
+League of Legends.exe+558B59 - 0F28 D4               - movaps xmm2,xmm4
+League of Legends.exe+558B5C - F3 0FC2 C5 01         - cmpss xmm0,xmm5,01
+League of Legends.exe+558B61 - 0F54 C8               - andps xmm1,xmm0
+League of Legends.exe+558B64 - 0F56 CB               - orps xmm1,xmm3
+League of Legends.exe+558B67 - F3 0F58 D1            - addss xmm2,xmm1
+League of Legends.exe+558B6B - F3 0F5C D1            - subss xmm2,xmm1
+League of Legends.exe+558B6F - 0F28 CD               - movaps xmm1,xmm5
+League of Legends.exe+558B72 - 0F28 C2               - movaps xmm0,xmm2
+League of Legends.exe+558B75 - F3 0F5C C4            - subss xmm0,xmm4
+League of Legends.exe+558B79 - F3 0F10 63 24         - movss xmm4,[ebx+24]
+
+
+
+
+
+League of Legends.exe+5585E0 - 8B FF                 - mov edi,edi
+League of Legends.exe+5585E2 - 55                    - push ebp
+League of Legends.exe+5585E3 - 8B EC                 - mov ebp,esp
+League of Legends.exe+5585E5 - 81 EC 9C000000        - sub esp,0000009C
+League of Legends.exe+5585EB - A1 108E1F02           - mov eax,[League of Legends.exe+1478E10]
+League of Legends.exe+5585F0 - 33 C5                 - xor eax,ebp
+League of Legends.exe+5585F2 - 89 45 FC              - mov [ebp-04],eax
+League of Legends.exe+5585F5 - 53                    - push ebx
+League of Legends.exe+5585F6 - 8B D9                 - mov ebx,ecx
+League of Legends.exe+5585F8 - 8B 0D 90622402        - mov ecx,[League of Legends.exe+14C6290]
+League of Legends.exe+5585FE - 56                    - push esi
+League of Legends.exe+5585FF - 57                    - push edi
+League of Legends.exe+558600 - 85 C9                 - test ecx,ecx
+League of Legends.exe+558602 - 0F84 A6020000         - je League of Legends.exe+5588AE
+League of Legends.exe+558608 - 8B 81 E0030000        - mov eax,[ecx+000003E0]
+League of Legends.exe+55860E - 81 C1 E0030000        - add ecx,000003E0
+League of Legends.exe+558614 - FF 50 04              - call dword ptr [eax+04]
+League of Legends.exe+558617 - 85 C0                 - test eax,eax
+League of Legends.exe+558619 - 0F84 8F020000         - je League of Legends.exe+5588AE
+League of Legends.exe+55861F - 8B 15 90622402        - mov edx,[League of Legends.exe+14C6290]
+League of Legends.exe+558625 - D9E8                  - fld1 
+League of Legends.exe+558627 - F3 0F10 35 A4FCF701   - movss xmm6,[League of Legends.exe+11FFCA4]
+League of Legends.exe+55862F - F3 0F10 2D 2C5DFB01   - movss xmm5,[League of Legends.exe+1235D2C]
+League of Legends.exe+558637 - 8B B2 68200000        - mov esi,[edx+00002068]   ; 指针
+League of Legends.exe+55863D - 8D 82 20060000        - lea eax,[edx+00000620]    ; 指针
+League of Legends.exe+558643 - 83 C6 28              - add esi,28
+League of Legends.exe+558646 - 89 85 64FFFFFF        - mov [ebp-0000009C],eax
+League of Legends.exe+55864C - 89 B5 68FFFFFF        - mov [ebp-00000098],esi
+League of Legends.exe+558652 - 33 FF                 - xor edi,edi
+League of Legends.exe+558654 - C7 85 6CFFFFFF 000000FF - mov [ebp-00000094],FF000000
+League of Legends.exe+55865E - 8B CF                 - mov ecx,edi
+League of Legends.exe+558660 - E8 8B774600           - call League of Legends.exe+9BFDF0
+League of Legends.exe+558665 - 83 F8 06              - cmp eax,06
+League of Legends.exe+558668 - 0F87 34020000         - ja League of Legends.exe+5588A2
+League of Legends.exe+55866E - FF 24 85 D0932D01     - jmp dword ptr [eax*4+League of Legends.exe+5593D0]
+League of Legends.exe+558675 - 8B 02                 - mov eax,[edx]
+League of Legends.exe+558677 - 8B CA                 - mov ecx,edx
+League of Legends.exe+558679 - DDD8                  - fstp st(0)
+League of Legends.exe+55867B - FF 90 90020000        - call dword ptr [eax+00000290]
+League of Legends.exe+558681 - 50                    - push eax
+League of Legends.exe+558682 - 6A 0A                 - push 0A
+League of Legends.exe+558684 - 8B CE                 - mov ecx,esi
+League of Legends.exe+558686 - E8 B5CFECFF           - call League of Legends.exe+425640
+League of Legends.exe+55868B - 8B 85 64FFFFFF        - mov eax,[ebp-0000009C]
+League of Legends.exe+558691 - F3 0F10 3D E4E1EF01   - movss xmm7,[League of Legends.exe+117E1E4]
+League of Legends.exe+558699 - F3 0F10 35 A4FCF701   - movss xmm6,[League of Legends.exe+11FFCA4]
+League of Legends.exe+5586A1 - F3 0F10 63 1C         - movss xmm4,[ebx+1C]
+League of Legends.exe+5586A6 - F3 0F10 88 C0000000   - movss xmm1,[eax+000000C0]
+League of Legends.exe+5586AE - F3 0F58 E6            - addss xmm4,xmm6
+League of Legends.exe+5586B2 - F3 0F10 80 20010000   - movss xmm0,[eax+00000120]
+League of Legends.exe+5586BA - F3 0F58 CF            - addss xmm1,xmm7
+League of Legends.exe+5586BE - F3 0F10 1D 982AF301   - movss xmm3,[League of Legends.exe+11B2A98]
+League of Legends.exe+5586C6 - F3 0F10 2D 2C5DFB01   - movss xmm5,[League of Legends.exe+1235D2C]
+League of Legends.exe+5586CE - D9 9D 74FFFFFF        - fstp dword ptr [ebp-0000008C]
+League of Legends.exe+5586D4 - F3 0F58 85 74FFFFFF   - addss xmm0,[ebp-0000008C]
+League of Legends.exe+5586DC - F3 0F59 88 BC000000   - mulss xmm1,[eax+000000BC]
+League of Legends.exe+5586E4 - 0F54 DC               - andps xmm3,xmm4
+League of Legends.exe+5586E7 - 0F28 D4               - movaps xmm2,xmm4
+League of Legends.exe+5586EA - F3 0F11 8D 70FFFFFF   - movss [ebp-00000090],xmm1
+League of Legends.exe+5586F2 - F3 0F58 C8            - addss xmm1,xmm0
+League of Legends.exe+5586F6 - 0F28 C4               - movaps xmm0,xmm4
+League of Legends.exe+5586F9 - 0F57 C3               - xorps xmm0,xmm3
+League of Legends.exe+5586FC - F3 0FC2 C5 01         - cmpss xmm0,xmm5,01
+League of Legends.exe+558701 - F3 0F11 8D 74FFFFFF   - movss [ebp-0000008C],xmm1
+League of Legends.exe+558709 - 0F28 CD               - movaps xmm1,xmm5
+League of Legends.exe+55870C - 0F54 C8               - andps xmm1,xmm0
+League of Legends.exe+55870F - 0F56 CB               - orps xmm1,xmm3
+League of Legends.exe+558712 - F3 0F58 D1            - addss xmm2,xmm1
+League of Legends.exe+558716 - F3 0F5C D1            - subss xmm2,xmm1
+League of Legends.exe+55871A - 0F28 CD               - movaps xmm1,xmm5
+League of Legends.exe+55871D - 0F28 C2               - movaps xmm0,xmm2
+League of Legends.exe+558720 - F3 0F5C C4            - subss xmm0,xmm4
+League of Legends.exe+558724 - F3 0F10 A5 74FFFFFF   - movss xmm4,[ebp-0000008C]
+League of Legends.exe+55872C - F3 0F58 E6            - addss xmm4,xmm6
+League of Legends.exe+558730 - F3 0FC2 C3 06         - cmpss xmm0,xmm3,06
+League of Legends.exe+558735 - F3 0F10 1D 982AF301   - movss xmm3,[League of Legends.exe+11B2A98]
+League of Legends.exe+55873D - 0F54 DC               - andps xmm3,xmm4
+League of Legends.exe+558740 - 0F54 C7               - andps xmm0,xmm7
+League of Legends.exe+558743 - F3 0F5C D0            - subss xmm2,xmm0
+League of Legends.exe+558747 - 0F28 C4               - movaps xmm0,xmm4
+League of Legends.exe+55874A - 0F57 C3               - xorps xmm0,xmm3
+League of Legends.exe+55874D - F3 0FC2 C5 01         - cmpss xmm0,xmm5,01
+League of Legends.exe+558752 - F3 0F2C CA            - cvttss2si ecx,xmm2
+League of Legends.exe+558756 - 0F54 C8               - andps xmm1,xmm0
+League of Legends.exe+558759 - 0F28 D4               - movaps xmm2,xmm4
+League of Legends.exe+55875C - 0F56 CB               - orps xmm1,xmm3
+League of Legends.exe+55875F - F3 0F58 D1            - addss xmm2,xmm1
+League of Legends.exe+558763 - F3 0F5C D1            - subss xmm2,xmm1
+League of Legends.exe+558767 - 0F28 C2               - movaps xmm0,xmm2
+League of Legends.exe+55876A - F3 0F5C C4            - subss xmm0,xmm4
+League of Legends.exe+55876E - F3 0FC2 C3 06         - cmpss xmm0,xmm3,06
+League of Legends.exe+558773 - 0F54 C7               - andps xmm0,xmm7
+League of Legends.exe+558776 - F3 0F5C D0            - subss xmm2,xmm0
+League of Legends.exe+55877A - F3 0F2C C2            - cvttss2si eax,xmm2
+League of Legends.exe+55877E - 3B C1                 - cmp eax,ecx
+League of Legends.exe+558780 - 0F84 610A0000         - je League of Legends.exe+5591E7
+League of Legends.exe+558786 - F3 0F10 85 70FFFFFF   - movss xmm0,[ebp-00000090]
+League of Legends.exe+55878E - 0F2F 05 001EED01      - comiss xmm0,[League of Legends.exe+1151E00]
+League of Legends.exe+558795 - 76 04                 - jna League of Legends.exe+55879B
+League of Legends.exe+558797 - B1 01                 - mov cl,01
+League of Legends.exe+558799 - EB 02                 - jmp League of Legends.exe+55879D
+League of Legends.exe+55879B - 32 C9                 - xor cl,cl
+League of Legends.exe+55879D - A1 50A5D603           - mov eax,[League of Legends.exe+2FEA550]
+League of Legends.exe+5587A2 - A8 01                 - test al,01
+League of Legends.exe+5587A4 - 75 12                 - jne League of Legends.exe+5587B8
+League of Legends.exe+5587A6 - 83 C8 01              - or eax,01
+League of Legends.exe+5587A9 - C7 05 54A5D603 FCD85CB4 - mov [League of Legends.exe+2FEA554],B45CD8FC
+League of Legends.exe+5587B3 - A3 50A5D603           - mov [League of Legends.exe+2FEA550],eax
+League of Legends.exe+5587B8 - A8 02                 - test al,02
+League of Legends.exe+5587BA - 75 12                 - jne League of Legends.exe+5587CE
+League of Legends.exe+5587BC - 83 C8 02              - or eax,02
+League of Legends.exe+5587BF - C7 05 58A5D603 00FF00FF - mov [League of Legends.exe+2FEA558],FF00FF00
+League of Legends.exe+5587C9 - A3 50A5D603           - mov [League of Legends.exe+2FEA550],eax
+League of Legends.exe+5587CE - F3 0F10 A5 74FFFFFF   - movss xmm4,[ebp-0000008C]
+League of Legends.exe+5587D6 - 0F28 CD               - movaps xmm1,xmm5
+League of Legends.exe+5587D9 - F3 0F10 1D 982AF301   - movss xmm3,[League of Legends.exe+11B2A98]
+League of Legends.exe+5587E1 - F3 0F58 E6            - addss xmm4,xmm6
+League of Legends.exe+5587E5 - 84 C9                 - test cl,cl
+League of Legends.exe+5587E7 - B8 58A5D603           - mov eax,League of Legends.exe+2FEA558
+League of Legends.exe+5587EC - B9 54A5D603           - mov ecx,League of Legends.exe+2FEA554
+League of Legends.exe+5587F1 - 0F44 C1               - cmove eax,ecx
+League of Legends.exe+5587F4 - 0F54 DC               - andps xmm3,xmm4
+League of Legends.exe+5587F7 - 0F28 C4               - movaps xmm0,xmm4
+League of Legends.exe+5587FA - 0F57 C3               - xorps xmm0,xmm3
+League of Legends.exe+5587FD - 0F28 D4               - movaps xmm2,xmm4
+League of Legends.exe+558800 - F3 0FC2 C5 01         - cmpss xmm0,xmm5,01
+League of Legends.exe+558805 - 8B 00                 - mov eax,[eax]
+League of Legends.exe+558807 - 89 85 6CFFFFFF        - mov [ebp-00000094],eax
+League of Legends.exe+55880D - 0F54 C8               - andps xmm1,xmm0
+League of Legends.exe+558810 - 0F56 CB               - orps xmm1,xmm3
+League of Legends.exe+558813 - F3 0F58 D1            - addss xmm2,xmm1
+League of Legends.exe+558817 - F3 0F5C D1            - subss xmm2,xmm1
+League of Legends.exe+55881B - 0F28 C2               - movaps xmm0,xmm2
+League of Legends.exe+55881E - F3 0F5C C4            - subss xmm0,xmm4
+League of Legends.exe+558822 - F3 0FC2 C3 06         - cmpss xmm0,xmm3,06
+League of Legends.exe+558827 - 0F54 C7               - andps xmm0,xmm7
+League of Legends.exe+55882A - F3 0F5C D0            - subss xmm2,xmm0
+League of Legends.exe+55882E - F3 0F2C C2            - cvttss2si eax,xmm2
+League of Legends.exe+558832 - 50                    - push eax
+League of Legends.exe+558833 - 8D 85 78FFFFFF        - lea eax,[ebp-00000088]
+League of Legends.exe+558839 - 68 20A1F801           - push League of Legends.exe+120A120
+League of Legends.exe+55883E - 50                    - push eax
+League of Legends.exe+55883F - E8 55608700           - call League of Legends.exe+DCE899
+League of Legends.exe+558844 - 8B 83 2C020000        - mov eax,[ebx+0000022C]
+League of Legends.exe+55884A - 8D B5 6CFFFFFF        - lea esi,[ebp-00000094]
+League of Legends.exe+558850 - 83 C4 0C              - add esp,0C
+League of Legends.exe+558853 - 8B 48 20              - mov ecx,[eax+20]
+League of Legends.exe+558856 - 56                    - push esi
+League of Legends.exe+558857 - FF 70 24              - push [eax+24]
+League of Legends.exe+55885A - 8B 11                 - mov edx,[ecx]
+League of Legends.exe+55885C - FF 52 28              - call dword ptr [edx+28]
+League of Legends.exe+55885F - 8B 83 2C020000        - mov eax,[ebx+0000022C]
+League of Legends.exe+558865 - 8D B5 78FFFFFF        - lea esi,[ebp-00000088]
+League of Legends.exe+55886B - 56                    - push esi
+League of Legends.exe+55886C - 8B 48 20              - mov ecx,[eax+20]
+League of Legends.exe+55886F - FF 70 24              - push [eax+24]
+League of Legends.exe+558872 - 8B 11                 - mov edx,[ecx]
+League of Legends.exe+558874 - FF 52 24              - call dword ptr [edx+24]
+League of Legends.exe+558877 - F3 0F10 85 74FFFFFF   - movss xmm0,[ebp-0000008C]
+League of Legends.exe+55887F - F3 0F11 43 1C         - movss [ebx+1C],xmm0
+League of Legends.exe+558884 - 8B 15 90622402        - mov edx,[League of Legends.exe+14C6290]
+League of Legends.exe+55888A - F3 0F10 2D 2C5DFB01   - movss xmm5,[League of Legends.exe+1235D2C]
+League of Legends.exe+558892 - 8B B5 68FFFFFF        - mov esi,[ebp-00000098]
+League of Legends.exe+558898 - D9E8                  - fld1 
+League of Legends.exe+55889A - F3 0F10 35 A4FCF701   - movss xmm6,[League of Legends.exe+11FFCA4]
+League of Legends.exe+5588A2 - 47                    - inc edi
+League of Legends.exe+5588A3 - 83 FF 07              - cmp edi,07
+League of Legends.exe+5588A6 - 0F82 B2FDFFFF         - jb League of Legends.exe+55865E
+League of Legends.exe+5588AC - DDD8                  - fstp st(0)
+League of Legends.exe+5588AE - 8B 4D FC              - mov ecx,[ebp-04]
+League of Legends.exe+5588B1 - 5F                    - pop edi
+League of Legends.exe+5588B2 - 5E                    - pop esi
+League of Legends.exe+5588B3 - 33 CD                 - xor ecx,ebp
+League of Legends.exe+5588B5 - 5B                    - pop ebx
+League of Legends.exe+5588B6 - E8 51C98600           - call League of Legends.exe+DC520C
+League of Legends.exe+5588BB - 8B E5                 - mov esp,ebp
+League of Legends.exe+5588BD - 5D                    - pop ebp
+League of Legends.exe+5588BE - C3                    - ret 
+League of Legends.exe+5588BF - 8B 02                 - mov eax,[edx]
+League of Legends.exe+5588C1 - 8B CA                 - mov ecx,edx
+League of Legends.exe+5588C3 - DDD8                  - fstp st(0)
+League of Legends.exe+5588C5 - FF 90 90020000        - call dword ptr [eax+00000290]
+League of Legends.exe+5588CB - 50                    - push eax
+League of Legends.exe+5588CC - 6A 05                 - push 05
+League of Legends.exe+5588CE - 8B CE                 - mov ecx,esi
+League of Legends.exe+5588D0 - E8 6BCDECFF           - call League of Legends.exe+425640
+League of Legends.exe+5588D5 - F3 0F10 46 40         - movss xmm0,[esi+40]
+League of Legends.exe+5588DA - 8B 85 64FFFFFF        - mov eax,[ebp-0000009C]
+League of Legends.exe+5588E0 - F3 0F10 35 A4FCF701   - movss xmm6,[League of Legends.exe+11FFCA4]
+League of Legends.exe+5588E8 - F3 0F10 63 20         - movss xmm4,[ebx+20]
+League of Legends.exe+5588ED - F3 0F10 1D 982AF301   - movss xmm3,[League of Legends.exe+11B2A98]
+League of Legends.exe+5588F5 - F3 0F58 E6            - addss xmm4,xmm6
+League of Legends.exe+5588F9 - F3 0F10 88 38010000   - movss xmm1,[eax+00000138]
+League of Legends.exe+558901 - F3 0F10 2D 2C5DFB01   - movss xmm5,[League of Legends.exe+1235D2C]
+League of Legends.exe+558909 - D9 9D 70FFFFFF        - fstp dword ptr [ebp-00000090]
+League of Legends.exe+55890F - F3 0F58 85 70FFFFFF   - addss xmm0,[ebp-00000090]
+League of Legends.exe+558917 - 0F54 DC               - andps xmm3,xmm4
+League of Legends.exe+55891A - F3 0F10 3D E4E1EF01   - movss xmm7,[League of Legends.exe+117E1E4]
+League of Legends.exe+558922 - 0F28 D4               - movaps xmm2,xmm4
+League of Legends.exe+558925 - F3 0F5C C8            - subss xmm1,xmm0
+League of Legends.exe+558929 - F3 0F11 8D 70FFFFFF   - movss [ebp-00000090],xmm1
+League of Legends.exe+558931 - F3 0F58 C8            - addss xmm1,xmm0
+League of Legends.exe+558935 - 0F28 C4               - movaps xmm0,xmm4
+League of Legends.exe+558938 - 0F57 C3               - xorps xmm0,xmm3
+League of Legends.exe+55893B - F3 0FC2 C5 01         - cmpss xmm0,xmm5,01
+League of Legends.exe+558940 - F3 0F11 8D 74FFFFFF   - movss [ebp-0000008C],xmm1
+League of Legends.exe+558948 - 0F28 CD               - movaps xmm1,xmm5
+League of Legends.exe+55894B - 0F54 C8               - andps xmm1,xmm0
+League of Legends.exe+55894E - 0F56 CB               - orps xmm1,xmm3
+League of Legends.exe+558951 - F3 0F58 D1            - addss xmm2,xmm1
+League of Legends.exe+558955 - F3 0F5C D1            - subss xmm2,xmm1
+League of Legends.exe+558959 - 0F28 CD               - movaps xmm1,xmm5
+League of Legends.exe+55895C - 0F28 C2               - movaps xmm0,xmm2
+League of Legends.exe+55895F - F3 0F5C C4            - subss xmm0,xmm4
+League of Legends.exe+558963 - F3 0F10 A5 74FFFFFF   - movss xmm4,[ebp-0000008C]
+League of Legends.exe+55896B - F3 0F58 E6            - addss xmm4,xmm6
+League of Legends.exe+55896F - F3 0FC2 C3 06         - cmpss xmm0,xmm3,06
+League of Legends.exe+558974 - F3 0F10 1D 982AF301   - movss xmm3,[League of Legends.exe+11B2A98]
+League of Legends.exe+55897C - 0F54 DC               - andps xmm3,xmm4
+League of Legends.exe+55897F - 0F54 C7               - andps xmm0,xmm7
+League of Legends.exe+558982 - F3 0F5C D0            - subss xmm2,xmm0
+League of Legends.exe+558986 - 0F28 C4               - movaps xmm0,xmm4
+League of Legends.exe+558989 - 0F57 C3               - xorps xmm0,xmm3
+League of Legends.exe+55898C - F3 0FC2 C5 01         - cmpss xmm0,xmm5,01
+League of Legends.exe+558991 - F3 0F2C CA            - cvttss2si ecx,xmm2
+League of Legends.exe+558995 - 0F54 C8               - andps xmm1,xmm0
+League of Legends.exe+558998 - 0F28 D4               - movaps xmm2,xmm4
+League of Legends.exe+55899B - 0F56 CB               - orps xmm1,xmm3
+League of Legends.exe+55899E - F3 0F58 D1            - addss xmm2,xmm1
+League of Legends.exe+5589A2 - F3 0F5C D1            - subss xmm2,xmm1
+League of Legends.exe+5589A6 - 0F28 C2               - movaps xmm0,xmm2
+League of Legends.exe+5589A9 - F3 0F5C C4            - subss xmm0,xmm4
+League of Legends.exe+5589AD - F3 0FC2 C3 06         - cmpss xmm0,xmm3,06
+League of Legends.exe+5589B2 - 0F54 C7               - andps xmm0,xmm7
+League of Legends.exe+5589B5 - F3 0F5C D0            - subss xmm2,xmm0
+League of Legends.exe+5589B9 - F3 0F2C C2            - cvttss2si eax,xmm2
+League of Legends.exe+5589BD - 3B C1                 - cmp eax,ecx
+League of Legends.exe+5589BF - 0F84 22080000         - je League of Legends.exe+5591E7
+League of Legends.exe+5589C5 - F3 0F10 85 70FFFFFF   - movss xmm0,[ebp-00000090]
+League of Legends.exe+5589CD - 0F2F 05 001EED01      - comiss xmm0,[League of Legends.exe+1151E00]
+League of Legends.exe+5589D4 - 76 04                 - jna League of Legends.exe+5589DA
+League of Legends.exe+5589D6 - B1 01                 - mov cl,01
+League of Legends.exe+5589D8 - EB 02                 - jmp League of Legends.exe+5589DC
+League of Legends.exe+5589DA - 32 C9                 - xor cl,cl
+League of Legends.exe+5589DC - A1 50A5D603           - mov eax,[League of Legends.exe+2FEA550]
+League of Legends.exe+5589E1 - A8 01                 - test al,01
+League of Legends.exe+5589E3 - 75 12                 - jne League of Legends.exe+5589F7
+League of Legends.exe+5589E5 - 83 C8 01              - or eax,01
+League of Legends.exe+5589E8 - C7 05 54A5D603 FCD85CB4 - mov [League of Legends.exe+2FEA554],B45CD8FC
+League of Legends.exe+5589F2 - A3 50A5D603           - mov [League of Legends.exe+2FEA550],eax
+League of Legends.exe+5589F7 - A8 02                 - test al,02
+League of Legends.exe+5589F9 - 75 12                 - jne League of Legends.exe+558A0D
+League of Legends.exe+5589FB - 83 C8 02              - or eax,02
+League of Legends.exe+5589FE - C7 05 58A5D603 00FF00FF - mov [League of Legends.exe+2FEA558],FF00FF00
+League of Legends.exe+558A08 - A3 50A5D603           - mov [League of Legends.exe+2FEA550],eax
+League of Legends.exe+558A0D - F3 0F10 A5 74FFFFFF   - movss xmm4,[ebp-0000008C]
+League of Legends.exe+558A15 - 0F28 CD               - movaps xmm1,xmm5
+League of Legends.exe+558A18 - F3 0F10 1D 982AF301   - movss xmm3,[League of Legends.exe+11B2A98]
+League of Legends.exe+558A20 - F3 0F58 E6            - addss xmm4,xmm6
+League of Legends.exe+558A24 - 84 C9                 - test cl,cl
+League of Legends.exe+558A26 - B8 58A5D603           - mov eax,League of Legends.exe+2FEA558
+League of Legends.exe+558A2B - B9 54A5D603           - mov ecx,League of Legends.exe+2FEA554
+League of Legends.exe+558A30 - 0F44 C1               - cmove eax,ecx
+League of Legends.exe+558A33 - 0F54 DC               - andps xmm3,xmm4
+League of Legends.exe+558A36 - 0F28 C4               - movaps xmm0,xmm4
+League of Legends.exe+558A39 - 0F57 C3               - xorps xmm0,xmm3
+League of Legends.exe+558A3C - 0F28 D4               - movaps xmm2,xmm4
+League of Legends.exe+558A3F - F3 0FC2 C5 01         - cmpss xmm0,xmm5,01
+League of Legends.exe+558A44 - 8B 00                 - mov eax,[eax]
+League of Legends.exe+558A46 - 89 85 6CFFFFFF        - mov [ebp-00000094],eax
+League of Legends.exe+558A4C - 0F54 C8               - andps xmm1,xmm0
+League of Legends.exe+558A4F - 0F56 CB               - orps xmm1,xmm3
+League of Legends.exe+558A52 - F3 0F58 D1            - addss xmm2,xmm1
+League of Legends.exe+558A56 - F3 0F5C D1            - subss xmm2,xmm1
+League of Legends.exe+558A5A - 0F28 C2               - movaps xmm0,xmm2
+League of Legends.exe+558A5D - F3 0F5C C4            - subss xmm0,xmm4
+League of Legends.exe+558A61 - F3 0FC2 C3 06         - cmpss xmm0,xmm3,06
+League of Legends.exe+558A66 - 0F54 C7               - andps xmm0,xmm7
+League of Legends.exe+558A69 - F3 0F5C D0            - subss xmm2,xmm0
+League of Legends.exe+558A6D - F3 0F2C C2            - cvttss2si eax,xmm2
+League of Legends.exe+558A71 - 50                    - push eax
+League of Legends.exe+558A72 - 8D 85 78FFFFFF        - lea eax,[ebp-00000088]
+League of Legends.exe+558A78 - 68 20A1F801           - push League of Legends.exe+120A120
+League of Legends.exe+558A7D - 50                    - push eax
+League of Legends.exe+558A7E - E8 165E8700           - call League of Legends.exe+DCE899
+League of Legends.exe+558A83 - 8B 83 40020000        - mov eax,[ebx+00000240]
+League of Legends.exe+558A89 - 8D B5 6CFFFFFF        - lea esi,[ebp-00000094]
+League of Legends.exe+558A8F - 83 C4 0C              - add esp,0C
+League of Legends.exe+558A92 - 8B 48 20              - mov ecx,[eax+20]
+League of Legends.exe+558A95 - 56                    - push esi
+League of Legends.exe+558A96 - FF 70 24              - push [eax+24]
+League of Legends.exe+558A99 - 8B 11                 - mov edx,[ecx]
+League of Legends.exe+558A9B - FF 52 28              - call dword ptr [edx+28]
+League of Legends.exe+558A9E - 8B 83 40020000        - mov eax,[ebx+00000240]
+League of Legends.exe+558AA4 - 8D B5 78FFFFFF        - lea esi,[ebp-00000088]
+League of Legends.exe+558AAA - 56                    - push esi
+League of Legends.exe+558AAB - 8B 48 20              - mov ecx,[eax+20]
+League of Legends.exe+558AAE - FF 70 24              - push [eax+24]
+League of Legends.exe+558AB1 - 8B 11                 - mov edx,[ecx]
+League of Legends.exe+558AB3 - FF 52 24              - call dword ptr [edx+24]
+League of Legends.exe+558AB6 - F3 0F10 85 74FFFFFF   - movss xmm0,[ebp-0000008C]
+League of Legends.exe+558ABE - F3 0F11 43 20         - movss [ebx+20],xmm0
+League of Legends.exe+558AC3 - E9 BCFDFFFF           - jmp League of Legends.exe+558884
+League of Legends.exe+558AC8 - 8B 02                 - mov eax,[edx]
+League of Legends.exe+558ACA - 8B CA                 - mov ecx,edx
+League of Legends.exe+558ACC - DDD8                  - fstp st(0)
+League of Legends.exe+558ACE - FF 90 90020000        - call dword ptr [eax+00000290]
+League of Legends.exe+558AD4 - 50                    - push eax
+League of Legends.exe+558AD5 - 6A 04                 - push 04
+League of Legends.exe+558AD7 - 8B CE                 - mov ecx,esi
+League of Legends.exe+558AD9 - E8 62CBECFF           - call League of Legends.exe+425640
+League of Legends.exe+558ADE - 8B 85 64FFFFFF        - mov eax,[ebp-0000009C]
+League of Legends.exe+558AE4 - F3 0F10 56 3C         - movss xmm2,[esi+3C]
+League of Legends.exe+558AE9 - F3 0F10 3D E4E1EF01   - movss xmm7,[League of Legends.exe+117E1E4]
+League of Legends.exe+558AF1 - F3 0F10 1D 982AF301   - movss xmm3,[League of Legends.exe+11B2A98]
+League of Legends.exe+558AF9 - F3 0F10 88 B4000000   - movss xmm1,[eax+000000B4]
+League of Legends.exe+558B01 - F3 0F10 80 B8000000   - movss xmm0,[eax+000000B8]
+League of Legends.exe+558B09 - F3 0F58 C7            - addss xmm0,xmm7
+League of Legends.exe+558B0D - F3 0F10 2D 2C5DFB01   - movss xmm5,[League of Legends.exe+1235D2C]
+League of Legends.exe+558B15 - D9 9D 70FFFFFF        - fstp dword ptr [ebp-00000090]
+League of Legends.exe+558B1B - F3 0F58 95 70FFFFFF   - addss xmm2,[ebp-00000090]
+League of Legends.exe+558B23 - F3 0F58 CA            - addss xmm1,xmm2
+League of Legends.exe+558B27 - F3 0F11 95 70FFFFFF   - movss [ebp-00000090],xmm2
+League of Legends.exe+558B2F - F3 0F59 C8            - mulss xmm1,xmm0

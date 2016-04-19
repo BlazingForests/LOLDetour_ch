@@ -1,0 +1,86 @@
+League of Legends.exe+B45322 - 8B 4F 4E              - mov ecx,[edi+4E]
+League of Legends.exe+B45325 - 8D 74 24 14           - lea esi,[esp+14]
+League of Legends.exe+B45329 - 88 44 24 1B           - mov [esp+1B],al
+League of Legends.exe+B4532D - BF 04000000           - mov edi,00000004
+League of Legends.exe+B45332 - 89 4C 24 14           - mov [esp+14],ecx
+League of Legends.exe+B45336 - 36 C7 06 01000000     - mov ss:[esi],00000001
+League of Legends.exe+B4533D - 90                    - nop 
+League of Legends.exe+B4533E - 90                    - nop 
+League of Legends.exe+B4533F - 90                    - nop 
+League of Legends.exe+B45340 - 90                    - nop 
+League of Legends.exe+B45341 - 90                    - nop 
+League of Legends.exe+B45342 - 90                    - nop 
+League of Legends.exe+B45343 - 90                    - nop 
+League of Legends.exe+B45344 - 90                    - nop 
+League of Legends.exe+B45345 - 83 7B 14 10           - cmp dword ptr [ebx+14],10
+League of Legends.exe+B45349 - 72 02                 - jb "League of Legends.exe"+B4534D
+League of Legends.exe+B4534B - 8B 1B                 - mov ebx,[ebx]
+League of Legends.exe+B4534D - FF 74 24 3C           - push [esp+3C]
+League of Legends.exe+B45351 - 83 7C 24 58 10        - cmp dword ptr [esp+58],10
+League of Legends.exe+B45356 - 8D 4C 24 44           - lea ecx,[esp+44]
+League of Legends.exe+B4535A - FF 74 24 20           - push [esp+20]
+League of Legends.exe+B4535E - 0F43 4C 24 48         - cmovae ecx,[esp+48]
+League of Legends.exe+B45363 - 8D 44 24 38           - lea eax,[esp+38]
+League of Legends.exe+B45367 - FF 74 24 30           - push [esp+30]
+League of Legends.exe+B4536B - 80 7C 24 27 00        - cmp byte ptr [esp+27],00
+League of Legends.exe+B45370 - BA 64000000           - mov edx,00000064
+League of Legends.exe+B45375 - FF 74 24 2C           - push [esp+2C]
+League of Legends.exe+B45379 - 50                    - push eax
+League of Legends.exe+B4537A - B8 C8000000           - mov eax,000000C8
+League of Legends.exe+B4537F - 0F45 C2               - cmovne eax,edx
+League of Legends.exe+B45382 - 8B D3                 - mov edx,ebx
+League of Legends.exe+B45384 - 50                    - push eax
+League of Legends.exe+B45385 - FF 74 24 2C           - push [esp+2C]
+League of Legends.exe+B45389 - E8 C2438FFF           - call "League of Legends.Scaleform::Semaphore::`default constructor closure'"+EAAC0
+League of Legends.exe+B4538E - 83 C4 1C              - add esp,1C
+League of Legends.exe+B45391 - 89 44 24 20           - mov [esp+20],eax
+League of Legends.exe+B45395 - 8D B0 40190000        - lea esi,[eax+00001940]
+League of Legends.exe+B4539B - 8D 44 24 70           - lea eax,[esp+70]
+League of Legends.exe+B4539F - 8B CE                 - mov ecx,esi
+League of Legends.exe+B453A1 - 50                    - push eax
+League of Legends.exe+B453A2 - E8 B9EDE5FF           - call "League of Legends.Scaleform::Render::Matrix2x4<float>::GetYScale"+52790
+League of Legends.exe+B453A7 - 8D 44 24 70           - lea eax,[esp+70]
+League of Legends.exe+B453AB - 8B CE                 - mov ecx,esi
+League of Legends.exe+B453AD - 50                    - push eax
+League of Legends.exe+B453AE - E8 3DD4B0FF           - call "League of Legends.Scaleform::Render::Matrix2x4<float>::SetIdentity"+E17D0
+League of Legends.exe+B453B3 - 8B 7C 24 2C           - mov edi,[esp+2C]
+League of Legends.exe+B453B7 - 8D 5C 24 14           - lea ebx,[esp+14]
+League of Legends.exe+B453BB - BE 04000000           - mov esi,00000004
+League of Legends.exe+B453C0 - 8B 47 0F              - mov eax,[edi+0F]
+League of Legends.exe+B453C3 - 89 44 24 14           - mov [esp+14],eax
+League of Legends.exe+B453C7 - 8A 0B                 - mov cl,[ebx]
+League of Legends.exe+B453C9 - E8 F2F70000           - call "League of Legends.exe"+B54BC0
+League of Legends.exe+B453CE - 88 03                 - mov [ebx],al
+League of Legends.exe+B453D0 - 8D 5B 01              - lea ebx,[ebx+01]
+League of Legends.exe+B453D3 - 4E                    - dec esi
+League of Legends.exe+B453D4 - 75 F1                 - jne "League of Legends.exe"+B453C7
+League of Legends.exe+B453D6 - 8B 35 34E35B02        - mov esi,["League of Legends.exe"+15EE334]
+League of Legends.exe+B453DC - F3 0F10 44 24 14      - movss xmm0,[esp+14]
+League of Legends.exe+B453E2 - 8B 5C 24 20           - mov ebx,[esp+20]
+League of Legends.exe+B453E6 - 0F2F 46 04            - comiss xmm0,[esi+04]
+League of Legends.exe+B453EA - 76 65                 - jna "League of Legends.exe"+B45451
+League of Legends.exe+B453EC - 8A 47 4D              - mov al,[edi+4D]
+League of Legends.exe+B453EF - 8B CB                 - mov ecx,ebx
+League of Legends.exe+B453F1 - 2C 56                 - sub al,56
+League of Legends.exe+B453F3 - F6 D0                 - not al
+League of Legends.exe+B453F5 - C0 C0 04              - rol al,04
+League of Legends.exe+B453F8 - C0 C0 02              - rol al,02
+League of Legends.exe+B453FB - C0 C0 03              - rol al,03
+League of Legends.exe+B453FE - 34 B6                 - xor al,-4A
+League of Legends.exe+B45400 - 88 44 24 1C           - mov [esp+1C],al
+League of Legends.exe+B45404 - FF 74 24 1C           - push [esp+1C]
+League of Legends.exe+B45408 - E8 B36C0200           - call "League of Legends.exe"+B6C0C0
+League of Legends.exe+B4540D - 8A 4F 55              - mov cl,[edi+55]
+League of Legends.exe+B45410 - E8 9BF80000           - call "League of Legends.exe"+B54CB0
+League of Legends.exe+B45415 - 0FB6 C0               - movzx eax,al
+League of Legends.exe+B45418 - C1 E0 11              - shl eax,11
+League of Legends.exe+B4541B - 33 83 70060000        - xor eax,[ebx+00000670]
+League of Legends.exe+B45421 - 25 00000200           - and eax,00020000 : ["Actx "]
+League of Legends.exe+B45426 - 33 83 70060000        - xor eax,[ebx+00000670]
+League of Legends.exe+B4542C - 39 83 70060000        - cmp [ebx+00000670],eax
+League of Legends.exe+B45432 - 74 06                 - je "League of Legends.exe"+B4543A
+League of Legends.exe+B45434 - 89 83 70060000        - mov [ebx+00000670],eax
+League of Legends.exe+B4543A - D9EE                  - fldz 
+League of Legends.exe+B4543C - 8D 8B 60040000        - lea ecx,[ebx+00000460]
+League of Legends.exe+B45442 - 8B 01                 - mov eax,[ecx]
+League of Legends.exe+B45444 - 83 EC 08              - sub esp,08
