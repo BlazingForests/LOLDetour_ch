@@ -24,7 +24,7 @@ using namespace std;
 
 #define SightWard 0x68676953 
 #define VisionWard 0x69736956
-
+#pragma execution_character_set("utf-8")
 
 typedef struct MEMORYINFO{
 	BOOL IsHook;

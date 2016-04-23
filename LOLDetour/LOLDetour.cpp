@@ -119,14 +119,14 @@ DWORD WINAPI dwWaitThread( LPVOID lpArgs )
 	}
 	return 0;
 }
-BOOL WINAPI IsAdministrator() {//ÅĞ¶ÏÊÇ·ñ¹ÜÀíÔ±Ä£Ê½  
+BOOL WINAPI IsAdministrator() {//åˆ¤æ–­æ˜¯å¦ç®¡ç†å‘˜æ¨¡å¼  
 
 	BOOL bIsElevated = FALSE;
 	HANDLE hToken = NULL;
 	UINT16 uWinVer = LOWORD(GetVersion());
 	uWinVer = MAKEWORD(HIBYTE(uWinVer), LOBYTE(uWinVer));
 
-	if (uWinVer < 0x0600)//²»ÊÇVISTA¡¢Windows7  
+	if (uWinVer < 0x0600)//ä¸æ˜¯VISTAã€Windows7  
 		return(FALSE);
 
 	if (OpenProcessToken(GetCurrentProcess(), TOKEN_QUERY, &hToken)) {
@@ -154,7 +154,7 @@ DWORD WINAPI GetHookPort(){
 DWORD WINAPI ccvv(){
 	DWORD dwThreadID;
 	
-	hGame=FindWindowA("ApolloRuntimeContentWindow","PVP.net ¿Í»§¶Ë");//PVP.net ¿Í»§¶Ë PVP.net Client
+	hGame=FindWindowA("ApolloRuntimeContentWindow","PVP.net å®¢æˆ·ç«¯");//PVP.net å®¢æˆ·ç«¯ PVP.net Client
 	if (!hGame) { 
 		g_hGetMsg = NULL;
 		return NULL; 

@@ -256,7 +256,7 @@ typedef struct _NT_TEB
 	NT_TIB Tib;                         /* 00h */
 	PVOID EnvironmentPointer;           /* 1Ch */
 	//  CLIENT_ID Cid;                      /* 20h */
-	BYTE Reserved1[8];				 //Õ¼ÓÃ8¸ö×Ö½Ú
+	BYTE Reserved1[8];				 //å ç”¨8ä¸ªå­—èŠ‚
 	PVOID ActiveRpcInfo;                /* 28h */
 	PVOID ThreadLocalStoragePointer;    /* 2Ch */
 	pNT_PEB Peb;                       /* 30h */
@@ -274,12 +274,12 @@ typedef struct _NT_TEB
 	UCHAR SpareBytes1[0x28];            /* 1ACh */
 	PVOID SystemReserved2[0xA];         /* 1D4h */
 	//  GDI_TEB_BATCH GdiTebBatch;          /* 1FCh */
-	BYTE Reserved3[0x4e0];				 //Õ¼ÓÃ8¸ö×Ö½Ú
+	BYTE Reserved3[0x4e0];				 //å ç”¨8ä¸ªå­—èŠ‚
 	ULONG gdiRgn;                       /* 6DCh */
 	ULONG gdiPen;                       /* 6E0h */
 	ULONG gdiBrush;                     /* 6E4h */
 	// CLIENT_ID RealClientId;             /* 6E8h */
-	BYTE Reserved2[8];				 //Õ¼ÓÃ8¸ö×Ö½Ú
+	BYTE Reserved2[8];				 //å ç”¨8ä¸ªå­—èŠ‚
 	PVOID GdiCachedProcessHandle;       /* 6F0h */
 	ULONG GdiClientPID;                 /* 6F4h */
 	ULONG GdiClientTID;                 /* 6F8h */
@@ -324,7 +324,7 @@ NT_TEB*  GetCurrentThreadTEB()
 
 	_asm
 	{
-		mov    eax,fs:[0x18]	//»ñÈ¡±¾½ø³ÌµÄÖ÷Ïß³ÌµÄTEB
+		mov    eax,fs:[0x18]	//èŽ·å–æœ¬è¿›ç¨‹çš„ä¸»çº¿ç¨‹çš„TEB
 		mov    pTeb,eax
 	}
 	return pTeb;
@@ -343,7 +343,7 @@ BOOL HideModuleByHandle(HMODULE hModule)
 	//LoadOrderModuleList
 	while(pLdrModule != ListHead)
 	{
-		//ÅÐ¶ÏÊÇ·ñÊÇÎÒÃÇÒªÆÁ±ÎµÄÄ£¿é
+		//åˆ¤æ–­æ˜¯å¦æ˜¯æˆ‘ä»¬è¦å±è”½çš„æ¨¡å—
 		if(pLdrModule->BaseAddress == hModule)
 		{
 			pLdrModule->InLoadOrderModuleList.Flink->Blink = pLdrModule->InLoadOrderModuleList.Blink;
@@ -356,7 +356,7 @@ BOOL HideModuleByHandle(HMODULE hModule)
 			pLdrModule->InInitializationOrderModuleList.Blink->Flink = pLdrModule->InInitializationOrderModuleList.Flink;
 		}
 
-		//ÒÆ¶¯µ½Á´±íµÄÏÂÒ»¸ö
+		//ç§»åŠ¨åˆ°é“¾è¡¨çš„ä¸‹ä¸€ä¸ª
 		pLdrModule = (PLDR_MODULE)pLdrModule->InLoadOrderModuleList.Flink;
 
 	} 

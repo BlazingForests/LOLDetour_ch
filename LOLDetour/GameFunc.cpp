@@ -1,7 +1,6 @@
 #include "GameProc.h"
 #pragma comment(lib, "version.lib")
 
-
 extern DWORD dwBASE_LOL;
 extern HWND hGame_LOL;
 extern HMODULE hInstance;
@@ -94,7 +93,7 @@ BOOL InitCode(){
 	if (HIWORD(pfixfileinfo->dwFileVersionMS) == 6 && LOWORD(pfixfileinfo->dwFileVersionMS) == 7 && HIWORD(pfixfileinfo->dwFileVersionLS) == 138 && LOWORD(pfixfileinfo->dwFileVersionLS) == 9658)
 		HookHeroName();
 	else
-		DbgPrintA("[Hook]∞Ê±æ ß–ß");
+		DbgPrintA("[Hook]ÁâàÊú¨Â§±Êïà");
 	}catch(...){}
 	return TRUE;
 }
@@ -180,7 +179,7 @@ void __stdcall gDrawText(DWORD Device,OBJECT_POSITION p,WCHAR* Text,DWORD Color)
 
 LPVOID pHookHeroName;
 MEMORYINFO MEM_INFO_HERONAME;
-WCHAR* NEWName=L"GANKÃ· æ£°«Î◊¢“‚÷‹Œß£°";
+WCHAR* NEWName=L"GANKÊèêÁ§∫ÔºÅËØ∑Ê≥®ÊÑèÂë®Âõ¥ÔºÅ";
 BOOL bJmp = FALSE;
 void __stdcall DrawHeroName(DWORD POS,DWORD NAME,DWORD DEVICE,DWORD HEROBASE){
 	try {
