@@ -2,7 +2,7 @@
 // Microsoft Visual C++ generated include file.
 // Used by INFO.rc
 
-// Ф√╟Е╞╧Х╠║Г └Д╦▀Д╦─Г╩└И╩≤Х╝╓Е─╪
+// пб╤тоС╣добр╩вИд╛хож╣
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
